@@ -264,6 +264,78 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 1, 2017",
+    title: "Boots on the ground in Puerto Rico",
+    narrative:
+      "Eleven days after Maria, the team landed in Puerto Rico with supplies, manpower, and generators for the Vieques hospital. The first shipment was already being distributed. These photos captured the staging — bins packed in the hangar, cargo netted onto pallets on the tarmac, and nighttime handoffs in the dark. No streetlights. No power. Just headlights and hands.",
+    caption:
+      "Our team made it to Puerto Rico yesterday with supplies, manpower, and generators to replace the failing generators at the hospital in Vieques. We have also distributed many of our supplies from our first shipment to those who need them the most. These pictures were taken before the shipment was sent. We will not be able to continue our mission without your donations.",
+    photos: [
+      {
+        src: "tarmac-forklift-cargo-netted.jpg",
+        alt: "Airman directing a forklift carrying a cargo-netted pallet of generators, water, and supplies on the tarmac",
+      },
+      {
+        src: "hangar-packing-bins-pallet.jpg",
+        alt: "Volunteers packing supply bins onto a pallet inside a hangar, checking inventory lists",
+      },
+      {
+        src: "hangar-hauling-bins-lineup.jpg",
+        alt: "Volunteer hauling a supply bin across a hangar floor, line of bins and diapers staged behind her",
+      },
+      {
+        src: "hangar-water-bottles-staged.jpg",
+        alt: "Cases of water bottles covering an entire workbench inside the hangar",
+      },
+      {
+        src: "pr-nighttime-supply-distribution.jpg",
+        alt: "Two people unloading supplies from an SUV at night in Puerto Rico — no streetlights, total darkness",
+      },
+    ],
+  },
+  {
+    date: "October 1, 2017",
+    title: "The 333rd loads the plane",
+    narrative:
+      "The 333rd Recruiting Squadron helped load the C-130 that carried supplies to Puerto Rico. Military in flight suits standing next to civilians in shorts and sneakers — under the tail of the aircraft that made it all possible. One team, one fight.",
+    caption:
+      "Big thanks to our friends at the 333 Recruiting Squadron for their hard work loading the planes with the supplies that arrived in Puerto Rico today. Your efforts have already changed the lives of many. Thank you for your service!",
+    photos: [
+      {
+        src: "333rd-crew-c130-tarmac.jpg",
+        alt: "Alpha CREW volunteers and 333rd Recruiting Squadron airmen standing together under the tail of a C-130 on the tarmac",
+      },
+    ],
+  },
+  {
+    date: "October 2, 2017",
+    title: "\"One of millions to come\"",
+    narrative:
+      "A Facebook post was circulating that stopped everyone cold. An 82-year-old Korean War veteran named William Nieves, alone in Toa Baja, surviving on crackers and two bottles of water. His roof was gone. Insects were eating him alive. He couldn't walk out because of the debris. His family couldn't reach him. \"He's not the only one,\" the post read. \"One of millions to come.\" Puerto Ricans are U.S. citizens. Alpha CREW refused to let them be forgotten.",
+    caption:
+      "Take a second to go through the attached post. It explains how challenging the situation in Puerto Rico has become. Many people are alone and in need of help! We CANNOT forget them and we CANNOT stop sending help their way. Remember, Puerto Ricans are born US Citizens.",
+    photos: [
+      {
+        src: "william-nieves-facebook-post.jpg",
+        alt: "Screenshot of a Facebook post describing an 82-year-old Korean War veteran alone in Puerto Rico, surviving on crackers and two bottles of water after Hurricane Maria",
+      },
+    ],
+  },
+  {
+    date: "October 2, 2017",
+    title: "The animals left behind",
+    narrative:
+      "It wasn't just people. Animals across Puerto Rico — in homes, on streets, on beaches — had been killed or displaced by the storm. The survivors were starving, separated from their owners, wandering through debris. Alpha CREW partnered with Veterinarians for Puerto Rico to address a crisis nobody else was talking about.",
+    caption:
+      "Many animals in the homes, streets, and beaches of Puerto Rico were killed by the wrath of Hurricane Maria. The animals that survived have lost their homes and owners and are now struggling to find them, as well as food. Our partners at Veterinarians for Puerto Rico are working to make a difference in this sphere and also need our help.",
+    photos: [
+      {
+        src: "veterinarians-for-pr-logo.jpg",
+        alt: "Veterinarians for Puerto Rico logo — paw print with Puerto Rican flag star",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

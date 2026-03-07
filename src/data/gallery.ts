@@ -512,6 +512,47 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 9, 2017",
+    title: "What a Category 5 leaves behind",
+    narrative:
+      "The crew photographed what was once a standing structure on Vieques. Every tree stripped bare, metal roofing twisted and scattered, debris tangled in everything. Three weeks after Maria, and this is what it still looked like. Not the kind of damage that gets fixed in months.",
+    caption:
+      "Our CREW took a picture of a once standing structure on the island of Vieques. Truly terrible to see... This damage is terrible and saddening but it has given us a greater reason to increase our efforts. With your help, we can impact more lives in Puerto Rico.",
+    photos: [
+      {
+        src: "vieques-destroyed-structure.jpg",
+        alt: "Collapsed structure on Vieques surrounded by stripped trees and debris — nothing left standing",
+      },
+    ],
+  },
+  {
+    date: "October 10, 2017",
+    title: "The operation expands to Georgia and the Carolinas",
+    narrative:
+      "Three weeks in, the operation had outgrown Florida. Alpha CREW put out a call for military volunteers in Savannah, Georgia and Charleston, South Carolina — the staging points closest to the C-130 airlift routes. The pipeline needed more hands.",
+    caption:
+      "Join the C.R.E.W. We are looking for military volunteers in the Savannah, GA and Charleston, SC area that are interested in working with us.",
+    photos: [],
+  },
+  {
+    date: "October 10, 2017",
+    title: "Sorting donations at the Choliseo in San Juan",
+    narrative:
+      "The crew moved to San Juan to help Puerto Rico Rises and other organizations sort through mountains of donated clothing and food at the Jos\u00e9 Miguel Agrelot Coliseum. The donations would be distributed to municipalities across the island. Alpha CREW wasn't just running its own missions anymore — it was plugging into wherever help was needed.",
+    caption:
+      "Our CREWmates are helping wherever there is a need. Here we are in San Juan, helping Puerto Rico Rises and other entities, inspecting and sorting out donations, (clothing and food) at the Jose Miguel Agrelo Coliseum (Choliseo). These donations will then be delivered to various municipalities around the island.",
+    photos: [
+      {
+        src: "choliseo-sorting-clothing.jpg",
+        alt: "Volunteer sorting and folding donated clothing at tables inside the José Miguel Agrelot Coliseum",
+      },
+      {
+        src: "choliseo-packing-boxes.jpg",
+        alt: "Volunteer packing boxes of donations at tables inside the coliseum, arena seating visible behind",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

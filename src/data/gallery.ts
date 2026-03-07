@@ -581,6 +581,15 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 10, 2017",
+    title: "Stateside crew works the phones for airlift and donations",
+    narrative:
+      "While the ground team ran missions across Puerto Rico, the stateside crew was burning through phone lines — coordinating with government agencies to secure airlift capacity and working with companies and nonprofits to prioritize what supplies went next. Two fronts, one operation.",
+    caption:
+      "Our Stateside C.R.E.W. continues communications with government agencies to find and secure airlift for the donations inbound to Puerto Rico. Also, we continue talking with various companies and non-profit organizations to prioritize the donations that we are taking to Puerto Rico.",
+    photos: [],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

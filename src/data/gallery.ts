@@ -323,6 +323,15 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 2, 2017",
+    title: "Las Vegas",
+    narrative:
+      "In the middle of everything, the Las Vegas shooting. The team paused. Then kept going.",
+    caption:
+      "Our prayers are with the people of Las Vegas.",
+    photos: [],
+  },
+  {
+    date: "October 2, 2017",
     title: "The animals left behind",
     narrative:
       "It wasn't just people. Animals across Puerto Rico — in homes, on streets, on beaches — had been killed or displaced by the storm. The survivors were starving, separated from their owners, wandering through debris. Alpha CREW partnered with Veterinarians for Puerto Rico to address a crisis nobody else was talking about.",
@@ -332,6 +341,91 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "veterinarians-for-pr-logo.jpg",
         alt: "Veterinarians for Puerto Rico logo — paw print with Puerto Rican flag star",
+      },
+    ],
+  },
+  {
+    date: "October 2, 2017",
+    title: "The crew-mates who made it run",
+    narrative:
+      "Behind every shipment were people giving their time, their weekends, their energy. Sandra Christian was one of them — volunteering, coordinating, showing up when it mattered. The comments section was full of people like her.",
+    caption:
+      "Our posts are filled with great comments of our great teammates and supporters. A big and special thanks to Sandra Christian for her support, volunteerism, and for being a great C.R.E.W.mate.",
+    photos: [
+      {
+        src: "crew-strapping-pallet-tarmac.jpg",
+        alt: "Crew members strapping down a pallet of generators, supply bins, and water on the tarmac, ready for airlift",
+      },
+    ],
+  },
+  {
+    date: "October 3, 2017",
+    title: "The team reaches Vieques. Then goes dark.",
+    narrative:
+      "Alpha CREW made it to Vieques that morning. Then — silence. No internet, no cell service, no way to send updates. The island was that cut off. All the team back in Florida knew was that their people were on the ground and working.",
+    caption:
+      "Our Crew has made it to Vieques this morning! Once the team returns to an area with internet connectivity, we will update with more pictures. Your support and your donations have made these missions a possibility. Thank you so much!",
+    photos: [],
+  },
+  {
+    date: "October 4, 2017",
+    title: "Still dark. Still working.",
+    narrative:
+      "Day two on Vieques with barely a word from the team. They were safe — that much was confirmed — but communications were almost nonexistent. The updates would come later. For now, the work continued in silence.",
+    caption:
+      "We have barely heard from our team since their arrival to Vieques but we know that they are safe and working hard to continue providing support. We will continue updating as more information flows.",
+    photos: [],
+  },
+  {
+    date: "October 5, 2017",
+    title: "Generators delivered. Supplies in the plaza.",
+    narrative:
+      "Word finally came through. The team had distributed supplies in the Vieques Plaza and Esperanza Park. The generators were delivered to the hospital and other government buildings — the whole reason they'd made the 1,100-mile journey. Still no photos. Still no reliable internet. Just confirmation that the mission was done.",
+    caption:
+      "Yesterday we handed out supplies in the Vieques Plaza and in the Esperanza Park. The generators have been handed to the hospital and other government buildings. When the C.R.E.W. gets some internet connectivity, we will begin posting pictures of the effort.",
+    photos: [],
+  },
+  {
+    date: "October 5, 2017",
+    title: "The line in Vieques",
+    narrative:
+      "The internet finally came back long enough to send two photos. A line of residents stretched across a stripped field in Vieques, waiting for supplies. At the front — a flatbed truck with \"ALPHA CREW\" hand-painted on the side, volunteers handing out donations alongside Activados por Puerto Rico and the First Lady's team. Every tree in the background was bare. Every person in line needed something.",
+    caption:
+      "Our friends in Vieques, Puerto Rico are finally getting the help they need! In these pictures, we are handing out donations that were brought in by the First Lady and another great group of people called Activados por Puerto Rico. Your help, volunteerism, and donations, no matter how small or large, have made a HUGE impact this week.",
+    photos: [
+      {
+        src: "vieques-crowd-waiting-field.jpg",
+        alt: "Long line of Vieques residents waiting in a devastated field for supply distribution, stripped trees and damaged buildings in the background",
+      },
+      {
+        src: "vieques-truck-handout-alphacrew.jpg",
+        alt: "Alpha CREW volunteers handing out supplies from a flatbed truck with hand-painted ALPHA CREW sign, residents gathering around",
+      },
+    ],
+  },
+  {
+    date: "October 6, 2017",
+    title: "80 families in the town square",
+    narrative:
+      "World Smile Day. The Alpha CREW truck pulled up to the Vieques town square, next to the church, and started handing out water, food, flashlights, and hygiene products. Eighty families came through the line — mothers with strollers, elderly residents with canes, kids. Eighty families who'd been waiting two weeks for someone to show up.",
+    caption:
+      "For World Smile Day Alpha CREW wants to bring smiles to those who have donated to our cause. Your donations and your support supplied 80 families with water, food, flashlights, and other hygiene products in the town square of Vieques, Puerto Rico. Let's continue making a difference!",
+    photos: [
+      {
+        src: "vieques-plaza-handout-closeup.jpg",
+        alt: "Volunteers on the Alpha CREW truck handing water and supplies to residents gathered in the Vieques town square",
+      },
+      {
+        src: "vieques-plaza-truck-church.jpg",
+        alt: "Alpha CREW truck parked by the church in Vieques, crowd of residents receiving supplies",
+      },
+      {
+        src: "vieques-plaza-line-street.jpg",
+        alt: "Line of residents stretching down the street in Vieques, waiting for supply distribution from the Alpha CREW truck",
+      },
+      {
+        src: "vieques-plaza-stroller-families.jpg",
+        alt: "Families with strollers and children gathering around the Alpha CREW truck in the Vieques plaza",
       },
     ],
   },

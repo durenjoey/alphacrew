@@ -567,6 +567,20 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 10, 2017",
+    title: "Fuel run for the Guaynabo hospital generator",
+    narrative:
+      "By evening, the crew was tracking down fuel and oil for a generator at the hospital in Guaynabo. Three weeks without reliable power, and hospitals were running on whatever they could scrounge. The team found five cans of fuel, labeled them for the hospital, and helped troubleshoot the generator on-site.",
+    caption:
+      "Our C.R.E.W.mates, later on, went to find fuel and oil for a generator at the Guaynabo hospital and assisted troubleshooting the same.",
+    photos: [
+      {
+        src: "guaynabo-hospital-fuel-cans.jpg",
+        alt: "Five red fuel cans labeled HSPR 1/5 through 5/5, lined up on a tile floor next to water bottles and rubber boots",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

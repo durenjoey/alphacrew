@@ -608,6 +608,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 12, 2017",
+    title: "Transporting Humane Society supplies from Isla Grande to Guaynabo",
+    narrative:
+      "The crew continued supporting the Humane Society, this time running supplies from the Isla Grande Airport hangar to Guaynabo. Truck beds loaded with water, pet food, and medical supplies. The S.P. Helicopters hangar had become a staging area — every square foot filled with donations waiting to move.",
+    caption:
+      "We have continued our aid to the Humane Society today as they transported food and supplies from the Isla Grande Airport to Guaynabo.",
+    photos: [
+      {
+        src: "humane-society-selfie-loaded-truck.jpg",
+        alt: "Crew member selfie in front of a pickup truck loaded with water bottles and supplies",
+      },
+      {
+        src: "humane-society-isla-grande-hangar.jpg",
+        alt: "S.P. Helicopters hangar at Isla Grande packed with pet food, water, and boxes of supplies",
+      },
+      {
+        src: "humane-society-truck-van-loading.jpg",
+        alt: "Truck bed and van being loaded with bags of pet food and water in the hangar",
+      },
+      {
+        src: "humane-society-water-heart-sign.jpg",
+        alt: "Truck bed filled with water bottles next to a large red heart sign at the hangar entrance",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

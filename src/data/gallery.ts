@@ -430,6 +430,88 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 6, 2017",
+    title: "500 families, a taped-up sign, and a red Jeep",
+    narrative:
+      "The crew posed for a photo in Vieques — the nonprofit's name written in marker on a styrofoam cooler lid, a Puerto Rican flag held overhead, a kitted-out red Jeep behind them. No professional branding yet. Just tape and conviction. By this point, over 500 families had received food, water, and supplies. The hospital and VER dialysis clinic had power. Government buildings had generators. The logo would come later.",
+    caption:
+      "This is the incredible C.R.E.W. that is currently making a great difference in Vieques, Puerto Rico. Because of this group, there are over 500 families in Vieques with food, water, and supplies for their everyday needs. The hospital and VER clinic (center for dialysis) have the power to take care of their patients. Also, we provided generators to government buildings to continue to assist their citizens.",
+    photos: [
+      {
+        src: "vieques-crew-photo-taped-sign.jpg",
+        alt: "Alpha CREW team posing in Vieques with a hand-lettered styrofoam sign, Puerto Rican flag, and red Jeep — stripped trees in the background",
+      },
+      {
+        src: "vieques-jeep-flag-sign.jpg",
+        alt: "The Alpha CREW sign propped against the red Jeep with Puerto Rican flag overhead, devastated landscape behind",
+      },
+    ],
+  },
+  {
+    date: "October 7, 2017",
+    title: "A footprint on the island",
+    narrative:
+      "Alpha CREW wasn't just dropping off supplies and leaving. They coordinated with local government in planning meetings, shared satellite phones so residents could call family members for the first time since the hurricane, drove a golf cart with a megaphone through neighborhoods to announce distributions, delivered generators to hospitals, clinics, and homes, and partnered with other organizations to help them distribute across the island. This was an operation now.",
+    caption:
+      "Alpha Crew established its footprint in Vieques. We coordinated with the local government, distributed our donations, shared our satellite phones with the residents for them to communicate with family members, provided generators and power inverters to hospitals, clinics and residents, collaborated with other entities to help them distribute their donations throughout the island.",
+    photos: [
+      {
+        src: "vieques-satphone-call-family.jpg",
+        alt: "A Vieques resident using Alpha CREW's satellite phone to call family, crew member watching from a fence — stripped trees in the background",
+      },
+      {
+        src: "vieques-coordination-meeting.jpg",
+        alt: "Alpha CREW in a coordination meeting with local officials and other organizations in Vieques, notes and clipboards in hand",
+      },
+      {
+        src: "vieques-golf-cart-megaphone.jpg",
+        alt: "Golf cart with a megaphone driving through a Vieques neighborhood to announce supply distributions",
+      },
+      {
+        src: "vieques-crew-residents-porch.jpg",
+        alt: "Crew member talking with elderly residents on a porch in Vieques",
+      },
+      {
+        src: "vieques-truck-handout-street.jpg",
+        alt: "Alpha CREW truck distributing supplies on the street in Vieques, residents walking away with water and goods",
+      },
+    ],
+  },
+  {
+    date: "October 7, 2017",
+    title: "Alpha CREW + Veterinarians for Puerto Rico",
+    narrative:
+      "The partnership with Veterinarians for Puerto Rico went from a Facebook post to boots on the ground. Alpha CREW handled the logistics — transport, coordination, getting the supplies to the island. The vets handled the last mile, delivering to animal shelters, the Animal Emergency Hospital, and communities across San Juan, Culebra, Lo\u00edza, and R\u00edo Grande. Night handoffs in the dark, crates stacked in shelters, dogs still finding their way back to people.",
+    caption:
+      "Alpha Crew collaborated with our friends of Veterinarians for Puerto Rico to get their donations to PR. Alpha Crew provided the logistics, coordination, and transport to the island, and Veterinarians for Puerto Rico provided the donations and delivered them to different parts of the island (San Juan, Culebra, Loiza, and Rio Grande).",
+    photos: [
+      {
+        src: "vetsforpr-animal-emergency-hospital.jpg",
+        alt: "Team delivering pet food and supplies to the Animal Emergency Hospital in Puerto Rico",
+      },
+      {
+        src: "vetsforpr-night-truck-loading.jpg",
+        alt: "Night handoff — volunteers and vets in scrubs loading supplies into a truck in the dark",
+      },
+      {
+        src: "vetsforpr-hangar-supplies.jpg",
+        alt: "Hangar stacked with cases of Clorox, water, and pet training pads staged for delivery",
+      },
+      {
+        src: "vetsforpr-animal-shelter-crates.jpg",
+        alt: "Volunteer carrying supplies past stacked animal crates at a shelter, dogs roaming",
+      },
+      {
+        src: "vetsforpr-cleaning-supplies-dogs.jpg",
+        alt: "Vet organizing Clorox and cleaning supplies on top of a crate, dogs nearby",
+      },
+      {
+        src: "vetsforpr-dogs-residents.jpg",
+        alt: "Vets for PR team with residents and dogs in a neighborhood, damaged palm trees overhead",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

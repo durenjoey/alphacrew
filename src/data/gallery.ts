@@ -187,6 +187,83 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "September 29, 2017",
+    title: "1,100 miles by air, 55 by truck, 20 by boat",
+    narrative:
+      "The director of health and human services on Vieques called — the hospital's generators were failing. Alpha CREW bought eight 4000-watt generators and began planning the route: fly 1,100 miles to Puerto Rico, truck 55 miles to Fajardo, then boat 20 miles across open water to Vieques. The mayor coordinated safe passage. There was no easy way to get there, so they found the hard way.",
+    caption:
+      "We are loading some generators to send to a busy hospital in Vieques, PR. The director of health and human services for the island spoke with us and said that they are in need of generators to keep their hospital operations running and we agreed to help. In order to get these generators to Vieques, our crew will have to fly 1,100 miles to Puerto Rico, travel 55 miles by truck to Fajardo and then go another 20 miles by boat to Vieques. There is very limited access to the island, but we have coordinated with the mayor to ensure safe passage.",
+    photos: [
+      {
+        src: "vieques-generators-hangar-staged.jpg",
+        alt: "Eight 4000-watt Predator generators stacked in a hangar, staged for shipment to Vieques Hospital",
+      },
+      {
+        src: "vieques-generators-truck-loading.jpg",
+        alt: "Volunteer loading generators into a pickup truck bed for transport",
+      },
+    ],
+  },
+  {
+    date: "September 29, 2017",
+    title: "Roads destroyed, $240 million in damage",
+    narrative:
+      "The Washington Post reported that Puerto Rico's roadways alone would cost at least $240 million to repair. Flooded highways and collapsed infrastructure were keeping first responders from reaching remote areas. This was exactly why Alpha CREW was focused on Vieques and Culebra — the places no one could get to.",
+    caption:
+      "The roadways in Puerto Rico are destroyed while other roads are completely flooded. This is what is keeping the first responders from being able to head out to the remote areas of the island. Your donations will allow for us to enter areas that are difficult to access, like Vieques and Culebra.",
+    photos: [],
+  },
+  {
+    date: "September 29, 2017",
+    title: "Generators loaded for airlift to Vieques",
+    narrative:
+      "The supplies were in transit and the generators were about to go airborne. A major shipment — enough power to keep the Vieques hospital running — was being loaded onto planes. Nine days from hurricane to hospital generators.",
+    caption:
+      "Our supplies are being transported and loaded onto the planes soon. We will have a major shipment flying out with generators that will help power the hospital in Vieques. Let's continue to make a difference together!",
+    photos: [],
+  },
+  {
+    date: "September 30, 2017",
+    title: "The crew grows",
+    narrative:
+      "Ten days in and volunteers were showing up on their own time, buying supplies out of pocket and loading trucks in store parking lots. Michael Cook and Jennifer Cook-Gilpin — two of the crew-mates who made the operation run.",
+    caption:
+      "Our amazing crew-mates moving donations for our next mission. Thank you for all of your hard work, Michael Cook and Jennifer Cook-Gilpin!",
+    photos: [
+      {
+        src: "volunteers-loading-water-supplies.jpg",
+        alt: "Two volunteers loading cases of water and canned goods from a store cart into a pickup truck",
+      },
+    ],
+  },
+  {
+    date: "September 30, 2017",
+    title: "The death toll is climbing. They need medicine.",
+    narrative:
+      "The post-hurricane death toll was unknown and rising. Families on the mainland were finding out about the deaths of loved ones a week after the fact. People were commenting on Facebook posts looking for any information about relatives. Alpha CREW put out the call — they needed medicine, and they needed contacts who could legally donate it. The mission was largely self-funded. The team was paying out of pocket.",
+    caption:
+      "The need for support from the United States continues to rise for Puerto Rico. The post-hurricane death toll is unknown but it is climbing. Reading through the comments of this original post is a heart-breaking experience. One person mentioned receiving a call one week after the death of his father... Families are unaware of what is happening to those they love and are unable to help. We MUST do something to help the hospitals, the sick and the wounded. Alpha Crew is looking for medicine to ship to the island. If you have any contacts that can safely and legally donate medicine, we want to talk to them. Also, our mission is largely funded by our own team and friends. We NEED your support to continue making a difference in Puerto Rico.",
+    photos: [],
+  },
+  {
+    date: "September 30, 2017",
+    title: "Local businesses join the mission",
+    narrative:
+      "Wang and Cortes Dental in Brevard County set up a donation drive in their office — diapers, baby formula, Lysol, batteries, canned food. A dentist office became a supply depot. The community was finding its own ways to help.",
+    caption:
+      "We want to thank Wang and Cortes Dental for gathering donations to send to Puerto Rico. Efforts like yours are making a difference in the lives of many.",
+    photos: [
+      {
+        src: "wang-cortes-dental-team.jpg",
+        alt: "Alpha CREW members with Wang and Cortes Dental staff standing beside donated supplies — baby formula, Lysol, batteries, and canned food",
+      },
+      {
+        src: "wang-cortes-donations-boxes.jpg",
+        alt: "Boxes of diapers and supplies stacked in the dental office, ready for pickup",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

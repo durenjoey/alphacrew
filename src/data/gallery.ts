@@ -590,6 +590,24 @@ export const galleryEntries: GalleryEntry[] = [
     photos: [],
   },
   {
+    date: "October 12, 2017",
+    title: "Volunteers pack and distribute at the Choliseo",
+    narrative:
+      "Back at the coliseum, the sorting operation continued. Volunteers worked the arena floor — folding clothing, filling boxes, organizing supplies for distribution across the island. Blaine Stevenson and others showed up to help, joining the effort alongside Alpha CREW and other organizations still running the Choliseo as a makeshift distribution hub.",
+    caption:
+      "Big thanks to the volunteers that helped us and the other organizations with packing and distributing supplies. Blaine Stevenson, thank you for your help!",
+    photos: [
+      {
+        src: "choliseo-volunteers-sorting-floor.jpg",
+        alt: "Volunteer sorting clothing and donations on the arena floor of the Choliseo, empty seating tiers and sponsor banners above",
+      },
+      {
+        src: "choliseo-crew-group-photo.jpg",
+        alt: "Six crew members and volunteers posing together on the Choliseo arena floor, boxes and pallets behind them",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

@@ -553,6 +553,20 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 10, 2017",
+    title: "Helping the Humane Society load aircraft for Vieques",
+    narrative:
+      "While part of the crew worked the Choliseo, another team headed to Isla Grande Airport in San Juan to help the Humane Society load their aircraft with provisions bound for Vieques. Animal welfare was one of the quieter crises inside the larger disaster — pets and strays left behind, veterinary supplies wiped out. Alpha CREW showed up wherever an extra set of hands was needed.",
+    caption:
+      "At the Isla Grande Airport in San Juan, our other C.R.E.W.mates, helped the Humane Society moving and loading their Aircraft with provisions that are going to Vieques.",
+    photos: [
+      {
+        src: "isla-grande-humane-society-loading.jpg",
+        alt: "Volunteer amid stacked pet carriers, boxes, and animal supplies in a hangar at Isla Grande Airport",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

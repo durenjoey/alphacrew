@@ -634,6 +634,20 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 13, 2017",
+    title: "Rivera and Caraballo family donates water, food, and pasta",
+    narrative:
+      "Donations kept arriving from families across the community. The Rivera and Caraballo family contributed water, food, and pasta — supplies that would be packed and shipped to Puerto Rico on the next available airlift. Every family donation meant another few families fed on the island.",
+    caption:
+      "The Rivera and Caraballo family has graciously donated water, food, and pasta to our cause. These supplies will be touching the lives of many in Puerto Rico.",
+    photos: [
+      {
+        src: "rivera-caraballo-donation.jpg",
+        alt: "Airman standing next to a cart loaded with donated water, food boxes, and plantains in a warehouse",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

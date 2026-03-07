@@ -648,6 +648,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 15, 2017",
+    title: "Scouting Utuado — collapsed bridges and cut-off communities",
+    narrative:
+      "The crew drove into the mountains of Utuado to scout communities that hadn't been reached. What they found was devastating. Bridges had collapsed into muddy rivers, roads were buried under landslides, and entire neighborhoods were cut off. Residents had been crossing the river on foot just to reach supplies on the other side. A military LMTV was one of the few vehicles that could navigate what was left of the roads.",
+    caption:
+      "Visited Utuado to scout communities in need of help and to determine the best ways to access and deliver supplies. In one of these areas, people have had to cross a river to gain access to supplies because of the collapse of their access bridge.",
+    photos: [
+      {
+        src: "utuado-collapsed-bridge.jpg",
+        alt: "Collapsed bridge in Utuado — concrete pillars broken into the muddy river, homes visible on the hillside above",
+      },
+      {
+        src: "utuado-surveying-bridge.jpg",
+        alt: "Two crew members standing at the edge of the collapsed bridge, surveying the destruction across the flooded river",
+      },
+      {
+        src: "utuado-destroyed-road.jpg",
+        alt: "Crew walking a mud-covered road in Utuado, landslides on both sides, stripped hillsides in the background",
+      },
+      {
+        src: "utuado-military-lmtv.jpg",
+        alt: "Military LMTV cargo truck parked on a road near Route 111 in Utuado, one of the few vehicles able to navigate the terrain",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

@@ -714,6 +714,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 16, 2017",
+    title: "Health fair in Aguas Buenas — seniors eating once a day",
+    narrative:
+      "The crew visited the Feria de Salud in Aguas Buenas and went door to door through Sector Minillas, Barrio Mula, Barrio Sumideros, Sector Corujas, and Sector la Jacana. What they found was grim: senior citizens surviving on one meal a day, communities surrounded by debris and mosquitoes, and patients with compromised health and no access to medical care. The team left water purifiers and collected contact information for follow-up — this wasn't a one-time visit.",
+    caption:
+      "After visiting the Health Fair (Feria de Salud) in Aguas Buenas, we found senior citizens that have only been eating once a day due to supply limitations. We also left water purifiers in communities where there is an excess of debris, mosquitoes, infectious diseases, and patients with compromised health. We have the information of the people in these communities and we are going to follow up. Areas visited: Sector Minillas, Bo Mula, Bo. Sumideros, Sector Corujas, and Sector la Jacana.",
+    photos: [
+      {
+        src: "aguas-buenas-porch-checkup.jpg",
+        alt: "Crew member and medic in scrubs checking on an elderly resident on his porch in Aguas Buenas",
+      },
+      {
+        src: "aguas-buenas-living-room-seniors.jpg",
+        alt: "Crowded living room in Aguas Buenas — crew and medical volunteers assessing elderly residents, family photos on the walls",
+      },
+      {
+        src: "aguas-buenas-medical-supplies.jpg",
+        alt: "Crew member carrying medical supply box on a porch while a medic takes a resident's blood pressure",
+      },
+      {
+        src: "aguas-buenas-doorway-intake.jpg",
+        alt: "Volunteer collecting information from a resident at her doorway, writing on a clipboard",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

@@ -963,6 +963,40 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 24, 2017",
+    title: "Hot meals in San Juan with Voces and Fundación El Plato Caliente",
+    narrative:
+      "Alpha CREW partnered with Voces, Fundación Topy Mamery, and Fundación El Plato Caliente to distribute hot meals to families and children at Parcelas Falu and Barrio Campollanos in San Juan. Volunteers portioned soup and ladled rice and stew into cups in a restaurant kitchen, loaded the CREW trucks, and drove into the neighborhoods. For families surviving on canned goods and MREs for over a month, a hot meal was everything.",
+    caption:
+      "Today, Alpha CREW collaborated with Voces, Fundación Topy Mamery, and Fundación El Plato Caliente distributing hot meals to families and children at Parcelas Falu and Barrio Campollanos in San Juan PR. We are very grateful for the invitation.",
+    photos: [
+      {
+        src: "voces-soup-portioning.jpg",
+        alt: "Rows of soup cups being portioned in a restaurant kitchen, volunteers working the counter",
+      },
+      {
+        src: "voces-serving-rice-stew.jpg",
+        alt: "Volunteers ladling rice and stew into cups from large pots, one wearing a CREW shirt",
+      },
+      {
+        src: "voces-crew-truck-site.jpg",
+        alt: "White Alpha CREW truck at the distribution site, crew loading food containers in a covered area",
+      },
+      {
+        src: "voces-trucks-san-juan-street.jpg",
+        alt: "Trucks lined up on a San Juan street with food containers and Puerto Rico flags, ready for delivery",
+      },
+      {
+        src: "voces-community-gathering.jpg",
+        alt: "Community members gathering around the truck as volunteers distribute meals from red and yellow containers",
+      },
+      {
+        src: "voces-crew-suv-neighborhood.jpg",
+        alt: "Alpha CREW SUV with logo driving through a San Juan neighborhood, white truck ahead",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

@@ -1031,6 +1031,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 26, 2017",
+    title: "Hot meals delivered to homebound residents",
+    narrative:
+      "The mobile crew shifted from supply logistics to direct care, driving through neighborhoods to deliver hot meals to residents who couldn't leave their homes — elderly, disabled, or too sick to travel. It was one of the most personal days of the operation: knocking on doors, handing food through gates, making sure people who had been forgotten were fed.",
+    caption:
+      "Yesterday, the mobile crew of Alpha CREW went to bring hot meals to people who did not have the means, health, or are bedridden. Thank you c.r.e.w.mates!",
+    photos: [
+      {
+        src: "hotmeals-crew-selfie-truck.jpg",
+        alt: "Five crew members taking a selfie in a truck bed loaded with red containers of portioned meals and supplies",
+      },
+      {
+        src: "hotmeals-elderly-delivery.jpg",
+        alt: "Volunteer handing a meal container to an elderly woman at her home gate, red container visible on the truck bed",
+      },
+      {
+        src: "hotmeals-containers-street.jpg",
+        alt: "Red and yellow meal containers stacked in a truck bed, colorful San Juan street in the background",
+      },
+      {
+        src: "hotmeals-crew-logo-truck.jpg",
+        alt: "Crew member selfie next to the Alpha CREW logo on the truck door, Puerto Rico flag visible in background",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

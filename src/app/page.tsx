@@ -14,11 +14,6 @@ export default function Home() {
         />
 
         <div className="relative text-center px-6 max-w-4xl mx-auto">
-          {/* Small marker */}
-          <div className="text-[10px] text-zinc-600 uppercase tracking-[0.4em] font-light mb-12">
-            September 2017 &mdash; March 2018
-          </div>
-
           {/* Title */}
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-6">
             ALPHA
@@ -91,9 +86,10 @@ export default function Home() {
             </p>
 
             <p>
-              Seven weeks later, the volunteers ran out of vacation time. Puerto
-              Rico was slowly coming back online. The operation wound down
-              quietly &mdash; the way most real relief work ends.
+              As the island began coming back online and local authorities
+              resumed operations, the scope of immediate disaster relief was
+              substantially complete. The operation ended the way it started
+              &mdash; without fanfare.
             </p>
           </div>
         </div>
@@ -278,8 +274,9 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed">
             Seven weeks. 100,000 lbs of supplies. Airlifted by C-130,
             ferried to Vieques, hand-delivered to hospitals, shelters, and
-            front porches. Then the volunteers went home, the island came
-            back online, and the operation quietly ended.
+            front porches. When the island began coming back online and
+            local authorities resumed operations, the immediate disaster
+            relief mission was substantially complete.
           </p>
           <p className="text-lg text-zinc-500 font-light leading-relaxed mt-6">
             This site exists so it isn&apos;t forgotten.

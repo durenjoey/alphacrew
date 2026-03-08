@@ -25,3 +25,30 @@
     color: #fff;
   }
 }
+
+/* Hero collage photo animation */
+@keyframes hero-photo-enter {
+  0% {
+    opacity: 0;
+    transform: translate(var(--scatter-x), var(--scatter-y)) scale(1.15);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.hero-photo-cell {
+  opacity: 0;
+  animation: hero-photo-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-cell {
+    animation: none;
+    opacity: 1;
+  }
+}

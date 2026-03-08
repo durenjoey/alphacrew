@@ -1057,6 +1057,36 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 26, 2017",
+    title: "Supply convoy to Utuado and Jayuya barrios",
+    narrative:
+      "Partnering again with Voces, Fundacion Topy Mamery, UNICEF, Lote 23, Grupo de Amigos de Margarita Santos, and Foundation for Puerto Rico, Alpha CREW loaded a multi-vehicle convoy and drove deep into the mountains of Utuado and Jayuya. They hit eight barrios — Tetuan 1 and 2, Don Alonzo, Limon, Caonillas, Caonillas Abajo, Mameyes Arriba, and Mameyes Abajo — delivering sandwiches, rice, baby supplies, and hygiene products. They brought treats for the kids too.",
+    caption:
+      "Today the C.R.E.W.mates of Alpha CREW collaborated once again with Voces, Fundación Topy Mamery, UNICEF, Lote 23, Grupo de Amigos de Margarita Santos - Volunteers Ad Hoc, and Foundation for Puerto Rico to deliver sandwiches, rice, baby and hygiene supplies to the residents of Utuado and Jayuya at Barrios Tetuan 1 & 2, Don Alonzo, Limon, Caonillas, Caonillas Abajo, Mameyes Arriba, and Mameyes Abajo. We also delivered some treats for the kids.... yum yum! We feel blessed every day we are able to help the community. Thank you again for the invite!",
+    photos: [
+      {
+        src: "utuado-jayuya-tundra-mountain-village.jpg",
+        alt: "Crew member standing in a Toyota Tundra truck bed with Alpha CREW logo, green mountain hillside and village buildings behind",
+      },
+      {
+        src: "utuado-jayuya-selfie-rice-bags.jpg",
+        alt: "Two crew members taking a selfie in the cab, backseat packed with yellow bags of rice",
+      },
+      {
+        src: "utuado-jayuya-convoy-rural-road.jpg",
+        alt: "Vehicle convoy on a rural mountain road, boxes visible in truck bed, downed trees and tilted power lines along the roadside",
+      },
+      {
+        src: "utuado-jayuya-dakota-loaded.jpg",
+        alt: "Maroon Dakota pickup with Alpha CREW logo, truck bed loaded with cardboard boxes and a small Puerto Rico flag",
+      },
+      {
+        src: "utuado-jayuya-jeep-crew-logo.jpg",
+        alt: "Silver Jeep Compass with Alpha CREW logo on the door parked on a street",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

@@ -3,12 +3,18 @@ export interface GalleryPhoto {
   alt: string;
 }
 
+export interface PartnerLink {
+  name: string;
+  url: string;
+}
+
 export interface GalleryEntry {
   date: string;
   title: string;
   narrative: string;
   caption: string;
   photos: GalleryPhoto[];
+  partners?: PartnerLink[];
 }
 
 export const galleryEntries: GalleryEntry[] = [
@@ -898,6 +904,12 @@ export const galleryEntries: GalleryEntry[] = [
       "The crew picked up emergency medical supplies from Partners for World Health at LMM Airport in San Juan — boxes of Hospira pharmaceuticals, non-sterile gowns, and other critical equipment. They loaded the Alpha CREW truck and drove straight to the Pediatric Children's Hospital in Bayamón, arriving at dusk. A children's hospital, a month without reliable supply chains, and a truck full of medicine pulling up to the entrance.",
     caption:
       "Today, Alpha C.R.E.W picked up at LMM Airport in San Juan emergency medical supplies sent by Partners for World Health and delivered to the Pediatric Children's Hospital in Bayamón, PR.",
+    partners: [
+      {
+        name: "Partners for World Health",
+        url: "https://www.facebook.com/PartnersForWorldHealth",
+      },
+    ],
     photos: [
       {
         src: "bayamon-crew-truck-lmm-airport.jpg",
@@ -1093,6 +1105,12 @@ export const galleryEntries: GalleryEntry[] = [
       "Back on the stateside logistics chain, volunteers palletized medical equipment donated by Partners for World Health — wheelchairs, walkers, crutches, and boxed supplies — and loaded them into trailers bound for Puerto Rico. An Air Force forklift moved the shrink-wrapped pallets onto the flight line. Every piece of durable medical equipment meant someone on the island could recover with dignity.",
     caption:
       "Yesterday, Alpha CREW C.R.E.W.mates palletized and shipped out medical supplies donated by Partners of World Health that are destined to PR. Your support is important to us, and is the lifeline for us to continue our efforts. No quantity is too small, everything counts.",
+    partners: [
+      {
+        name: "Partners for World Health",
+        url: "https://www.facebook.com/PartnersForWorldHealth",
+      },
+    ],
     photos: [
       {
         src: "pwh-volunteers-wheelchairs.jpg",
@@ -1173,7 +1191,17 @@ export const galleryEntries: GalleryEntry[] = [
       "Six weeks into the operation, Alpha CREW coordinated an airlift of medical supplies donated by Partners for World Health to the hospital on Vieques — a small island off Puerto Rico's east coast, reachable only by ferry. The cargo moved by truck, then ferry, then hand-delivered to the hospital staff waiting inside.",
     caption:
       "Alpha CREW has made history once again! We have successfully airlifted, transported and delivered very important life saving life supporting supplies donated by Partners for World Health to the Vieques Hospital in Puerto Rico. This has been an odyssey, but extremely rewarding! Thank you C.R.E.W. mates!!",
+    partners: [
+      {
+        name: "Partners for World Health",
+        url: "https://www.facebook.com/PartnersForWorldHealth",
+      },
+    ],
     photos: [
+      {
+        src: "vieques-c130-loading-tarmac.jpg",
+        alt: "Airmen loading pink-wrapped medical supply pallets into a C-130 cargo bay on the tarmac, clear blue sky",
+      },
       {
         src: "vieques-warehouse-staging-area.jpg",
         alt: "Warehouse staging area — pallets of water, supplies, and equipment ready for airlift",
@@ -1183,8 +1211,20 @@ export const galleryEntries: GalleryEntry[] = [
         alt: "Night operations — crew loading pallets with forklift, military vehicles in background",
       },
       {
+        src: "vieques-c130-in-flight.jpg",
+        alt: "C-130 aircraft in flight against a cloudy sky, carrying medical supplies to Puerto Rico",
+      },
+      {
         src: "vieques-cargo-pallets-military-flatbed.jpg",
         alt: "Military cargo pallets strapped to flatbed for transport",
+      },
+      {
+        src: "vieques-ferry-terminal-crew-selfie.jpg",
+        alt: "Three crew members in CREW shirts taking a selfie at the ferry terminal, Vieques ferry visible in the background",
+      },
+      {
+        src: "vieques-ferry-cabin-crew-selfie.jpg",
+        alt: "Five crew members and a local volunteer selfie inside the ferry cabin on the crossing to Vieques",
       },
       {
         src: "vieques-ferry-crossing.jpg",
@@ -1213,6 +1253,194 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-hospital-supplies-delivered.jpg",
         alt: "Medical supplies delivered inside Vieques Hospital",
+      },
+    ],
+  },
+  {
+    date: "November 6, 2017",
+    title: "Church of Doral supplies airlifted to Añasco",
+    narrative:
+      "The same day the Vieques delivery wrapped up, another shipment was already moving. Supplies donated by The Church of Doral were airlifted and delivered to the functionaries of Catacumba 5 in Añasco — a community on Puerto Rico's west coast that had been cut off and underserved since Maria hit. The crew worked late into the night staging pallets and bins under floodlights, strapping cargo for the next leg of the chain.",
+    caption:
+      "Alpha CREW airlifted and delivered life saving life sustaining supplies donated by The Church of Doral to the functionaries of Catacumba 5 from Añasco PR. To contribute to our organization, please find the GoFundMe link on our page. Thank you for your support!",
+    partners: [
+      {
+        name: "Catacumba 5 / Uno Church Puerto Rico",
+        url: "https://www.facebook.com/UnoChurchPuertoRico",
+      },
+    ],
+    photos: [
+      {
+        src: "anasco-night-ops-palletizing.jpg",
+        alt: "Crew and volunteers stacking bins and pallets under floodlights at night on the staging area, one volunteer standing on top of the pallet directing",
+      },
+    ],
+  },
+  {
+    date: "November 6, 2017",
+    title: "CREW mates help Hurricane Irma recovery in Florida",
+    narrative:
+      "Alpha CREW wasn't only focused on Puerto Rico. Back in Florida, crew members were also helping neighbors recover from Hurricane Irma, which had torn through the state two weeks before Maria hit the island. A CREW mate loaded up the Silverado — logo on the door — and spent the day clearing downed palms, branches, and debris from residential neighborhoods, hauling it all to roll-off dumpsters. Same crew, same mission, different storm.",
+    caption:
+      "Our C.R.E.W. mates are amazing.... not only they help in PR, but also those affected by Hurricane Irma in FL. Thank you Team!!",
+    photos: [
+      {
+        src: "irma-fl-crewmate-clearing-debris.jpg",
+        alt: "Crew member in red shirt standing in a Silverado truck bed, tossing downed palm fronds into an Express Roll Off dumpster, storm-damaged roofs in the background",
+      },
+      {
+        src: "irma-fl-silverado-dumpster.jpg",
+        alt: "Black Chevy Silverado with Alpha CREW logo parked next to a green Express dumpster, crew member loading storm debris",
+      },
+      {
+        src: "irma-fl-silverado-loaded-branches.jpg",
+        alt: "Silverado truck bed overflowing with branches and palm fronds, parked in a Florida neighborhood driveway",
+      },
+    ],
+  },
+  {
+    date: "November 6, 2017",
+    title: "Mass distribution with the Municipio de San Juan",
+    narrative:
+      "Alpha CREW joined forces with the Municipio de San Juan and the military for a large-scale supply distribution. National Guard trucks loaded with pallets of MREs rolled into a community playground, and soldiers and volunteers formed lines to move boxes to hundreds of residents waiting behind the fence. This wasn't just Alpha CREW anymore — it was a full joint operation, military and municipal, with the crew embedded in the middle of it.",
+    caption:
+      "Alpha CREW fever is everywhere. Our C.R.E.W. mates collaborated with the Municipio de San Juan to distribute supplies to the community. We are on FIRE! Thank you CREW!!!",
+    photos: [
+      {
+        src: "sanjuan-municipio-aerial-distribution.jpg",
+        alt: "Aerial view of a mass supply distribution — National Guard trucks and pallets of MRE boxes at a playground, soldiers and volunteers working, large crowd of residents lined up along the fence",
+      },
+    ],
+  },
+  {
+    date: "November 6, 2017",
+    title: "Goal Zero generators from Sparks delivered to Vieques",
+    narrative:
+      "Alpha CREW received, processed, airlifted, transported, and delivered Goal Zero Yeti battery-powered portable generators donated by Sparks to the island of Vieques. The full chain was on display: airmen and civilians palletizing boxes of generators and diapers in a hangar, a King Transport flatbed hauling netted pallets across the tarmac stateside, a Yale forklift unloading at the destination with the crew posing alongside local volunteers, and the final handoff — boxes stacked in a pickup, ready for distribution across the island.",
+    caption:
+      "Alpha CREW received, processed, airlifted, transported, and delivered Goal Zero Yeti Battery Powered Portable Generators donated by Sparks to the Island of Vieques. To contribute to our organization, please find the GoFundMe link on our page. Thank you for your support!",
+    partners: [
+      {
+        name: "Sparks",
+        url: "https://www.facebook.com/SparksMarketing",
+      },
+    ],
+    photos: [
+      {
+        src: "sparks-hangar-palletizing-generators.jpg",
+        alt: "Airmen and civilian volunteer palletizing boxes of generators, diapers, and supplies onto a pallet jack inside a hangar, labeled '6 of 7'",
+      },
+      {
+        src: "sparks-king-transport-flatbed.jpg",
+        alt: "Two crew members standing beside a King Transport flatbed fully loaded with netted cargo pallets on the tarmac, blue sky behind",
+      },
+      {
+        src: "sparks-vieques-forklift-unloading.jpg",
+        alt: "Yellow Yale forklift unloading pallets of generators in Vieques, crew member in CREW shirt posing with local volunteers, green hillside behind",
+      },
+      {
+        src: "sparks-vieques-crew-delivery.jpg",
+        alt: "Crew member and local volunteer standing behind a pickup loaded with shrink-wrapped boxes of Goal Zero generators in Vieques, flowering trees in background",
+      },
+    ],
+  },
+  {
+    date: "November 7, 2017",
+    title: "New partnership with Air National Guard EFAC — meeting FEMA at the COE",
+    narrative:
+      "Alpha CREW forged a new partnership with the Air National Guard Emergency Family Assistance Center (EFAC) and together met with FEMA at the Emergency Operations Center (COE) inside the Centro de Convenciones de Puerto Rico in San Juan. The goal: find a solution to keep moving life-sustaining supplies to the island using military aircraft. Seven weeks in, and the operation was still growing — building relationships at the institutional level to sustain what had started as a family effort.",
+    caption:
+      "Alpha CREW continues to move forward forging new relationships. We are now collaborating with the Air National Guard Emergency Family Assistance Center (EFAC). We teamed up for the same cause and met with FEMA at the Emergency Operations Center (COE) in San Juan, PR to find a solution to move life saving life sustaining supplies to Puerto Rico using military aircraft.",
+    photos: [
+      {
+        src: "efac-fema-convention-center.jpg",
+        alt: "Alpha CREW founder and EFAC partners posing outside the Centro de Convenciones de Puerto Rico after meeting with FEMA at the Emergency Operations Center",
+      },
+    ],
+  },
+  {
+    date: "November 10, 2017",
+    title: "Hot meals with Fundación El Plato Caliente",
+    narrative:
+      "The crew partnered again with Fundación El Plato Caliente — this time for a full meal prep and delivery operation. Volunteers gathered around checkered tables to pack utensil kits and portion meals into styrofoam containers, then loaded up the trunk of a sedan and drove into the neighborhood. In a parking lot, they handed hot food directly to elderly women, neighbors in scrubs coming off shifts, and anyone who showed up. No staging area, no formality — just a car trunk and people who needed to eat.",
+    caption:
+      "Today, Alpha CREW C.R.E.W. mates collaborated with Fundación El Plato Caliente delivering hot meals to the community.",
+    photos: [
+      {
+        src: "platocaliente-selfie-packing-utensils.jpg",
+        alt: "Crew member selfie at a long table where volunteers in gloves pack utensil kits and napkins, boxes of supplies stacked in the background",
+      },
+      {
+        src: "platocaliente-volunteers-packing-table.jpg",
+        alt: "Two volunteers smiling at the checkered table, assembling utensil kits with gloves on, stacks of forks and napkins in front of them",
+      },
+      {
+        src: "platocaliente-handing-meal-resident.jpg",
+        alt: "Volunteer in green cap handing a styrofoam meal container to a woman in an orange shirt from the open trunk of a silver sedan",
+      },
+      {
+        src: "platocaliente-trunk-elderly-women.jpg",
+        alt: "Volunteer distributing meals from a car trunk to two elderly women in a parking lot, colorful buildings behind",
+      },
+      {
+        src: "platocaliente-parking-lot-distribution.jpg",
+        alt: "Volunteer handing out meals from the car trunk in a parking lot, residents and a woman in scrubs waiting, palm trees and high-rise in the background",
+      },
+      {
+        src: "platocaliente-community-conversation.jpg",
+        alt: "Community member in a green dress talking with a resident while a volunteer loads meals from the trunk behind them",
+      },
+    ],
+  },
+  {
+    date: "November 10, 2017",
+    title: "Gluten-free foods from Kinnikinnick delivered to Alianza de Autismo",
+    narrative:
+      "Alpha CREW delivered gluten-free foods donated by Kinnikinnick to the Alianza de Autismo de Puerto Rico — animal cookies, pancake mix, flour blend, sandwich cremes, and chocolate chip cookies. The chain started in the hangar stateside where a U.S. Air Force forklift moved palletized boxes, a CREW Jeep towed a trailer to the flight line, and a crew member with a headlamp pushed pallets deep into a trailer. On the island, Mr. Jose Galindez donated the local transport, and Ms. Byankah Sobá connected the crew with the autism alliance. The boxes were unloaded on pallets and hand carts outside Alianza's building — specialty food for families who needed it most.",
+    caption:
+      "Today, Alpha CREW delivered gluten free foods donated by Kinnikinnick to Alianza de Autismo de Puerto Rico. A special thanks to our good friend Mr. Jose Galindez for the donation of the transport in Puerto Rico and to Ms. Byankah Sobá to reach out to us to be part of this wonderful cause!",
+    partners: [
+      {
+        name: "Alianza de Autismo de Puerto Rico",
+        url: "https://www.facebook.com/alianzaautismo",
+      },
+      {
+        name: "Byankah Sobá",
+        url: "https://www.facebook.com/byankah.soba",
+      },
+    ],
+    photos: [
+      {
+        src: "autismo-kinnikinnick-boxes-closeup.jpg",
+        alt: "Stack of Kinnikinnick gluten-free boxes — vanilla cookies, animal cookies, flour blend, pancake mix, and chocolate chip cookies",
+      },
+      {
+        src: "autismo-usaf-forklift-hangar.jpg",
+        alt: "U.S. Air Force Hyster forklift moving a pallet of Kinnikinnick boxes inside the hangar, water pallets stacked nearby",
+      },
+      {
+        src: "autismo-jeep-trailer-hangar-loading.jpg",
+        alt: "Black CREW Jeep with white enclosed trailer outside the hangar, Air Force forklift loading pallets in the background",
+      },
+      {
+        src: "autismo-crewmate-trailer-palletjack.jpg",
+        alt: "Crew member wearing a headlamp pushing a tall pallet of Kinnikinnick boxes with a red pallet jack inside a trailer",
+      },
+      {
+        src: "autismo-crew-selfie-trailer.jpg",
+        alt: "Three crew members selfie inside the trailer, walls of Kinnikinnick boxes stacked behind them",
+      },
+      {
+        src: "autismo-flatbed-school-pr-flag.jpg",
+        alt: "CREW flatbed truck at a school courtyard with basketball hoop, crew member on the bed with a Puerto Rico flag",
+      },
+      {
+        src: "autismo-galindez-pallets-delivery.jpg",
+        alt: "Mr. Jose Galindez standing next to black-wrapped pallets on blue pallets with a Clark pallet jack, outside Alianza's building",
+      },
+      {
+        src: "autismo-kinnikinnick-unloaded-alianza.jpg",
+        alt: "Kinnikinnick Gluten Free boxes unloaded on pallets and a hand cart outside the Alianza de Autismo building, iron fence and flowering plants behind",
       },
     ],
   },

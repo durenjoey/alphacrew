@@ -39,9 +39,11 @@ export default function Gallery() {
                     <div className="text-sm text-zinc-400 font-medium truncate">
                       {entry.title}
                     </div>
-                    <div className="text-[10px] text-zinc-700 whitespace-nowrap">
-                      {photoCount} {photoCount === 1 ? "photo" : "photos"}
-                    </div>
+                    {photoCount > 0 && (
+                      <div className="text-[10px] text-zinc-700 whitespace-nowrap">
+                        {photoCount} {photoCount === 1 ? "photo" : "photos"}
+                      </div>
+                    )}
                   </div>
                   <div
                     className={`text-zinc-600 transition-transform duration-300 flex-shrink-0 ${
@@ -78,8 +80,28 @@ export default function Gallery() {
                       </div>
                     </div>
 
+                    {/* Partner shoutouts */}
+                    {entry.partners && entry.partners.length > 0 && (
+                      <div className="max-w-2xl mb-6 flex flex-wrap gap-3">
+                        {entry.partners.map((partner, k) => (
+                          <a
+                            key={k}
+                            href={partner.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-[10px] text-zinc-600 uppercase tracking-[0.15em] border border-zinc-800/40 rounded-sm px-3 py-1.5 hover:text-zinc-400 hover:border-zinc-700 transition-colors"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                              <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            {partner.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+
                     {/* Photo grid */}
-                    {photoCount === 1 ? (
+                    {photoCount === 0 ? null : photoCount === 1 ? (
                       <div className="max-w-2xl">
                         <Image
                           src={`/assets/photos/${entry.photos[0].src}`}

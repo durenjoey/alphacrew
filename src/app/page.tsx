@@ -245,9 +245,15 @@ export default function Home() {
             .
           </p>
 
-          <div className="text-[10px] text-zinc-800 tracking-wider">
+          <div className="text-[10px] text-zinc-800 tracking-wider mb-3">
             &copy; 2017&ndash;2026 Alpha CREW
           </div>
+          <a
+            href="mailto:durenjoey@gmail.com"
+            className="text-[10px] text-zinc-700 hover:text-zinc-500 transition-colors tracking-wider"
+          >
+            durenjoey@gmail.com
+          </a>
         </div>
       </footer>
     </div>

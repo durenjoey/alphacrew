@@ -846,6 +846,20 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 20, 2017",
+    title: "The crew — volunteers, airmen, and families",
+    narrative:
+      "A month into the operation, the team gathered outside the warehouse for a group photo. Airmen in uniform stood next to civilian volunteers, church partners, and their families — kids included. This was never a military operation or a civilian one. It was both, held together by people who showed up because they couldn't not show up.",
+    caption:
+      "Big thanks to all of our volunteers, donors, and crewmates for continuing to make an effort to help save lives in Puerto Rico.",
+    photos: [
+      {
+        src: "full-crew-group-photo-warehouse.jpg",
+        alt: "Full Alpha CREW group photo outside the warehouse — airmen in uniform, civilian volunteers, church partners, and families with children",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

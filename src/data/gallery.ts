@@ -740,6 +740,28 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 17, 2017",
+    title: "Preparing the next shipment — every item labeled and manifested",
+    narrative:
+      "Back stateside, the next shipment was taking shape in the warehouse. Pallets of water, diapers, baby supplies, and food were shrink-wrapped and staged. Every single item was labeled and logged on a manifest document — Alpha CREW ran this like a military logistics operation because that's exactly what it was. Nothing got misplaced, nothing went unaccounted for.",
+    caption:
+      "We are preparing another shipment to Puerto Rico. This next shipment will bring more needed supplies to hundreds of people throughout the island. To ensure that our shipments aren't misplaced, we label every single item and container and add it to a manifest document.",
+    photos: [
+      {
+        src: "shipment-warehouse-pallets-wide.jpg",
+        alt: "Wide shot of warehouse floor — rows of shrink-wrapped pallets stacked high, freezers and military containers in the background",
+      },
+      {
+        src: "shipment-labeled-diapers-containers.jpg",
+        alt: "Labeled containers of diapers, baby wipes, and Pampers stacked on pallets with manifest tags visible",
+      },
+      {
+        src: "shipment-water-pallets-manifested.jpg",
+        alt: "Rows of shrink-wrapped water pallets with yellow manifest labels, staged for airlift",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

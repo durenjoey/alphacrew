@@ -700,6 +700,20 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 16, 2017",
+    title: "Keeping vaccines cold in a personal fridge",
+    narrative:
+      "With the island's power grid still down, cold chain logistics came down to improvisation. Crew member Jorgito stored the Humane Society's rabies vaccines in his own refrigerator after Guardians of Rescue's generator couldn't keep up. Boxes of veterinary vaccines stacked on household shelves — the kind of problem-solving that doesn't make headlines but keeps an operation alive.",
+    caption:
+      "One of our CREWmates (Jorgito) in PR has been keeping HSPR vaccines cold in his personal refrigerator due to the limitations of Guardians of Rescue's power generator.",
+    photos: [
+      {
+        src: "jorgito-fridge-vaccines.jpg",
+        alt: "Boxes of veterinary rabies vaccines stacked on refrigerator shelves, kept cold in a crew member's personal fridge",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

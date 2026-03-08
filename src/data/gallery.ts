@@ -674,6 +674,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 16, 2017",
+    title: "Evacuating dogs from Puerto Rico with the Humane Society",
+    narrative:
+      "The crew spent the weekend helping the Humane Society of Puerto Rico transport rescued dogs from Isla Grande Airport to the Luis Muñoz Marín International Airport, where Guardians of Rescue had arranged a flight to New York. A van packed floor-to-ceiling with crates, a nighttime run to the Jet Aviation terminal, and an aircraft loaded on the tarmac. The animals were getting out.",
+    caption:
+      "This weekend we spent some time helping the Humane Society of PR in Isla Grande Airport in San Juan. With them, we brought dogs to the LMM airport that are going to be sent to NY with the Guardians of Rescue. Our furry friends in Puerto Rico are also in need of help.",
+    photos: [
+      {
+        src: "humane-society-dogs-carriers.jpg",
+        alt: "Rescued dogs in stacked carriers, named and labeled, waiting for transport",
+      },
+      {
+        src: "humane-society-van-packed-crates.jpg",
+        alt: "Van packed wall-to-wall with dog crates marked HSPR, ready for the drive to LMM airport",
+      },
+      {
+        src: "humane-society-jet-aviation-night.jpg",
+        alt: "Truck loaded with supplies outside the Jet Aviation terminal at LMM airport at night",
+      },
+      {
+        src: "humane-society-aircraft-loading.jpg",
+        alt: "Aircraft N651CT on the tarmac at night, crew loading cargo through the side door",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

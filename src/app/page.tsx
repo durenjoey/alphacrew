@@ -298,8 +298,8 @@ export default function Home() {
           </div>
 
           <p className="text-zinc-600 text-sm leading-relaxed max-w-lg mx-auto mb-8">
-            Alpha CREW was founded in 2017 by the Duren family and fellow
-            service members in response to Hurricane Maria. The organization
+            Alpha CREW was founded in 2017 by the Duren family in response
+            to Hurricane Maria. The organization
             is no longer actively operating.
           </p>
 

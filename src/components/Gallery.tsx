@@ -26,7 +26,17 @@ export default function Gallery() {
             const photoCount = entry.photos.length;
 
             return (
-              <div key={i} className="border border-zinc-800/40 rounded-sm overflow-hidden">
+              <div key={i}>
+                {entry.phase && (
+                  <div className="flex items-center gap-4 py-8 first:pt-0">
+                    <div className="h-px flex-1 bg-amber-700/30" />
+                    <div className="text-[10px] text-amber-700/60 uppercase tracking-[0.3em] font-medium whitespace-nowrap">
+                      {entry.phase}
+                    </div>
+                    <div className="h-px flex-1 bg-amber-700/30" />
+                  </div>
+                )}
+              <div className="border border-zinc-800/40 rounded-sm overflow-hidden">
                 {/* Header — always visible, clickable */}
                 <button
                   onClick={() => toggle(i)}
@@ -135,6 +145,7 @@ export default function Gallery() {
                     )}
                   </div>
                 )}
+              </div>
               </div>
             );
           })}

@@ -15,11 +15,13 @@ export interface GalleryEntry {
   caption: string;
   photos: GalleryPhoto[];
   partners?: PartnerLink[];
+  phase?: string;
 }
 
 export const galleryEntries: GalleryEntry[] = [
   {
     date: "September 25, 2017",
+    phase: "Stateside Mobilization",
     title: "Five days after landfall, the kit list comes together",
     narrative:
       "Hurricane Maria hit Puerto Rico on September 20th. By the 25th, the Duren family had assembled everything they could carry — chainsaws, power tools, safety gear, a jump starter. No formal plan yet. Just a table full of equipment and a decision to go.",
@@ -315,6 +317,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 2, 2017",
+    phase: "Boots on the Ground",
     title: "\"One of millions to come\"",
     narrative:
       "A Facebook post was circulating that stopped everyone cold. An 82-year-old Korean War veteran named William Nieves, alone in Toa Baja, surviving on crackers and two bottles of water. His roof was gone. Insects were eating him alive. He couldn't walk out because of the debris. His family couldn't reach him. \"He's not the only one,\" the post read. \"One of millions to come.\" Puerto Ricans are U.S. citizens. Alpha CREW refused to let them be forgotten.",
@@ -659,6 +662,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 13, 2017",
+    phase: "Sustained Operations",
     title: "Andrea Moya recommends Alpha CREW to her network",
     narrative:
       "People on the island were fielding calls from stateside friends and family asking what to send. Andrea Moya, who was personally fine, told everyone: don't send it to me — direct it to Guardians of Rescue, Alpha CREW, the Humane Society of Puerto Rico, or Para la Naturaleza. When the people on the ground start naming you as one of the organizations to trust, that's when you know the work is landing.",
@@ -1100,6 +1104,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "November 1, 2017",
+    phase: "Final Push",
     title: "Partners for World Health medical supplies palletized and shipped",
     narrative:
       "Back on the stateside logistics chain, volunteers palletized medical equipment donated by Partners for World Health — wheelchairs, walkers, crutches, and boxed supplies — and loaded them into trailers bound for Puerto Rico. An Air Force forklift moved the shrink-wrapped pallets onto the flight line. Every piece of durable medical equipment meant someone on the island could recover with dignity.",

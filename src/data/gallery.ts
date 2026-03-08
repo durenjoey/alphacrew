@@ -832,6 +832,20 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 19, 2017",
+    title: "ABBA Church partners with Alpha CREW on the flight line",
+    narrative:
+      "Pastor Evelyn Martinez, her husband Luis A. Martinez, and niece Glorianne Ruiz from ABBA — La Casa De Mi Padre in Tampa visited the staging area and met with founder Joseph Duren on the flight line. Faith communities were becoming key partners in the relief effort, connecting Alpha CREW with congregations and families across Puerto Rico who needed help the most.",
+    caption:
+      "Pastor Evelyn Martinez, husband Luis A. Martinez, and niece Glorianne Ruiz from ABBA — La Casa De Mi Padre in Tampa with our founder, Joseph Duren.",
+    photos: [
+      {
+        src: "abba-church-flight-line-group.jpg",
+        alt: "Luis Martinez, Pastor Evelyn Martinez, Joseph Duren in uniform, and Glorianne Ruiz standing together on the flight line with a C-130 in the background",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

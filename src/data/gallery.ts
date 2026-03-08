@@ -1087,6 +1087,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "November 1, 2017",
+    title: "Partners for World Health medical supplies palletized and shipped",
+    narrative:
+      "Back on the stateside logistics chain, volunteers palletized medical equipment donated by Partners for World Health — wheelchairs, walkers, crutches, and boxed supplies — and loaded them into trailers bound for Puerto Rico. An Air Force forklift moved the shrink-wrapped pallets onto the flight line. Every piece of durable medical equipment meant someone on the island could recover with dignity.",
+    caption:
+      "Yesterday, Alpha CREW C.R.E.W.mates palletized and shipped out medical supplies donated by Partners of World Health that are destined to PR. Your support is important to us, and is the lifeline for us to continue our efforts. No quantity is too small, everything counts.",
+    photos: [
+      {
+        src: "pwh-volunteers-wheelchairs.jpg",
+        alt: "Three volunteers palletizing wheelchairs and walkers onto a pallet in a warehouse",
+      },
+      {
+        src: "pwh-palletizing-walkers.jpg",
+        alt: "Volunteer stacking aluminum walkers onto a wooden pallet in a large warehouse",
+      },
+      {
+        src: "pwh-forklift-loading-trailer.jpg",
+        alt: "U.S. Air Force forklift loading shrink-wrapped pallets into a semi trailer on the flight line",
+      },
+      {
+        src: "pwh-trailer-packed-equipment.jpg",
+        alt: "Inside a trailer packed with shrink-wrapped pallets of wheelchairs, walkers, crutches, and medical equipment",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

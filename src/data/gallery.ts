@@ -886,6 +886,20 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 21, 2017",
+    title: "Welfare check on Ms. Carmen Rivera in St. Just",
+    narrative:
+      "The Rivera family in New Jersey hadn't heard from their grandmother since before Maria hit. They reached out to Alpha CREW and asked if someone could check on her. A crew member drove to St. Just, found Ms. Carmen Rivera on her porch — alive, with a tarp where her roof used to be, but okay. He handed her his cellphone so she could talk to her family for the first time in a month. One good story in the middle of everything else.",
+    caption:
+      "Today the Rivera Family asked Alpha CREW to check on Ms. Carmen Rivera in St. Just, PR. The Rivera Family is in New Jersey and haven't heard from her since before Hurricane Maria, and were extremely worried about her well being. One of our C.R.E.W. mates paid her a visit, and found her well, under the circumstances. She was able to talk to her family through his cellphone. One happy story for today!",
+    photos: [
+      {
+        src: "carmen-rivera-welfare-check.jpg",
+        alt: "Crew member selfie with Ms. Carmen Rivera on her porch in St. Just, a tarp overhead covering storm damage, both smiling",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

@@ -788,6 +788,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 19, 2017",
+    title: "333rd volunteers reorganize pallets — displaced families helping their own",
+    narrative:
+      "Many of the Air Force volunteers from the 333rd Recruiting Squadron had themselves been displaced from Puerto Rico by Maria. They lost everything — and then showed up at the warehouse to help reorganize pallets that had arrived in bad condition, separating medicine from food and water. People who had just lost their homes, sorting supplies to send back to the island they'd been forced to leave.",
+    caption:
+      "Many of our Air Force volunteers from the 333 Recruiting Squadron and their families came from Puerto Rico after losing everything to Hurricane Maria and are now helping our cause. Today they are reorganizing the pallets that arrived in bad condition and separating the medicine from the food and water.",
+    photos: [
+      {
+        src: "333rd-warehouse-overhead.jpg",
+        alt: "Overhead view of warehouse floor filled with dozens of shrink-wrapped pallets — water, food, medical supplies staged for airlift",
+      },
+      {
+        src: "333rd-sorting-pallets-water.jpg",
+        alt: "Volunteers in Air Force shirts and civilians sorting water bottles onto pallets in the warehouse",
+      },
+      {
+        src: "333rd-airmen-civilians-sorting.jpg",
+        alt: "Airmen in uniform and civilian volunteers working together to reorganize pallets of water and supplies",
+      },
+      {
+        src: "333rd-warehouse-reorganized.jpg",
+        alt: "Wide shot of reorganized warehouse — pallets neatly wrapped and separated by category, overhead crane visible",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

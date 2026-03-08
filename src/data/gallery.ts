@@ -762,6 +762,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 17, 2017",
+    title: "Guaynabo shelter floods — Jorgito evacuates the animals",
+    narrative:
+      "The Humane Society shelter in Guaynabo flooded overnight. When Jorgito got the call, he moved immediately. The kennels were emptied, the floors covered in mud, but every animal made it out safely. They were relocated to a local basketball gym where dozens of carriers were lined up across the court — a temporary shelter inside a shelter. The disaster kept compounding, but so did the response.",
+    caption:
+      "The Humane Society in Guaynabo was flooded yesterday. After hearing the news, Jorgito, one of our crewmates, sprung into action. Luckily, everyone made it out of there safely and the animals were relocated.",
+    photos: [
+      {
+        src: "guaynabo-shelter-flooded-kennels.jpg",
+        alt: "Empty kennels with doors flung open, mud and debris covering the shelter floor after flooding",
+      },
+      {
+        src: "guaynabo-shelter-flooded-floor.jpg",
+        alt: "Flooded shelter interior — wet concrete floor, van backed into the bay, water barrels along the wall",
+      },
+      {
+        src: "guaynabo-animals-relocated-gym.jpg",
+        alt: "Dozens of pet carriers lined up in rows inside a basketball gym, volunteers organizing the relocated animals",
+      },
+      {
+        src: "guaynabo-gym-volunteers-carriers.jpg",
+        alt: "Volunteers walking among rows of carriers on the gym floor, bags of pet food stacked nearby",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

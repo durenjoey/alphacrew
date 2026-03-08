@@ -997,6 +997,40 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 25, 2017",
+    title: "65,000 lbs shipped in 48 hours",
+    narrative:
+      "This was the moment the entire operation had been building toward. In a single two-day push, Alpha CREW shipped 65,000 lbs of life-sustaining supplies from Florida to Georgia for airlift to Puerto Rico — 15,000 lbs on Tuesday, 50,000 lbs on Wednesday. King Transport flatbeds carried military-netted cargo pallets. Forklifts ran nonstop loading box trucks in the rain. Wheelchairs, stretchers, medical supplies, water, food — everything the warehouse had been staging for weeks was finally moving.",
+    caption:
+      "In the last two days, Alpha CREW in Florida sent out approximately 65,000 lbs (15,000 lbs Tuesday and 50,000 lbs Wednesday) of life sustaining supplies to GA, to then be airlifted to PR.",
+    photos: [
+      {
+        src: "65k-flatbed-crew-posing.jpg",
+        alt: "Two crew members standing beside a King Transport flatbed loaded with netted cargo pallets on the flight line",
+      },
+      {
+        src: "65k-flatbed-forklift-loading.jpg",
+        alt: "Military forklift loading netted pallets onto a King Transport flatbed, full load stretching the length of the trailer",
+      },
+      {
+        src: "65k-crew-selfie-pallets.jpg",
+        alt: "Four crew members selfie in front of netted cargo pallets on the flatbed, celebrating the shipment",
+      },
+      {
+        src: "65k-medical-equipment-staged.jpg",
+        alt: "Warehouse packed with pallets of medical supplies, wheelchairs, stretchers, and equipment staged for transport",
+      },
+      {
+        src: "65k-forklift-warehouse.jpg",
+        alt: "Forklift moving red-wrapped pallets inside the warehouse, food and water pallets visible on the right",
+      },
+      {
+        src: "65k-box-truck-loading-rain.jpg",
+        alt: "Forklift loading pallets into a box truck on wet tarmac under cloudy skies, crew member directing",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

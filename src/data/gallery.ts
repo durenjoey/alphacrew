@@ -941,6 +941,28 @@ export const galleryEntries: GalleryEntry[] = [
     photos: [],
   },
   {
+    date: "October 24, 2017",
+    title: "Farm recovery in Utuado with Climbing Puerto Rico",
+    narrative:
+      "Alpha CREW partnered with Climbing Puerto Rico and headed back into the mountains of Utuado. The mission: help area farmers prep their land and clear a family's driveway that had been blocked by debris since Maria hit — over a month without being able to access their own home. Ismael \"Tico\" Marques provided the Jeep, Bryan from Climbing PR organized the trip, and volunteers worked chainsaws and rakes through massive downed trees. The CREW logo was on every vehicle now.",
+    caption:
+      "Together with Climbing Puerto Rico, Alpha CREW went to Utuado, PR to assist the area farmers prepping the farms. In addition, assisted a family to clear their driveway of debris, as they were unable to access their home since Hurricane Maria. A special thanks to Ismael \"Tico\" Marques for the Jeep ride and Bryan from Climbing Puerto Rico for the invitation.",
+    photos: [
+      {
+        src: "utuado-climbing-pr-jeep-crew.jpg",
+        alt: "Two crew members posing next to the Alpha CREW-branded Jeep in Utuado, ready for the mountain roads",
+      },
+      {
+        src: "utuado-climbing-pr-convoy.jpg",
+        alt: "Mitsubishi Montero with Alpha CREW logo leading a convoy on a mountain road into Utuado, lush hillsides recovering",
+      },
+      {
+        src: "utuado-clearing-debris-farm.jpg",
+        alt: "Large group of volunteers clearing massive downed trees and debris from a farm property with chainsaws and rakes",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

@@ -62,27 +62,29 @@ export default function Home() {
               Within days, the Duren family organized Alpha CREW &mdash; a
               volunteer-driven operation to collect and deliver life-sustaining
               supplies to the island. Working with military and civilian
-              communities across Florida, the team collected water, food,
-              generators, batteries, medical supplies, and clothing. Active duty
-              Air Force members became key partners, providing access to C-130
-              aircraft to airlift cargo from Savannah, Georgia to San Juan.
+              communities across the United States and Puerto Rico, the team
+              collected water, food, generators, batteries, medical supplies,
+              and clothing. Active duty Air Force members became key partners,
+              providing access to C-130 aircraft to airlift cargo from
+              Savannah, Georgia to San Juan.
             </p>
 
             <p className="text-zinc-300">
-              In a single two-day stretch, Alpha CREW shipped 65,000 lbs of
-              supplies. By the end of the operation, total aid delivered exceeded
-              100,000 lbs.
+              By the end of the operation, total aid delivered exceeded
+              100,000 lbs. But the weight doesn&apos;t tell the full story.
             </p>
 
             <p>
-              On the ground in Puerto Rico, the operation went far beyond
-              logistics. Crew members delivered medical supplies to the
-              children&apos;s hospital in Bayam&oacute;n, ferried generators to
-              Vieques by boat, ran welfare checks on isolated seniors,
-              distributed hot meals door to door with Fundaci&oacute;n El Plato
-              Caliente, evacuated animals from a flooded shelter with the Humane
-              Society, and drove convoys of food into the mountains of Utuado
-              and Jayuya.
+              On the ground in Puerto Rico, volunteers delivered medical
+              supplies to the children&apos;s hospital in Bayam&oacute;n,
+              ferried generators to Vieques by boat, ran welfare checks on
+              isolated seniors, distributed hot meals door to door with
+              Fundaci&oacute;n El Plato Caliente, evacuated animals from a
+              flooded shelter with the Humane Society, drove convoys of food
+              into the mountains of Utuado and Jayuya, and partnered with
+              churches, foundations, and municipal governments to reach
+              communities that had been cut off for weeks. Every day brought
+              a different mission. Every volunteer gave what they had.
             </p>
 
             <p>

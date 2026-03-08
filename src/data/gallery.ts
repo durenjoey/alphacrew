@@ -814,6 +814,24 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 19, 2017",
+    title: "Airlift secured, trucks ready, supplies staged — waiting on FEMA",
+    narrative:
+      "Everything was in place. The warehouse was full, the pallets were wrapped and manifested, the trucks were positioned on the flight line, and C-130s sat on the tarmac ready to fly. All that was missing was FEMA mission approval. The frustration of having everything ready to go and not being able to move it — that was its own kind of crisis.",
+    caption:
+      "We have secured airlift, we have trucks, we have people, and the lifesaving supplies are ready to go. Just waiting on FEMA for mission approval.",
+    photos: [
+      {
+        src: "fema-waiting-truck-c130s.jpg",
+        alt: "Semi truck parked on the flight line, C-130 aircraft visible on the tarmac in the background under blue skies",
+      },
+      {
+        src: "fema-waiting-warehouse-ready.jpg",
+        alt: "Overhead view of warehouse packed with dozens of pallets — water, food, medicine, all staged and waiting for FEMA approval",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

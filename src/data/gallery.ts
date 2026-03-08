@@ -512,6 +512,24 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 8, 2017",
+    title: "Weddings in Vieques shares Alpha CREW's GoFundMe",
+    narrative:
+      "Word was spreading beyond the military and relief communities. Sandy Malone's Weddings in Vieques — a popular wedding planning business on the island — shared Alpha CREW's GoFundMe with their alumni and followers. Couples who had been married on Vieques were now asking how they could help the island recover. The #LetsSavePR campaign was reaching people the crew had never met.",
+    caption:
+      "Lots of requests from our Weddings in Vieques alumni and friends asking how you can help Vieques recover — this GoFundMe supports a group called Alpha CREW.",
+    photos: [
+      {
+        src: "shoutout-sandy-malone-weddings.png",
+        alt: "Facebook post from Sandy Malone Weddings & Events sharing Alpha CREW's GoFundMe with #LetsSavePR banner",
+      },
+      {
+        src: "shoutout-weddings-in-vieques.png",
+        alt: "Facebook post from Weddings in Vieques page sharing Alpha CREW's GoFundMe to their alumni network",
+      },
+    ],
+  },
+  {
     date: "October 9, 2017",
     title: "What a Category 5 leaves behind",
     narrative:
@@ -630,6 +648,20 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "humane-society-water-heart-sign.jpg",
         alt: "Truck bed filled with water bottles next to a large red heart sign at the hangar entrance",
+      },
+    ],
+  },
+  {
+    date: "October 13, 2017",
+    title: "Andrea Moya recommends Alpha CREW to her network",
+    narrative:
+      "People on the island were fielding calls from stateside friends and family asking what to send. Andrea Moya, who was personally fine, told everyone: don't send it to me — direct it to Guardians of Rescue, Alpha CREW, the Humane Society of Puerto Rico, or Para la Naturaleza. When the people on the ground start naming you as one of the organizations to trust, that's when you know the work is landing.",
+    caption:
+      "Many people stateside are asking if I need anything and what to send. I'm personally fine and my family is thankfully not wanting in anything. So I would say direct what you would've spent on me to one of these organizations: Guardians of Rescue, Alpha CREW, Humane Society of Puerto Rico, The Humane Society of the United States — Puerto Rico, Para la Naturaleza.",
+    photos: [
+      {
+        src: "shoutout-andrea-moya.png",
+        alt: "Facebook post from Andrea Moya recommending Alpha CREW and other relief organizations to her network",
       },
     ],
   },
@@ -898,6 +930,15 @@ export const galleryEntries: GalleryEntry[] = [
         alt: "Crew member selfie with Ms. Carmen Rivera on her porch in St. Just, a tarp overhead covering storm damage, both smiling",
       },
     ],
+  },
+  {
+    date: "October 21, 2017",
+    title: "Alpha CREW opens volunteering to everyone",
+    narrative:
+      "A month in, the operation had grown beyond what the original crew could handle alone. Alpha CREW put out a formal call for volunteers — not just military, everyone. Donate, spread the word, help transport supplies between sites, sort and palletize at the warehouse, or mentor Puerto Rican families arriving stateside. The message was clear: there's a role for anyone willing to show up.",
+    caption:
+      "General volunteering opportunities open to everyone. Are you interested in helping? Alpha CREW always has volunteering opportunities for everyone. You can help us accomplish the mission by donating, spreading the word, helping with transportation, mentoring Puerto Rican families arriving to your area, or helping us inspect, sort, palletize and load emergency supplies for transport. If you think you have what it takes to become an official C.R.E.W. mate, please send your bio and resume at contact@alphacrew.org.",
+    photos: [],
   },
   {
     date: "November 6, 2017",

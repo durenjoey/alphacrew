@@ -860,6 +860,32 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "October 20, 2017",
+    title: "Medical supplies delivered to the Pediatric Children's Hospital in Bayamón",
+    narrative:
+      "The crew picked up emergency medical supplies from Partners for World Health at LMM Airport in San Juan — boxes of Hospira pharmaceuticals, non-sterile gowns, and other critical equipment. They loaded the Alpha CREW truck and drove straight to the Pediatric Children's Hospital in Bayamón, arriving at dusk. A children's hospital, a month without reliable supply chains, and a truck full of medicine pulling up to the entrance.",
+    caption:
+      "Today, Alpha C.R.E.W picked up at LMM Airport in San Juan emergency medical supplies sent by Partners for World Health and delivered to the Pediatric Children's Hospital in Bayamón, PR.",
+    photos: [
+      {
+        src: "bayamon-crew-truck-lmm-airport.jpg",
+        alt: "Alpha CREW truck loaded with medical supply boxes outside LMM Airport terminal, CREW logo visible on the tailgate",
+      },
+      {
+        src: "bayamon-pwh-boxes-truck-cab.jpg",
+        alt: "Partners for World Health and Hospira medical supply boxes loaded in the truck, visible through the passenger window",
+      },
+      {
+        src: "bayamon-truck-hospital-dusk.jpg",
+        alt: "Truck bed full of medical supply boxes arriving at the hospital at dusk, Alpha CREW logo on the tailgate, streetlights on",
+      },
+      {
+        src: "bayamon-childrens-hospital-arrival.jpg",
+        alt: "Loaded truck parked outside the Pediatric Children's Hospital in Bayamón at twilight, ambulance under the awning",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

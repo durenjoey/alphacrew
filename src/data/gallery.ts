@@ -1113,6 +1113,60 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "November 2, 2017",
+    title: "Late-night emergency supply run across San Juan communities",
+    narrative:
+      "Collaborating with the City of San Juan, the crew mobilized their entire fleet — a flatbed truck stacked with Nikini boxes, an F-350 dump truck, pickups loaded with diapers and water, even a compact Hyundai sedan bearing the CREW logo — and drove into Parcelas Falu, Hill Brothers, El Polvorin, and Berwind. They stayed out well past dark, distributing supplies under floodlights to crowds of residents who had been waiting. The Puerto Rico flag flew from every vehicle.",
+    caption:
+      "Last Sunday October 29, 2017 Alpha CREW C.R.E.W.mates stayed out until very late collaborating with the City of San Juan to bring emergency supplies to the communities located at Parcelas Falu, Hill Brothers, el Polvorin, and Berwind. We are very grateful for the invitation. To contribute to our organization, please find the GoFundMe link on our page. Thank you for your support!",
+    photos: [
+      {
+        src: "sanjuan-flatbed-nikini-boxes.jpg",
+        alt: "Dark green flatbed truck with Alpha CREW logo loaded with stacked Nikini supply boxes, Puerto Rico flag flying from the cab",
+      },
+      {
+        src: "sanjuan-nighttime-pallets-distribution.jpg",
+        alt: "Nighttime distribution scene under floodlights, volunteers moving pallets of boxed supplies to waiting residents",
+      },
+      {
+        src: "sanjuan-nighttime-community-crowd.jpg",
+        alt: "Large crowd of community residents gathered at night under a pavilion waiting for supply distribution",
+      },
+      {
+        src: "sanjuan-pr-flag-water-bottles.jpg",
+        alt: "Puerto Rico flag waving above cases of Poland Spring water bottles on a vehicle roof rack, palm trees and blue sky behind",
+      },
+      {
+        src: "sanjuan-crewmates-selfie-car.jpg",
+        alt: "Two crew members in Alpha CREW t-shirts taking a selfie in the car, supplies visible in the backseat",
+      },
+      {
+        src: "sanjuan-truck-water-pr-flag.jpg",
+        alt: "Pickup truck bed loaded with water bottles and juice boxes, Puerto Rico flag on the roof rack",
+      },
+      {
+        src: "sanjuan-f350-dump-truck.jpg",
+        alt: "Maroon Ford F-350 dump truck with Alpha CREW logo parked on a colorful San Juan street",
+      },
+      {
+        src: "sanjuan-pickup-diapers-loaded.jpg",
+        alt: "White pickup truck with CREW logo, bed loaded with bundled diapers and a spare tire",
+      },
+      {
+        src: "sanjuan-fleet-flatbed-corolla.jpg",
+        alt: "Alpha CREW flatbed truck and black Corolla with CREW logo parked together, PR flag on the flatbed, residential neighborhood behind",
+      },
+      {
+        src: "sanjuan-fleet-parking-lot.jpg",
+        alt: "Alpha CREW fleet vehicles — sedan, SUV, and flatbed truck with PR flag — staged in a parking lot before the supply run",
+      },
+      {
+        src: "sanjuan-hyundai-crew-logo.jpg",
+        alt: "Light blue Hyundai Accent sedan with large Alpha CREW magnetic logo on the door, downed tree debris in the background",
+      },
+    ],
+  },
+  {
     date: "November 6, 2017",
     title: "Medical supplies reach Vieques Hospital by air, land, and sea",
     narrative:

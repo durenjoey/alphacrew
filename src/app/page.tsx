@@ -4,7 +4,7 @@ import HowItMoved from "@/components/HowItMoved";
 import Missions from "@/components/Missions";
 import PhotoViewer from "@/components/PhotoViewer";
 import Who from "@/components/Who";
-import { founder } from "@/data/receipts";
+import { founders, linkedIn } from "@/data/receipts";
 
 const h2 =
   "text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-8";
@@ -88,17 +88,17 @@ export default function Home() {
           </div>
 
           <p className="text-zinc-300 text-base leading-relaxed max-w-lg mx-auto mb-4">
-            Joey Duren founded Alpha CREW and led it. His father ran shipping.
+            {founders}
           </p>
 
           <p className="flex flex-wrap justify-center gap-x-6 gap-y-1">
             <a
-              href={founder.url}
+              href={linkedIn.url}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block py-1 text-base text-amber-300 underline underline-offset-4 hover:text-amber-200 transition-colors"
             >
-              {founder.linkText}
+              {linkedIn.text}
             </a>
             <a
               href="mailto:durenjoey@gmail.com"

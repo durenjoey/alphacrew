@@ -26,7 +26,7 @@ Next.js 15 with the App Router, React 19, Tailwind CSS 4 (theme in `src/app/glob
 - `src/components/PhotoViewer.tsx`: the full-size photo viewer. It is the only client code.
 - `src/data/gallery.ts`: the 2017 posts and their photos.
 - `src/data/missions.ts`: the six missions and the six "How it moved" photos.
-- `src/data/receipts.ts`: the founder line, the partners, the people and the press links.
+- `src/data/receipts.ts`: the founders line, the LinkedIn link, the partners, the people and the press links.
 - `src/data/days.ts`, `src/data/site.ts`: date helpers and the site address.
 - `public/assets/photos`: the photos.
 - `public/og.jpg`: the photo a shared link shows.
@@ -38,7 +38,7 @@ Next.js 15 with the App Router, React 19, Tailwind CSS 4 (theme in `src/app/glob
 Do not change these without Joey.
 
 - Alpha CREW moved 200,000+ lbs of supplies. Write it as "200,000+ lbs".
-- Joey Duren founded Alpha CREW and led it. His father ran shipping. Never write "the Duren family" as the organizer.
+- The Duren family founded Alpha CREW. The page credits the family and does not single out one person as founder or leader.
 - The posts run from September 25 to November 10, 2017. The work continued after that. Do not write that it lasted seven weeks or ended on November 10.
 - One shipment was 65,000 lbs over two days, October 24 and 25, 2017.
 - Maria reached Puerto Rico on September 20, 2017 as a Category 4 hurricane.

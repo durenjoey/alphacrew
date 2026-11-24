@@ -1535,7 +1535,7 @@ export const galleryEntries: GalleryEntry[] = [
     photos: [
       {
         src: "efac-fema-convention-center.jpg",
-        alt: "Alpha CREW founder and EFAC partners posing outside the Centro de Convenciones de Puerto Rico after meeting with FEMA at the Emergency Operations Center",
+        alt: "Alpha CREW and EFAC members posing outside the Centro de Convenciones de Puerto Rico after meeting with FEMA at the Emergency Operations Center",
         width: 720,
         height: 960,
       },

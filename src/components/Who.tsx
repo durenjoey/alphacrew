@@ -1,5 +1,5 @@
 import { galleryEntries } from "@/data/gallery";
-import { founder, links, partners, people, press } from "@/data/receipts";
+import { founders, links, partners, people, press } from "@/data/receipts";
 
 // An organization or a person is listed only if a post names them.
 const posts = galleryEntries.map((entry) => entry.caption).join("\n");
@@ -18,8 +18,8 @@ const link =
 const list =
   "text-zinc-300 text-base leading-relaxed sm:columns-2 md:columns-3 gap-x-8";
 
-// Who helped, who ran it, and where the work can be checked.
-// The organizations and the people the posts name come first. The founder line comes last.
+// Who helped, who founded it, and where the work can be checked.
+// The organizations and the people the posts name come first. The founders line comes last.
 export default function Who() {
   return (
     <>
@@ -64,7 +64,7 @@ export default function Who() {
           </ul>
 
           <p className="text-zinc-300 text-lg leading-relaxed max-w-2xl mt-12">
-            {founder.text}
+            {founders}
           </p>
         </div>
       </section>

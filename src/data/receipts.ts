@@ -1,4 +1,4 @@
-// Who ran Alpha CREW, who helped, and where the work can be checked.
+// Who founded Alpha CREW, who helped, and where the work can be checked.
 // Every organization and person here is named in a 2017 post. Add a name only if a post names it.
 // The build stops if a listed name is not in a post.
 
@@ -10,9 +10,12 @@ export interface Named {
   posted?: string;
 }
 
-export const founder = {
-  text: "Joey Duren founded Alpha CREW and led it. His father ran shipping.",
-  linkText: "Joey Duren on LinkedIn",
+// The credit. The Duren family founded Alpha CREW, and the page does not single out one person.
+export const founders = "The Duren family founded Alpha CREW.";
+
+// The one personal link on the page. It sits in the footer.
+export const linkedIn = {
+  text: "Joey Duren on LinkedIn",
   url: "https://www.linkedin.com/in/joeduren/",
 };
 

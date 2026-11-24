@@ -45,7 +45,8 @@ check('Source', 'Photos named in src/ that are missing from public/assets/photos
 check('Source', 'Em dashes in copy, titles and alt text', count(emInSource) === 0, count(emInSource), '0');
 check('Source', '"100,000" or "100K" still in the copy', count(/100,000|100K/g) === 0, count(/100,000|100K/g), '0');
 check('Source', '"200,000" in the copy', count(/200,000/g) > 0, count(/200,000/g), '1 or more');
-check('Source', '"Duren family" still in the copy', count(/Duren family/g) === 0, count(/Duren family/g), '0');
+// Joey, November 24, 2026: the Duren family founded Alpha CREW. This line used to fail on "Duren family". It now fails on a single-founder credit.
+check('Source', 'Founders credited as the Duren family, not one person', count(/Duren family/g) > 0 && count(/founded Alpha CREW and led it/g) === 0, `"Duren family" ${count(/Duren family/g)}, single-founder credit ${count(/founded Alpha CREW and led it/g)}`, '1 or more, and 0');
 info('Source', 'Photos referenced', referenced.size);
 
 // ---------------------------------------------------------------- rendered page

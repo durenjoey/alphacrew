@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alpha CREW | Hurricane Maria Disaster Relief",
+  title: "Alpha CREW | Hurricane Maria relief, 2017",
   description:
-    "100,000+ lbs of life-sustaining supplies airlifted to Puerto Rico after Hurricane Maria. A veteran-led disaster relief operation, September 2017.",
+    "Alpha CREW moved 200,000+ lbs of water, food, medicine and generators to Puerto Rico after Hurricane Maria. The posts and photos from 2017.",
   keywords: [
     "hurricane maria relief",
     "puerto rico disaster relief",
     "alpha crew",
-    "veteran disaster response",
     "catastrophe relief expeditionary workforce",
   ],
   authors: [{ name: "Alpha CREW" }],

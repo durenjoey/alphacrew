@@ -155,9 +155,12 @@ export default function HeroCollage() {
           <div className="max-w-xl mx-auto">
             <div className="w-12 h-px bg-amber-700/60 mx-auto mb-8" />
             <p className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light drop-shadow-lg">
-              The story of the volunteers who braved the destruction of
-              Hurricane Maria to deliver 100,000 lbs of life-sustaining
-              supplies to Puerto Rico.
+              After Hurricane Maria we moved 200,000+ lbs of water, food,
+              medicine and generators from Florida to Puerto Rico by truck,
+              C-130 and boat.
+            </p>
+            <p className="text-base text-zinc-300 leading-relaxed font-light drop-shadow-lg mt-4">
+              Joey Duren founded Alpha CREW and led it.
             </p>
           </div>
         </div>

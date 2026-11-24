@@ -71,6 +71,29 @@ export const galleryEntries: GalleryEntry[] = [
     ],
   },
   {
+    date: "September 26, 2017",
+    title: "This is what they were heading into",
+    narrative:
+      "While the team in Florida was packing supplies and raising money, images from the island were circulating. This was Mayaguez — homes collapsed into the sea, vehicles swallowed by floodwater. No power, no communications, no help coming. This was the reality driving every donation, every loaded truck, every hour of lost sleep.",
+    caption:
+      "This is Mayaguez Puerto Rico today. Alpha Crew's mission is to go where NO OTHER organization has its focus. Let's end the pain in Puerto Rico. #PRHereWeCome",
+    photos: [
+      {
+        src: "mayaguez-destruction-coastline.jpg",
+        alt: "Mayaguez, Puerto Rico — homes collapsed into the ocean, truck submerged in floodwater, a man surveying the destruction from the roadside",
+      },
+    ],
+  },
+  {
+    date: "September 26, 2017",
+    title: "A thousand dollars in a single day",
+    narrative:
+      "By the end of the day, the GoFundMe had crossed $1,000. People were putting names to donations — Christopher Soto Nieves, Richard Santiago, Rand Duren, Humberto De La Pena. A $20,000 goal that had seemed ambitious was starting to feel possible.",
+    caption:
+      "We are approximating $1,000 in 1 day. Our fundraising goal of 20,000 is getting closer! A BIG THANK YOU to everyone who has donated! Christopher Soto Nieves, Richard Santiago, Rand Duren, Humberto De La Pena",
+    photos: [],
+  },
+  {
     date: "September 27, 2017",
     title: "700 likes, and the volunteers start calling",
     narrative:
@@ -119,29 +142,6 @@ export const galleryEntries: GalleryEntry[] = [
         alt: "Airman from the 920th Rescue Wing with chainsaw case, dog food, and supplies ready for shipment",
       },
     ],
-  },
-  {
-    date: "September 26, 2017",
-    title: "This is what they were heading into",
-    narrative:
-      "While the team in Florida was packing supplies and raising money, images from the island were circulating. This was Mayaguez — homes collapsed into the sea, vehicles swallowed by floodwater. No power, no communications, no help coming. This was the reality driving every donation, every loaded truck, every hour of lost sleep.",
-    caption:
-      "This is Mayaguez Puerto Rico today. Alpha Crew's mission is to go where NO OTHER organization has its focus. Let's end the pain in Puerto Rico. #PRHereWeCome",
-    photos: [
-      {
-        src: "mayaguez-destruction-coastline.jpg",
-        alt: "Mayaguez, Puerto Rico — homes collapsed into the ocean, truck submerged in floodwater, a man surveying the destruction from the roadside",
-      },
-    ],
-  },
-  {
-    date: "September 26, 2017",
-    title: "A thousand dollars in a single day",
-    narrative:
-      "By the end of the day, the GoFundMe had crossed $1,000. People were putting names to donations — Christopher Soto Nieves, Richard Santiago, Rand Duren, Humberto De La Pena. A $20,000 goal that had seemed ambitious was starting to feel possible.",
-    caption:
-      "We are approximating $1,000 in 1 day. Our fundraising goal of 20,000 is getting closer! A BIG THANK YOU to everyone who has donated! Christopher Soto Nieves, Richard Santiago, Rand Duren, Humberto De La Pena",
-    photos: [],
   },
   {
     date: "September 27, 2017",

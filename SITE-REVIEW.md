@@ -329,6 +329,7 @@ Joey, November 24, 2026. Where one of these differs from a default above, this o
 - The October 2 "Las Vegas" post is back in the log, so the log has 73 posts. This reverses default 5.
 - His LinkedIn link is in the footer, not in the "Who" block.
 - In "Who", the 27 organizations and the 17 people come first and the founder line comes last.
+- The hero no longer carries the line "Joey Duren founded Alpha CREW and led it." The credit stays at the end of "Who" and in the footer.
 - Two photos are out of the November 6 post and out of the photo folder: `vieques-ferry-terminal-crew-selfie.jpg` and `vieques-ferry-cabin-crew-selfie.jpg`.
 
 Open, waiting on his yes: the link preview photo is cut from `vieques-plaza-handout-closeup.jpg`, not the file default 8 and Step 8 name. That file is 720 px wide and would have been enlarged.

@@ -150,9 +150,6 @@ export default function HeroCollage() {
               After Hurricane Maria we moved 200,000+ lbs of water, food,
               medicine and generators to Puerto Rico by truck, C-130 and boat.
             </p>
-            <p className="text-base text-zinc-100 leading-relaxed font-light drop-shadow-lg mt-4">
-              Joey Duren founded Alpha CREW and led it.
-            </p>
           </div>
         </div>
       </div>

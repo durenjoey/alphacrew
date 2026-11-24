@@ -11,33 +11,21 @@ for (const named of [...partners.map((p) => p.posted ?? p.name), ...people]) {
 
 const h2 =
   "text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-6";
-const h3 = "text-lg font-semibold text-zinc-100 mt-12 mb-2";
+const h3 = "text-lg font-semibold text-zinc-100 mb-2";
 const lead = "text-zinc-400 text-sm leading-relaxed mb-4";
 const link =
   "inline-block py-0.5 text-amber-300 underline underline-offset-4 hover:text-amber-200 transition-colors";
 const list =
   "text-zinc-300 text-base leading-relaxed sm:columns-2 md:columns-3 gap-x-8";
 
-// Who ran it, who helped, and where the work can be checked.
+// Who helped, who ran it, and where the work can be checked.
+// The organizations and the people the posts name come first. The founder line comes last.
 export default function Who() {
   return (
     <>
       <section id="who" className="py-20 md:py-28 border-t border-zinc-800/60">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className={h2}>Who</h2>
-          <p className="text-zinc-300 text-lg leading-relaxed max-w-2xl">
-            {founder.text}
-          </p>
-          <p className="mt-3">
-            <a
-              href={founder.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${link} text-base`}
-            >
-              {founder.linkText}
-            </a>
-          </p>
 
           <h3 className={h3}>Organizations</h3>
           <p className={lead}>
@@ -65,7 +53,7 @@ export default function Who() {
             ))}
           </ul>
 
-          <h3 className={h3}>People</h3>
+          <h3 className={`${h3} mt-12`}>People</h3>
           <p className={lead}>The 2017 posts name these people.</p>
           <ul role="list" className={list}>
             {people.map((person) => (
@@ -74,6 +62,10 @@ export default function Who() {
               </li>
             ))}
           </ul>
+
+          <p className="text-zinc-300 text-lg leading-relaxed max-w-2xl mt-12">
+            {founder.text}
+          </p>
         </div>
       </section>
 

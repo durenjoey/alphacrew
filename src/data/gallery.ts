@@ -345,6 +345,13 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 2, 2017",
+    title: "Our prayers for the people of Las Vegas",
+    caption:
+      "Our prayers are with the people of Las Vegas.",
+    photos: [],
+  },
+  {
+    date: "October 2, 2017",
     title: "The animals of Puerto Rico needed help",
     mission: "animals",
     caption:

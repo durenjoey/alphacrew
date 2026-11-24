@@ -1,5 +1,6 @@
 import Gallery from "@/components/Gallery";
 import HeroCollage from "@/components/HeroCollage";
+import PhotoViewer from "@/components/PhotoViewer";
 
 const h2 =
   "text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-8";
@@ -217,6 +218,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <PhotoViewer />
     </div>
   );
 }

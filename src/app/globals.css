@@ -58,3 +58,146 @@
     opacity: 1;
   }
 }
+
+/* Photos in rows, each at its own shape. Photos in a row share one height. A photo never shows wider
+   than its file (--natural) and a short row grows a little instead of stretching across the page. */
+.photo-row {
+  --row: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.photo-row[data-count="one"] {
+  --row: 420px;
+  --stretch: 1;
+}
+
+.photo-row[data-count="two"] {
+  --row: 150px;
+}
+
+@media (min-width: 768px) {
+  .photo-row {
+    --row: 200px;
+  }
+
+  .photo-row[data-count="one"] {
+    --row: 420px;
+  }
+
+  .photo-row[data-count="two"] {
+    --row: 300px;
+  }
+}
+
+.photo-item {
+  display: block;
+  flex-grow: calc(var(--ratio) * 100);
+  flex-basis: calc(var(--ratio) * var(--row));
+  min-width: 0;
+  max-width: min(var(--natural), calc(var(--ratio) * var(--row) * var(--stretch, 1.6)));
+  aspect-ratio: var(--ratio);
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #18181b;
+}
+
+.photo-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The photo viewer: one native dialog for the whole page */
+.photo-viewer {
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 3.75rem 0.75rem 1rem;
+  border: 0;
+  background-color: rgba(5, 5, 5, 0.97);
+  color: #e4e4e7;
+}
+
+.photo-viewer[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-viewer::backdrop {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.photo-viewer-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+.photo-viewer-figure img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 11rem);
+  border-radius: 2px;
+}
+
+.photo-viewer-figure figcaption {
+  max-width: 44rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #d4d4d8;
+  text-align: center;
+}
+
+.photo-viewer-count {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+}
+
+.photo-viewer-button {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid #3f3f46;
+  border-radius: 999px;
+  background-color: rgba(39, 39, 42, 0.92);
+  color: #f4f4f5;
+  cursor: pointer;
+}
+
+.photo-viewer-close {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.photo-viewer-prev {
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.photo-viewer-next {
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+}
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}

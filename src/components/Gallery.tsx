@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Photos from "@/components/Photos";
 import { galleryEntries, type GalleryEntry } from "@/data/gallery";
 
 const MONTHS = [
@@ -84,79 +84,44 @@ export default function Gallery() {
               </h3>
 
               <div className="space-y-10">
-                {day.posts.map((entry) => {
-                  const photoCount = entry.photos.length;
-                  return (
-                    <article key={entry.title}>
-                      <h4 className="text-lg font-semibold text-zinc-100 mb-2">
-                        {entry.title}
-                      </h4>
+                {day.posts.map((entry) => (
+                  <article key={entry.title}>
+                    <h4 className="text-lg font-semibold text-zinc-100 mb-2">
+                      {entry.title}
+                    </h4>
 
-                      {/* Context, only where a post needs it */}
-                      {entry.note && (
-                        <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-2">
-                          {entry.note}
-                        </p>
-                      )}
-
-                      {/* The post as it was written in 2017 */}
-                      <p className="text-zinc-300 text-base leading-relaxed max-w-2xl">
-                        {entry.caption}
+                    {/* Context, only where a post needs it */}
+                    {entry.note && (
+                      <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-2">
+                        {entry.note}
                       </p>
+                    )}
 
-                      {/* Partner links */}
-                      {entry.partners && entry.partners.length > 0 && (
-                        <div className="max-w-2xl mt-4 flex flex-wrap gap-3">
-                          {entry.partners.map((partner) => (
-                            <a
-                              key={partner.url}
-                              href={partner.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center min-h-8 text-sm text-amber-300 border border-zinc-700 rounded-sm px-3 py-1.5 hover:text-amber-200 hover:border-zinc-500 transition-colors"
-                            >
-                              {partner.name}
-                            </a>
-                          ))}
-                        </div>
-                      )}
+                    {/* The post as it was written in 2017 */}
+                    <p className="text-zinc-300 text-base leading-relaxed max-w-2xl">
+                      {entry.caption}
+                    </p>
 
-                      {/* Photos */}
-                      {photoCount === 0 ? null : photoCount === 1 ? (
-                        <div className="max-w-2xl mt-5">
-                          <Image
-                            src={`/assets/photos/${entry.photos[0].src}`}
-                            alt={entry.photos[0].alt}
-                            width={800}
-                            height={600}
-                            sizes="(max-width: 768px) 100vw, 672px"
-                            className="w-full object-cover rounded-sm"
-                          />
-                        </div>
-                      ) : (
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-1.5 mt-5">
-                          {entry.photos.map((photo, j) => (
-                            <div
-                              key={photo.src}
-                              className={`overflow-hidden ${
-                                j === 0 ? "md:col-span-2 md:row-span-2" : ""
-                              }`}
-                            >
-                              <Image
-                                src={`/assets/photos/${photo.src}`}
-                                alt={photo.alt}
-                                width={j === 0 ? 800 : 400}
-                                height={j === 0 ? 600 : 300}
-                                sizes="(max-width: 768px) 50vw, 300px"
-                                className="w-full h-full object-cover aspect-[4/3]"
-                              />
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </article>
-                  );
-                })}
+                    {/* Partner links */}
+                    {entry.partners && entry.partners.length > 0 && (
+                      <div className="max-w-2xl mt-4 flex flex-wrap gap-3">
+                        {entry.partners.map((partner) => (
+                          <a
+                            key={partner.url}
+                            href={partner.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center min-h-8 text-sm text-amber-300 border border-zinc-700 rounded-sm px-3 py-1.5 hover:text-amber-200 hover:border-zinc-500 transition-colors"
+                          >
+                            {partner.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+
+                    <Photos photos={entry.photos} group={day.iso} className="mt-5" />
+                  </article>
+                ))}
               </div>
             </section>
           ))}

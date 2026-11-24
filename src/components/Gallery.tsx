@@ -14,47 +14,50 @@ export default function Gallery() {
     setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
 
   return (
-    <section className="py-24 md:py-32 bg-[#080808]">
+    <section className="py-20 md:py-28 bg-[#080808]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-[10px] text-zinc-600 uppercase tracking-[0.4em] mb-6">
-          From the Field
-        </div>
-        <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-16">
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-4">
+          From the field
+        </h2>
+        <p className="text-zinc-300 text-base leading-relaxed max-w-2xl mb-10">
           These are our posts as we wrote them on Facebook in 2017.
         </p>
 
-        <div className="space-y-6">
+        <div className="space-y-4">
           {galleryEntries.map((entry, i) => {
             const isOpen = expanded[i] ?? false;
             const photoCount = entry.photos.length;
 
             return (
-              <div key={i}>
-              <div className="border border-zinc-800/40 rounded-sm overflow-hidden">
+              <div
+                key={i}
+                className="border border-zinc-800/60 rounded-sm overflow-hidden"
+              >
                 {/* Header: always visible, clickable */}
                 <button
                   onClick={() => toggle(i)}
-                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 hover:bg-zinc-900/50 transition-colors"
+                  aria-expanded={isOpen}
+                  className="w-full text-left px-4 sm:px-6 py-4 flex items-start justify-between gap-4 hover:bg-zinc-900/50 transition-colors"
                 >
-                  <div className="flex items-center gap-6 min-w-0">
-                    <div className="text-[10px] text-zinc-700 uppercase tracking-[0.2em] whitespace-nowrap">
+                  <div className="min-w-0 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6">
+                    <div className="text-xs text-zinc-400 uppercase tracking-[0.08em] sm:w-40 sm:flex-shrink-0">
                       {entry.date}
                     </div>
-                    <div className="text-sm text-zinc-400 font-medium truncate">
+                    <div className="text-base text-zinc-100 font-medium">
                       {entry.title}
                     </div>
                     {photoCount > 0 && (
-                      <div className="text-[10px] text-zinc-700 whitespace-nowrap">
+                      <div className="text-xs text-zinc-400 sm:whitespace-nowrap">
                         {photoCount} {photoCount === 1 ? "photo" : "photos"}
                       </div>
                     )}
                   </div>
                   <div
-                    className={`text-zinc-600 transition-transform duration-300 flex-shrink-0 ${
+                    className={`text-zinc-400 transition-transform duration-300 flex-shrink-0 mt-1 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   >
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                       <path
                         d="M4 6L8 10L12 6"
                         stroke="currentColor"
@@ -68,20 +71,20 @@ export default function Gallery() {
 
                 {/* Expandable content */}
                 {isOpen && (
-                  <div className="px-6 pb-6">
+                  <div className="px-4 sm:px-6 pb-6">
                     {/* Context, only where a post needs it */}
                     {entry.note && (
-                      <p className="text-zinc-500 text-xs leading-relaxed max-w-2xl mb-2">
+                      <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-2">
                         {entry.note}
                       </p>
                     )}
 
                     {/* The post as it was written in 2017 */}
-                    <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-6">
+                    <p className="text-zinc-300 text-base leading-relaxed max-w-2xl mb-6">
                       {entry.caption}
                     </p>
 
-                    {/* Partner shoutouts */}
+                    {/* Partner links */}
                     {entry.partners && entry.partners.length > 0 && (
                       <div className="max-w-2xl mb-6 flex flex-wrap gap-3">
                         {entry.partners.map((partner, k) => (
@@ -90,9 +93,9 @@ export default function Gallery() {
                             href={partner.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 text-[10px] text-zinc-600 uppercase tracking-[0.15em] border border-zinc-800/40 rounded-sm px-3 py-1.5 hover:text-zinc-400 hover:border-zinc-700 transition-colors"
+                            className="inline-flex items-center gap-1.5 text-xs text-amber-300 uppercase tracking-[0.08em] border border-zinc-700 rounded-sm px-3 py-1.5 hover:text-amber-200 hover:border-zinc-500 transition-colors"
                           >
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                               <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             {partner.name}
@@ -136,7 +139,6 @@ export default function Gallery() {
                     )}
                   </div>
                 )}
-              </div>
               </div>
             );
           })}

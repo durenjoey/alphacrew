@@ -80,7 +80,7 @@ const STAGGER_MS = 120;
 export default function HeroCollage() {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Photo Grid — 2x3 on mobile, 3x3 on desktop */}
+      {/* Photo Grid: 2x3 on mobile, 3x3 on desktop */}
       <div className="absolute inset-0 grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-0.5">
         {HERO_PHOTOS.map((photo, i) => (
           <div
@@ -113,7 +113,7 @@ export default function HeroCollage() {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/[0.55] md:bg-black/[0.58]" />
 
-      {/* Radial gradient — extra darkness behind title */}
+      {/* Radial gradient: extra darkness behind title */}
       <div
         className="absolute inset-0"
         style={{
@@ -122,7 +122,7 @@ export default function HeroCollage() {
         }}
       />
 
-      {/* Vignette — darker edges */}
+      {/* Vignette: darker edges */}
       <div
         className="absolute inset-0"
         style={{
@@ -148,18 +148,18 @@ export default function HeroCollage() {
             CREW
           </h1>
 
-          <div className="text-[11px] text-zinc-400 uppercase tracking-[0.3em] mb-16">
+          <div className="text-xs md:text-sm text-zinc-100 uppercase tracking-[0.08em] mb-16">
             Catastrophe Relief Expeditionary Workforce
           </div>
 
           <div className="max-w-xl mx-auto">
             <div className="w-12 h-px bg-amber-700/60 mx-auto mb-8" />
-            <p className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light drop-shadow-lg">
+            <p className="text-lg md:text-xl text-zinc-100 leading-relaxed font-light drop-shadow-lg">
               After Hurricane Maria we moved 200,000+ lbs of water, food,
               medicine and generators from Florida to Puerto Rico by truck,
               C-130 and boat.
             </p>
-            <p className="text-base text-zinc-300 leading-relaxed font-light drop-shadow-lg mt-4">
+            <p className="text-base text-zinc-100 leading-relaxed font-light drop-shadow-lg mt-4">
               Joey Duren founded Alpha CREW and led it.
             </p>
           </div>

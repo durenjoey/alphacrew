@@ -8,37 +8,33 @@ export interface PartnerLink {
   url: string;
 }
 
+// One post from the Alpha CREW Facebook page in 2017. The caption is the post as it was written. Do not reword it.
 export interface GalleryEntry {
   date: string;
   title: string;
-  narrative: string;
+  // one plain sentence of context, only where a post needs it
+  note?: string;
   caption: string;
   photos: GalleryPhoto[];
   partners?: PartnerLink[];
-  phase?: string;
 }
 
 export const galleryEntries: GalleryEntry[] = [
   {
     date: "September 25, 2017",
-    phase: "Stateside Mobilization",
-    title: "Five days after landfall, the kit list comes together",
-    narrative:
-      "Hurricane Maria hit Puerto Rico on September 20th. By the 25th, the Duren family had assembled everything they could carry — chainsaws, power tools, safety gear, a jump starter. No formal plan yet. Just a table full of equipment and a decision to go.",
+    title: "We laid out our gear for Puerto Rico",
     caption:
       "Here's the equipment that our Crewmates will be sporting in Puerto Rico. #PRHereWeCome",
     photos: [
       {
         src: "gear-loadout-pre-deployment.jpg",
-        alt: "Tools and equipment laid out for deployment — chainsaw, circular saw, drill, safety vest, tool belt, boots, bolt cutters, and jump starter",
+        alt: "Tools and equipment laid out for deployment: chainsaw, circular saw, drill, safety vest, tool belt, boots, bolt cutters, and jump starter",
       },
     ],
   },
   {
     date: "September 26, 2017",
-    title: "The 920th Rescue Wing opens its doors",
-    narrative:
-      "The day after packing their own gear, the first outside support arrived. Members of the 920th Rescue Wing at Patrick Air Force Base donated fuel cans, cases of water, batteries, and supplies — packed into military-grade containers and loaded onto a truck. What started as a family effort was becoming something bigger.",
+    title: "The 920th Rescue Wing donated supplies",
     caption:
       "A BIG THANKS to the Members of the 920th Rescue Wing at Patrick Air Force Base for their donations!",
     photos: [
@@ -58,9 +54,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "September 26, 2017",
-    title: "The donations don't stop",
-    narrative:
-      "Same day, more kept coming. Generators, power inverters, jumper cables — the kind of equipment that matters when an entire island has gone dark. The back of every car was full. What had been a family's impulse to help was turning into a real operation.",
+    title: "More donations came in",
     caption:
       "The donations keep on piling up!",
     photos: [
@@ -72,68 +66,54 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "September 26, 2017",
-    title: "This is what they were heading into",
-    narrative:
-      "While the team in Florida was packing supplies and raising money, images from the island were circulating. This was Mayaguez — homes collapsed into the sea, vehicles swallowed by floodwater. No power, no communications, no help coming. This was the reality driving every donation, every loaded truck, every hour of lost sleep.",
+    title: "Mayaguez after the hurricane",
     caption:
       "This is Mayaguez Puerto Rico today. Alpha Crew's mission is to go where NO OTHER organization has its focus. Let's end the pain in Puerto Rico. #PRHereWeCome",
     photos: [
       {
         src: "mayaguez-destruction-coastline.jpg",
-        alt: "Mayaguez, Puerto Rico — homes collapsed into the ocean, truck submerged in floodwater, a man surveying the destruction from the roadside",
+        alt: "Mayaguez, Puerto Rico: homes collapsed into the ocean, truck submerged in floodwater, a man surveying the destruction from the roadside",
       },
     ],
   },
   {
     date: "September 26, 2017",
-    title: "A thousand dollars in a single day",
-    narrative:
-      "By the end of the day, the GoFundMe had crossed $1,000. People were putting names to donations — Christopher Soto Nieves, Richard Santiago, Rand Duren, Humberto De La Pena. A $20,000 goal that had seemed ambitious was starting to feel possible.",
+    title: "Nearly $1,000 raised in one day",
     caption:
       "We are approximating $1,000 in 1 day. Our fundraising goal of 20,000 is getting closer! A BIG THANK YOU to everyone who has donated! Christopher Soto Nieves, Richard Santiago, Rand Duren, Humberto De La Pena",
     photos: [],
   },
   {
     date: "September 27, 2017",
-    title: "700 likes, and the volunteers start calling",
-    narrative:
-      "One week after Maria. The Facebook page had crossed 700 likes and the messages were pouring in — people offering donations, people volunteering to fly out. Fundraisers were being organized across the country. What started in a garage in Florida was becoming a national effort.",
+    title: "The page passed 700 likes",
     caption:
       "Thank you all for the Help and Support. Not only already passing 700 likes to make an impact on social media, but also to those who have messaged us for donations and volunteering to fly out with us to help our Families and Friends in Puerto Rico. A simple share and like has been a powerful help as we are now reaching friends and families who are also partnering to help with our mission to help rebuild Puerto Rico! We are currently organizing fundraisers across the U.S. we will be able to make a major impact soon in helping Puerto Rico recover and we owe it all to all of you!",
     photos: [],
   },
   {
     date: "September 27, 2017",
-    title: "1,000 likes by nightfall",
-    narrative:
-      "The page hit 1,000 likes the same day it had hit 700. Fundraisers were being coordinated across the country. The momentum was undeniable.",
+    title: "The page reached 1,000 likes",
     caption:
       "Wow! We feel incredibly honored to have reached 1000 likes so quickly. We are working hard and now coordinating fundraisers across the United States to keep helping our Families and Friends in Puerto Rico.",
     photos: [],
   },
   {
     date: "September 27, 2017",
-    title: "Satellite imagery reveals the scale",
-    narrative:
-      "NOAA released aerial and satellite imagery of the damage. The team used it to identify where help was needed most — not just the places making the news, but the communities no one was talking about.",
+    title: "A map of the damage in Puerto Rico",
     caption:
       "This map shows how things look in Puerto Rico right now. Although the imagery is heart-breaking, tools like this help us find the locations that need the most help in Puerto Rico.",
     photos: [],
   },
   {
     date: "September 27, 2017",
-    title: "Vieques and Culebra — cut off, not forgotten",
-    narrative:
-      "The small islands of Vieques and Culebra were among the hardest hit and the most isolated. Lists of confirmed survivors were circulating on social media — that's how bad communications were. Alpha CREW made a promise: when they found a way to reach them, they would be there. Six weeks later, they kept it.",
+    title: "A list of people confirmed safe in Vieques",
     caption:
       "Vieques was terribly affected by Maria. Here is a list of people who have been confirmed to be safe in La Isla Nena: Vieques. When we find a way to get to Vieques and Culebra, we will be there!",
     photos: [],
   },
   {
     date: "September 27, 2017",
-    title: "First shipment heads south",
-    narrative:
-      "The donations from the 920th were packed and moving. Chainsaw, dog food, fuel — whatever people could give. By the next day, it would be in Puerto Rico.",
+    title: "We sent the 920th Rescue Wing's donations to Puerto Rico",
     caption:
       "We are sending all of the donations from the members of the 920th Rescue Wing today. These donations will be arriving in Puerto Rico tomorrow!",
     photos: [
@@ -145,46 +125,38 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "September 27, 2017",
-    title: "Another shipment, palletized and waiting",
-    narrative:
-      "By dusk, another load was staged and ready — pallets stacked with coolers, generators, military duffel bags, and household supplies. One week after the hurricane, and the pipeline was already running.",
+    title: "Another shipment on its way",
     caption:
       "Another shipment of supplies on its way to Puerto Rico. #LetsRescuePR",
     photos: [
       {
         src: "pallets-loaded-dusk.jpg",
-        alt: "Supply pallets loaded at dusk — coolers, generators, military bags, paper towels, and luggage staged for shipment",
+        alt: "Supply pallets loaded at dusk: coolers, generators, military bags, paper towels, and luggage staged for shipment",
       },
     ],
   },
   {
     date: "September 28, 2017",
-    title: "First shipment touches down in San Juan",
-    narrative:
-      "Eight days after Hurricane Maria made landfall, the first Alpha CREW shipment arrived at Luis Mu\u00f1oz Mar\u00edn International Airport. Pallets of generators, fuel, diapers, water, and military cases sat on the tarmac with a forklift standing by. The logistics were brutal, but the pipeline worked.",
+    title: "Our first shipment reached the San Juan airport",
     caption:
-      "Our first shipment made it to the Luis Mu\u00f1oz Mar\u00edn Airport in Puerto Rico this morning. The logistical struggle continues but we are pushing through.",
+      "Our first shipment made it to the Luis Muñoz Marín Airport in Puerto Rico this morning. The logistical struggle continues but we are pushing through.",
     photos: [
       {
         src: "first-shipment-sju-airport.jpg",
-        alt: "First Alpha CREW shipment on the tarmac at San Juan airport — pallets loaded with generators, diapers, fuel cans, coolers, and military cases, forklift in background",
+        alt: "First Alpha CREW shipment on the tarmac at San Juan airport: pallets loaded with generators, diapers, fuel cans, coolers, and military cases, forklift in background",
       },
     ],
   },
   {
     date: "September 28, 2017",
-    title: "iHeart Radio picks up the story",
-    narrative:
-      "The mission hit the airwaves. Super Martinez on iHeart Latino's Mia 92.1 gave Alpha CREW a shoutout, pushing the fundraising effort to a wider audience. Eight days in, and the operation had gone from a family garage to national radio.",
+    title: "A mention on iHeart Latino's Mia 92.1",
     caption:
       "iHeart Radio's Super Martinez will be making mention of our mission to aid in raising donations for the cause. Tune into iHeart Latino on Mia 92.1 Today at 3:00 pm Eastern Time!",
     photos: [],
   },
   {
     date: "September 28, 2017",
-    title: "The images that kept them going",
-    narrative:
-      "Photos like this were circulating everywhere — an elderly man evacuated by kayak through chest-deep floodwater, his dog riding beside him, neighbors pushing through the wreckage. Not Alpha CREW's photos, but the images that made sleep impossible and quitting unthinkable.",
+    title: "We asked for donations",
     caption:
       "The devastating effects of Maria will linger for years in Puerto Rico. You can help end this suffering by donating to our mission today!",
     photos: [
@@ -196,9 +168,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "September 29, 2017",
-    title: "1,100 miles by air, 55 by truck, 20 by boat",
-    narrative:
-      "The director of health and human services on Vieques called — the hospital's generators were failing. Alpha CREW bought eight 4000-watt generators and began planning the route: fly 1,100 miles to Puerto Rico, truck 55 miles to Fajardo, then boat 20 miles across open water to Vieques. The mayor coordinated safe passage. There was no easy way to get there, so they found the hard way.",
+    title: "We loaded generators for the hospital in Vieques",
     caption:
       "We are loading some generators to send to a busy hospital in Vieques, PR. The director of health and human services for the island spoke with us and said that they are in need of generators to keep their hospital operations running and we agreed to help. In order to get these generators to Vieques, our crew will have to fly 1,100 miles to Puerto Rico, travel 55 miles by truck to Fajardo and then go another 20 miles by boat to Vieques. There is very limited access to the island, but we have coordinated with the mayor to ensure safe passage.",
     photos: [
@@ -214,27 +184,21 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "September 29, 2017",
-    title: "Roads destroyed, $240 million in damage",
-    narrative:
-      "The Washington Post reported that Puerto Rico's roadways alone would cost at least $240 million to repair. Flooded highways and collapsed infrastructure were keeping first responders from reaching remote areas. This was exactly why Alpha CREW was focused on Vieques and Culebra — the places no one could get to.",
+    title: "Roads in Puerto Rico were destroyed or flooded",
     caption:
       "The roadways in Puerto Rico are destroyed while other roads are completely flooded. This is what is keeping the first responders from being able to head out to the remote areas of the island. Your donations will allow for us to enter areas that are difficult to access, like Vieques and Culebra.",
     photos: [],
   },
   {
     date: "September 29, 2017",
-    title: "Generators loaded for airlift to Vieques",
-    narrative:
-      "The supplies were in transit and the generators were about to go airborne. A major shipment — enough power to keep the Vieques hospital running — was being loaded onto planes. Nine days from hurricane to hospital generators.",
+    title: "The generators were about to fly out",
     caption:
       "Our supplies are being transported and loaded onto the planes soon. We will have a major shipment flying out with generators that will help power the hospital in Vieques. Let's continue to make a difference together!",
     photos: [],
   },
   {
     date: "September 30, 2017",
-    title: "The crew grows",
-    narrative:
-      "Ten days in and volunteers were showing up on their own time, buying supplies out of pocket and loading trucks in store parking lots. Michael Cook and Jennifer Cook-Gilpin — two of the crew-mates who made the operation run.",
+    title: "Michael Cook and Jennifer Cook-Gilpin moved donations",
     caption:
       "Our amazing crew-mates moving donations for our next mission. Thank you for all of your hard work, Michael Cook and Jennifer Cook-Gilpin!",
     photos: [
@@ -246,24 +210,20 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "September 30, 2017",
-    title: "The death toll is climbing. They need medicine.",
-    narrative:
-      "The post-hurricane death toll was unknown and rising. Families on the mainland were finding out about the deaths of loved ones a week after the fact. People were commenting on Facebook posts looking for any information about relatives. Alpha CREW put out the call — they needed medicine, and they needed contacts who could legally donate it. The mission was largely self-funded. The team was paying out of pocket.",
+    title: "We asked for medicine to ship to the island",
     caption:
       "The need for support from the United States continues to rise for Puerto Rico. The post-hurricane death toll is unknown but it is climbing. Reading through the comments of this original post is a heart-breaking experience. One person mentioned receiving a call one week after the death of his father... Families are unaware of what is happening to those they love and are unable to help. We MUST do something to help the hospitals, the sick and the wounded. Alpha Crew is looking for medicine to ship to the island. If you have any contacts that can safely and legally donate medicine, we want to talk to them. Also, our mission is largely funded by our own team and friends. We NEED your support to continue making a difference in Puerto Rico.",
     photos: [],
   },
   {
     date: "September 30, 2017",
-    title: "Local businesses join the mission",
-    narrative:
-      "Wang and Cortes Dental in Brevard County set up a donation drive in their office — diapers, baby formula, Lysol, batteries, canned food. A dentist office became a supply depot. The community was finding its own ways to help.",
+    title: "Wang and Cortes Dental gathered donations",
     caption:
       "We want to thank Wang and Cortes Dental for gathering donations to send to Puerto Rico. Efforts like yours are making a difference in the lives of many.",
     photos: [
       {
         src: "wang-cortes-dental-team.jpg",
-        alt: "Alpha CREW members with Wang and Cortes Dental staff standing beside donated supplies — baby formula, Lysol, batteries, and canned food",
+        alt: "Alpha CREW members with Wang and Cortes Dental staff standing beside donated supplies: baby formula, Lysol, batteries, and canned food",
       },
       {
         src: "wang-cortes-donations-boxes.jpg",
@@ -273,9 +233,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 1, 2017",
-    title: "Boots on the ground in Puerto Rico",
-    narrative:
-      "Eleven days after Maria, the team landed in Puerto Rico with supplies, manpower, and generators for the Vieques hospital. The first shipment was already being distributed. These photos captured the staging — bins packed in the hangar, cargo netted onto pallets on the tarmac, and nighttime handoffs in the dark. No streetlights. No power. Just headlights and hands.",
+    title: "Our team reached Puerto Rico",
     caption:
       "Our team made it to Puerto Rico yesterday with supplies, manpower, and generators to replace the failing generators at the hospital in Vieques. We have also distributed many of our supplies from our first shipment to those who need them the most. These pictures were taken before the shipment was sent. We will not be able to continue our mission without your donations.",
     photos: [
@@ -297,15 +255,13 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "pr-nighttime-supply-distribution.jpg",
-        alt: "Two people unloading supplies from an SUV at night in Puerto Rico — no streetlights, total darkness",
+        alt: "Two people unloading supplies from an SUV at night in Puerto Rico, no streetlights, total darkness",
       },
     ],
   },
   {
     date: "October 1, 2017",
-    title: "The 333rd loads the plane",
-    narrative:
-      "The 333rd Recruiting Squadron helped load the C-130 that carried supplies to Puerto Rico. Military in flight suits standing next to civilians in shorts and sneakers — under the tail of the aircraft that made it all possible. One team, one fight.",
+    title: "The 333rd Recruiting Squadron loaded the planes",
     caption:
       "Big thanks to our friends at the 333 Recruiting Squadron for their hard work loading the planes with the supplies that arrived in Puerto Rico today. Your efforts have already changed the lives of many. Thank you for your service!",
     photos: [
@@ -317,10 +273,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 2, 2017",
-    phase: "Boots on the Ground",
-    title: "\"One of millions to come\"",
-    narrative:
-      "A Facebook post was circulating that stopped everyone cold. An 82-year-old Korean War veteran named William Nieves, alone in Toa Baja, surviving on crackers and two bottles of water. His roof was gone. Insects were eating him alive. He couldn't walk out because of the debris. His family couldn't reach him. \"He's not the only one,\" the post read. \"One of millions to come.\" Puerto Ricans are U.S. citizens. Alpha CREW refused to let them be forgotten.",
+    title: "A post about a veteran alone after the hurricane",
     caption:
       "Take a second to go through the attached post. It explains how challenging the situation in Puerto Rico has become. Many people are alone and in need of help! We CANNOT forget them and we CANNOT stop sending help their way. Remember, Puerto Ricans are born US Citizens.",
     photos: [
@@ -332,32 +285,19 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 2, 2017",
-    title: "Las Vegas",
-    narrative:
-      "In the middle of everything, the Las Vegas shooting. The team paused. Then kept going.",
-    caption:
-      "Our prayers are with the people of Las Vegas.",
-    photos: [],
-  },
-  {
-    date: "October 2, 2017",
-    title: "The animals left behind",
-    narrative:
-      "It wasn't just people. Animals across Puerto Rico — in homes, on streets, on beaches — had been killed or displaced by the storm. The survivors were starving, separated from their owners, wandering through debris. Alpha CREW partnered with Veterinarians for Puerto Rico to address a crisis nobody else was talking about.",
+    title: "The animals of Puerto Rico needed help",
     caption:
       "Many animals in the homes, streets, and beaches of Puerto Rico were killed by the wrath of Hurricane Maria. The animals that survived have lost their homes and owners and are now struggling to find them, as well as food. Our partners at Veterinarians for Puerto Rico are working to make a difference in this sphere and also need our help.",
     photos: [
       {
         src: "veterinarians-for-pr-logo.jpg",
-        alt: "Veterinarians for Puerto Rico logo — paw print with Puerto Rican flag star",
+        alt: "Veterinarians for Puerto Rico logo: paw print with Puerto Rican flag star",
       },
     ],
   },
   {
     date: "October 2, 2017",
-    title: "The crew-mates who made it run",
-    narrative:
-      "Behind every shipment were people giving their time, their weekends, their energy. Sandra Christian was one of them — volunteering, coordinating, showing up when it mattered. The comments section was full of people like her.",
+    title: "Thank you, Sandra Christian",
     caption:
       "Our posts are filled with great comments of our great teammates and supporters. A big and special thanks to Sandra Christian for her support, volunteerism, and for being a great C.R.E.W.mate.",
     photos: [
@@ -369,36 +309,28 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 3, 2017",
-    title: "The team reaches Vieques. Then goes dark.",
-    narrative:
-      "Alpha CREW made it to Vieques that morning. Then — silence. No internet, no cell service, no way to send updates. The island was that cut off. All the team back in Florida knew was that their people were on the ground and working.",
+    title: "Our crew reached Vieques",
     caption:
       "Our Crew has made it to Vieques this morning! Once the team returns to an area with internet connectivity, we will update with more pictures. Your support and your donations have made these missions a possibility. Thank you so much!",
     photos: [],
   },
   {
     date: "October 4, 2017",
-    title: "Still dark. Still working.",
-    narrative:
-      "Day two on Vieques with barely a word from the team. They were safe — that much was confirmed — but communications were almost nonexistent. The updates would come later. For now, the work continued in silence.",
+    title: "Little word from the team in Vieques",
     caption:
       "We have barely heard from our team since their arrival to Vieques but we know that they are safe and working hard to continue providing support. We will continue updating as more information flows.",
     photos: [],
   },
   {
     date: "October 5, 2017",
-    title: "Generators delivered. Supplies in the plaza.",
-    narrative:
-      "Word finally came through. The team had distributed supplies in the Vieques Plaza and Esperanza Park. The generators were delivered to the hospital and other government buildings — the whole reason they'd made the 1,100-mile journey. Still no photos. Still no reliable internet. Just confirmation that the mission was done.",
+    title: "We delivered the generators and handed out supplies in Vieques",
     caption:
       "Yesterday we handed out supplies in the Vieques Plaza and in the Esperanza Park. The generators have been handed to the hospital and other government buildings. When the C.R.E.W. gets some internet connectivity, we will begin posting pictures of the effort.",
     photos: [],
   },
   {
     date: "October 5, 2017",
-    title: "The line in Vieques",
-    narrative:
-      "The internet finally came back long enough to send two photos. A line of residents stretched across a stripped field in Vieques, waiting for supplies. At the front — a flatbed truck with \"ALPHA CREW\" hand-painted on the side, volunteers handing out donations alongside Activados por Puerto Rico and the First Lady's team. Every tree in the background was bare. Every person in line needed something.",
+    title: "Handing out donations in Vieques",
     caption:
       "Our friends in Vieques, Puerto Rico are finally getting the help they need! In these pictures, we are handing out donations that were brought in by the First Lady and another great group of people called Activados por Puerto Rico. Your help, volunteerism, and donations, no matter how small or large, have made a HUGE impact this week.",
     photos: [
@@ -414,9 +346,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 6, 2017",
-    title: "80 families in the town square",
-    narrative:
-      "World Smile Day. The Alpha CREW truck pulled up to the Vieques town square, next to the church, and started handing out water, food, flashlights, and hygiene products. Eighty families came through the line — mothers with strollers, elderly residents with canes, kids. Eighty families who'd been waiting two weeks for someone to show up.",
+    title: "80 families got supplies in the Vieques town square",
     caption:
       "For World Smile Day Alpha CREW wants to bring smiles to those who have donated to our cause. Your donations and your support supplied 80 families with water, food, flashlights, and other hygiene products in the town square of Vieques, Puerto Rico. Let's continue making a difference!",
     photos: [
@@ -440,15 +370,13 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 6, 2017",
-    title: "500 families, a taped-up sign, and a red Jeep",
-    narrative:
-      "The crew posed for a photo in Vieques — the nonprofit's name written in marker on a styrofoam cooler lid, a Puerto Rican flag held overhead, a kitted-out red Jeep behind them. No professional branding yet. Just tape and conviction. By this point, over 500 families had received food, water, and supplies. The hospital and VER dialysis clinic had power. Government buildings had generators. The logo would come later.",
+    title: "More than 500 families in Vieques had food, water and supplies",
     caption:
       "This is the incredible C.R.E.W. that is currently making a great difference in Vieques, Puerto Rico. Because of this group, there are over 500 families in Vieques with food, water, and supplies for their everyday needs. The hospital and VER clinic (center for dialysis) have the power to take care of their patients. Also, we provided generators to government buildings to continue to assist their citizens.",
     photos: [
       {
         src: "vieques-crew-photo-taped-sign.jpg",
-        alt: "Alpha CREW team posing in Vieques with a hand-lettered styrofoam sign, Puerto Rican flag, and red Jeep — stripped trees in the background",
+        alt: "Alpha CREW team posing in Vieques with a hand-lettered styrofoam sign, Puerto Rican flag, and red Jeep, stripped trees in the background",
       },
       {
         src: "vieques-jeep-flag-sign.jpg",
@@ -458,15 +386,13 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 7, 2017",
-    title: "A footprint on the island",
-    narrative:
-      "Alpha CREW wasn't just dropping off supplies and leaving. They coordinated with local government in planning meetings, shared satellite phones so residents could call family members for the first time since the hurricane, drove a golf cart with a megaphone through neighborhoods to announce distributions, delivered generators to hospitals, clinics, and homes, and partnered with other organizations to help them distribute across the island. This was an operation now.",
+    title: "What we did in Vieques",
     caption:
       "Alpha Crew established its footprint in Vieques. We coordinated with the local government, distributed our donations, shared our satellite phones with the residents for them to communicate with family members, provided generators and power inverters to hospitals, clinics and residents, collaborated with other entities to help them distribute their donations throughout the island.",
     photos: [
       {
         src: "vieques-satphone-call-family.jpg",
-        alt: "A Vieques resident using Alpha CREW's satellite phone to call family, crew member watching from a fence — stripped trees in the background",
+        alt: "A Vieques resident using Alpha CREW's satellite phone to call family, crew member watching from a fence, stripped trees in the background",
       },
       {
         src: "vieques-coordination-meeting.jpg",
@@ -488,9 +414,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 7, 2017",
-    title: "Alpha CREW + Veterinarians for Puerto Rico",
-    narrative:
-      "The partnership with Veterinarians for Puerto Rico went from a Facebook post to boots on the ground. Alpha CREW handled the logistics — transport, coordination, getting the supplies to the island. The vets handled the last mile, delivering to animal shelters, the Animal Emergency Hospital, and communities across San Juan, Culebra, Lo\u00edza, and R\u00edo Grande. Night handoffs in the dark, crates stacked in shelters, dogs still finding their way back to people.",
+    title: "We moved donations for Veterinarians for Puerto Rico",
     caption:
       "Alpha Crew collaborated with our friends of Veterinarians for Puerto Rico to get their donations to PR. Alpha Crew provided the logistics, coordination, and transport to the island, and Veterinarians for Puerto Rico provided the donations and delivered them to different parts of the island (San Juan, Culebra, Loiza, and Rio Grande).",
     photos: [
@@ -500,7 +424,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "vetsforpr-night-truck-loading.jpg",
-        alt: "Night handoff — volunteers and vets in scrubs loading supplies into a truck in the dark",
+        alt: "Night handoff: volunteers and vets in scrubs loading supplies into a truck in the dark",
       },
       {
         src: "vetsforpr-hangar-supplies.jpg",
@@ -522,11 +446,10 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 8, 2017",
-    title: "Weddings in Vieques shares Alpha CREW's GoFundMe",
-    narrative:
-      "Word was spreading beyond the military and relief communities. Sandy Malone's Weddings in Vieques — a popular wedding planning business on the island — shared Alpha CREW's GoFundMe with their alumni and followers. Couples who had been married on Vieques were now asking how they could help the island recover. The #LetsSavePR campaign was reaching people the crew had never met.",
+    title: "Weddings in Vieques shared our GoFundMe",
+    note: "Weddings in Vieques wrote this on their page.",
     caption:
-      "Lots of requests from our Weddings in Vieques alumni and friends asking how you can help Vieques recover — this GoFundMe supports a group called Alpha CREW.",
+      "Lots of requests from our Weddings in Vieques alumni and friends asking how you can help Vieques recover - this GoFundMe supports a group called Alpha CREW.",
     photos: [
       {
         src: "shoutout-sandy-malone-weddings.png",
@@ -540,32 +463,26 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 9, 2017",
-    title: "What a Category 5 leaves behind",
-    narrative:
-      "The crew photographed what was once a standing structure on Vieques. Every tree stripped bare, metal roofing twisted and scattered, debris tangled in everything. Three weeks after Maria, and this is what it still looked like. Not the kind of damage that gets fixed in months.",
+    title: "A destroyed structure on Vieques",
     caption:
       "Our CREW took a picture of a once standing structure on the island of Vieques. Truly terrible to see... This damage is terrible and saddening but it has given us a greater reason to increase our efforts. With your help, we can impact more lives in Puerto Rico.",
     photos: [
       {
         src: "vieques-destroyed-structure.jpg",
-        alt: "Collapsed structure on Vieques surrounded by stripped trees and debris — nothing left standing",
+        alt: "Collapsed structure on Vieques surrounded by stripped trees and debris, nothing left standing",
       },
     ],
   },
   {
     date: "October 10, 2017",
-    title: "The operation expands to Georgia and the Carolinas",
-    narrative:
-      "Three weeks in, the operation had outgrown Florida. Alpha CREW put out a call for military volunteers in Savannah, Georgia and Charleston, South Carolina — the staging points closest to the C-130 airlift routes. The pipeline needed more hands.",
+    title: "We asked for military volunteers in Savannah and Charleston",
     caption:
       "Join the C.R.E.W. We are looking for military volunteers in the Savannah, GA and Charleston, SC area that are interested in working with us.",
     photos: [],
   },
   {
     date: "October 10, 2017",
-    title: "Sorting donations at the Choliseo in San Juan",
-    narrative:
-      "The crew moved to San Juan to help Puerto Rico Rises and other organizations sort through mountains of donated clothing and food at the Jos\u00e9 Miguel Agrelot Coliseum. The donations would be distributed to municipalities across the island. Alpha CREW wasn't just running its own missions anymore — it was plugging into wherever help was needed.",
+    title: "We sorted donations at the Choliseo in San Juan",
     caption:
       "Our CREWmates are helping wherever there is a need. Here we are in San Juan, helping Puerto Rico Rises and other entities, inspecting and sorting out donations, (clothing and food) at the Jose Miguel Agrelo Coliseum (Choliseo). These donations will then be delivered to various municipalities around the island.",
     photos: [
@@ -581,9 +498,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 10, 2017",
-    title: "Helping the Humane Society load aircraft for Vieques",
-    narrative:
-      "While part of the crew worked the Choliseo, another team headed to Isla Grande Airport in San Juan to help the Humane Society load their aircraft with provisions bound for Vieques. Animal welfare was one of the quieter crises inside the larger disaster — pets and strays left behind, veterinary supplies wiped out. Alpha CREW showed up wherever an extra set of hands was needed.",
+    title: "We helped the Humane Society load aircraft for Vieques",
     caption:
       "At the Isla Grande Airport in San Juan, our other C.R.E.W.mates, helped the Humane Society moving and loading their Aircraft with provisions that are going to Vieques.",
     photos: [
@@ -595,9 +510,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 10, 2017",
-    title: "Fuel run for the Guaynabo hospital generator",
-    narrative:
-      "By evening, the crew was tracking down fuel and oil for a generator at the hospital in Guaynabo. Three weeks without reliable power, and hospitals were running on whatever they could scrounge. The team found five cans of fuel, labeled them for the hospital, and helped troubleshoot the generator on-site.",
+    title: "We found fuel for the Guaynabo hospital generator",
     caption:
       "Our C.R.E.W.mates, later on, went to find fuel and oil for a generator at the Guaynabo hospital and assisted troubleshooting the same.",
     photos: [
@@ -609,18 +522,14 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 10, 2017",
-    title: "Stateside crew works the phones for airlift and donations",
-    narrative:
-      "While the ground team ran missions across Puerto Rico, the stateside crew was burning through phone lines — coordinating with government agencies to secure airlift capacity and working with companies and nonprofits to prioritize what supplies went next. Two fronts, one operation.",
+    title: "The stateside crew worked on airlift and donations",
     caption:
       "Our Stateside C.R.E.W. continues communications with government agencies to find and secure airlift for the donations inbound to Puerto Rico. Also, we continue talking with various companies and non-profit organizations to prioritize the donations that we are taking to Puerto Rico.",
     photos: [],
   },
   {
     date: "October 12, 2017",
-    title: "Volunteers pack and distribute at the Choliseo",
-    narrative:
-      "Back at the coliseum, the sorting operation continued. Volunteers worked the arena floor — folding clothing, filling boxes, organizing supplies for distribution across the island. Blaine Stevenson and others showed up to help, joining the effort alongside Alpha CREW and other organizations still running the Choliseo as a makeshift distribution hub.",
+    title: "Thank you to the volunteers who packed and distributed supplies",
     caption:
       "Big thanks to the volunteers that helped us and the other organizations with packing and distributing supplies. Blaine Stevenson, thank you for your help!",
     photos: [
@@ -636,9 +545,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 12, 2017",
-    title: "Transporting Humane Society supplies from Isla Grande to Guaynabo",
-    narrative:
-      "The crew continued supporting the Humane Society, this time running supplies from the Isla Grande Airport hangar to Guaynabo. Truck beds loaded with water, pet food, and medical supplies. The S.P. Helicopters hangar had become a staging area — every square foot filled with donations waiting to move.",
+    title: "We helped the Humane Society move supplies to Guaynabo",
     caption:
       "We have continued our aid to the Humane Society today as they transported food and supplies from the Isla Grande Airport to Guaynabo.",
     photos: [
@@ -662,12 +569,10 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 13, 2017",
-    phase: "Sustained Operations",
-    title: "Andrea Moya recommends Alpha CREW to her network",
-    narrative:
-      "People on the island were fielding calls from stateside friends and family asking what to send. Andrea Moya, who was personally fine, told everyone: don't send it to me — direct it to Guardians of Rescue, Alpha CREW, the Humane Society of Puerto Rico, or Para la Naturaleza. When the people on the ground start naming you as one of the organizations to trust, that's when you know the work is landing.",
+    title: "Andrea Moya recommended Alpha CREW",
+    note: "Andrea Moya wrote this on her own page.",
     caption:
-      "Many people stateside are asking if I need anything and what to send. I'm personally fine and my family is thankfully not wanting in anything. So I would say direct what you would've spent on me to one of these organizations: Guardians of Rescue, Alpha CREW, Humane Society of Puerto Rico, The Humane Society of the United States — Puerto Rico, Para la Naturaleza.",
+      "Many people stateside are asking if I need anything and what to send. I'm personally fine and my family is thankfully not wanting in anything. So I would say direct what you would've spent on me to one of these organizations: Guardians of Rescue, Alpha CREW, Humane Society of Puerto Rico, The Humane Society of the United States - Puerto Rico, Para la Naturaleza.",
     photos: [
       {
         src: "shoutout-andrea-moya.png",
@@ -677,9 +582,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 13, 2017",
-    title: "Rivera and Caraballo family donates water, food, and pasta",
-    narrative:
-      "Donations kept arriving from families across the community. The Rivera and Caraballo family contributed water, food, and pasta — supplies that would be packed and shipped to Puerto Rico on the next available airlift. Every family donation meant another few families fed on the island.",
+    title: "The Rivera and Caraballo family donated water, food and pasta",
     caption:
       "The Rivera and Caraballo family has graciously donated water, food, and pasta to our cause. These supplies will be touching the lives of many in Puerto Rico.",
     photos: [
@@ -691,15 +594,13 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 15, 2017",
-    title: "Scouting Utuado — collapsed bridges and cut-off communities",
-    narrative:
-      "The crew drove into the mountains of Utuado to scout communities that hadn't been reached. What they found was devastating. Bridges had collapsed into muddy rivers, roads were buried under landslides, and entire neighborhoods were cut off. Residents had been crossing the river on foot just to reach supplies on the other side. A military LMTV was one of the few vehicles that could navigate what was left of the roads.",
+    title: "We scouted Utuado",
     caption:
       "Visited Utuado to scout communities in need of help and to determine the best ways to access and deliver supplies. In one of these areas, people have had to cross a river to gain access to supplies because of the collapse of their access bridge.",
     photos: [
       {
         src: "utuado-collapsed-bridge.jpg",
-        alt: "Collapsed bridge in Utuado — concrete pillars broken into the muddy river, homes visible on the hillside above",
+        alt: "Collapsed bridge in Utuado: concrete pillars broken into the muddy river, homes visible on the hillside above",
       },
       {
         src: "utuado-surveying-bridge.jpg",
@@ -717,9 +618,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 16, 2017",
-    title: "Evacuating dogs from Puerto Rico with the Humane Society",
-    narrative:
-      "The crew spent the weekend helping the Humane Society of Puerto Rico transport rescued dogs from Isla Grande Airport to the Luis Muñoz Marín International Airport, where Guardians of Rescue had arranged a flight to New York. A van packed floor-to-ceiling with crates, a nighttime run to the Jet Aviation terminal, and an aircraft loaded on the tarmac. The animals were getting out.",
+    title: "We helped the Humane Society send dogs to New York",
     caption:
       "This weekend we spent some time helping the Humane Society of PR in Isla Grande Airport in San Juan. With them, we brought dogs to the LMM airport that are going to be sent to NY with the Guardians of Rescue. Our furry friends in Puerto Rico are also in need of help.",
     photos: [
@@ -743,9 +642,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 16, 2017",
-    title: "Keeping vaccines cold in a personal fridge",
-    narrative:
-      "With the island's power grid still down, cold chain logistics came down to improvisation. Crew member Jorgito stored the Humane Society's rabies vaccines in his own refrigerator after Guardians of Rescue's generator couldn't keep up. Boxes of veterinary vaccines stacked on household shelves — the kind of problem-solving that doesn't make headlines but keeps an operation alive.",
+    title: "Jorgito kept the vaccines cold in his refrigerator",
     caption:
       "One of our CREWmates (Jorgito) in PR has been keeping HSPR vaccines cold in his personal refrigerator due to the limitations of Guardians of Rescue's power generator.",
     photos: [
@@ -757,9 +654,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 16, 2017",
-    title: "Health fair in Aguas Buenas — seniors eating once a day",
-    narrative:
-      "The crew visited the Feria de Salud in Aguas Buenas and went door to door through Sector Minillas, Barrio Mula, Barrio Sumideros, Sector Corujas, and Sector la Jacana. What they found was grim: senior citizens surviving on one meal a day, communities surrounded by debris and mosquitoes, and patients with compromised health and no access to medical care. The team left water purifiers and collected contact information for follow-up — this wasn't a one-time visit.",
+    title: "In Aguas Buenas we found seniors eating once a day",
     caption:
       "After visiting the Health Fair (Feria de Salud) in Aguas Buenas, we found senior citizens that have only been eating once a day due to supply limitations. We also left water purifiers in communities where there is an excess of debris, mosquitoes, infectious diseases, and patients with compromised health. We have the information of the people in these communities and we are going to follow up. Areas visited: Sector Minillas, Bo Mula, Bo. Sumideros, Sector Corujas, and Sector la Jacana.",
     photos: [
@@ -769,7 +664,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "aguas-buenas-living-room-seniors.jpg",
-        alt: "Crowded living room in Aguas Buenas — crew and medical volunteers assessing elderly residents, family photos on the walls",
+        alt: "Crowded living room in Aguas Buenas: crew and medical volunteers assessing elderly residents, family photos on the walls",
       },
       {
         src: "aguas-buenas-medical-supplies.jpg",
@@ -783,15 +678,13 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 17, 2017",
-    title: "Preparing the next shipment — every item labeled and manifested",
-    narrative:
-      "Back stateside, the next shipment was taking shape in the warehouse. Pallets of water, diapers, baby supplies, and food were shrink-wrapped and staged. Every single item was labeled and logged on a manifest document — Alpha CREW ran this like a military logistics operation because that's exactly what it was. Nothing got misplaced, nothing went unaccounted for.",
+    title: "We labeled and manifested the next shipment",
     caption:
       "We are preparing another shipment to Puerto Rico. This next shipment will bring more needed supplies to hundreds of people throughout the island. To ensure that our shipments aren't misplaced, we label every single item and container and add it to a manifest document.",
     photos: [
       {
         src: "shipment-warehouse-pallets-wide.jpg",
-        alt: "Wide shot of warehouse floor — rows of shrink-wrapped pallets stacked high, freezers and military containers in the background",
+        alt: "Wide shot of warehouse floor: rows of shrink-wrapped pallets stacked high, freezers and military containers in the background",
       },
       {
         src: "shipment-labeled-diapers-containers.jpg",
@@ -805,9 +698,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 17, 2017",
-    title: "Guaynabo shelter floods — Jorgito evacuates the animals",
-    narrative:
-      "The Humane Society shelter in Guaynabo flooded overnight. When Jorgito got the call, he moved immediately. The kennels were emptied, the floors covered in mud, but every animal made it out safely. They were relocated to a local basketball gym where dozens of carriers were lined up across the court — a temporary shelter inside a shelter. The disaster kept compounding, but so did the response.",
+    title: "The Guaynabo shelter flooded and the animals were moved",
     caption:
       "The Humane Society in Guaynabo was flooded yesterday. After hearing the news, Jorgito, one of our crewmates, sprung into action. Luckily, everyone made it out of there safely and the animals were relocated.",
     photos: [
@@ -817,7 +708,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "guaynabo-shelter-flooded-floor.jpg",
-        alt: "Flooded shelter interior — wet concrete floor, van backed into the bay, water barrels along the wall",
+        alt: "Flooded shelter interior: wet concrete floor, van backed into the bay, water barrels along the wall",
       },
       {
         src: "guaynabo-animals-relocated-gym.jpg",
@@ -831,15 +722,13 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 19, 2017",
-    title: "333rd volunteers reorganize pallets — displaced families helping their own",
-    narrative:
-      "Many of the Air Force volunteers from the 333rd Recruiting Squadron had themselves been displaced from Puerto Rico by Maria. They lost everything — and then showed up at the warehouse to help reorganize pallets that had arrived in bad condition, separating medicine from food and water. People who had just lost their homes, sorting supplies to send back to the island they'd been forced to leave.",
+    title: "Volunteers from the 333rd reorganized the pallets",
     caption:
       "Many of our Air Force volunteers from the 333 Recruiting Squadron and their families came from Puerto Rico after losing everything to Hurricane Maria and are now helping our cause. Today they are reorganizing the pallets that arrived in bad condition and separating the medicine from the food and water.",
     photos: [
       {
         src: "333rd-warehouse-overhead.jpg",
-        alt: "Overhead view of warehouse floor filled with dozens of shrink-wrapped pallets — water, food, medical supplies staged for airlift",
+        alt: "Overhead view of warehouse floor filled with dozens of shrink-wrapped pallets: water, food, medical supplies staged for airlift",
       },
       {
         src: "333rd-sorting-pallets-water.jpg",
@@ -851,15 +740,13 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "333rd-warehouse-reorganized.jpg",
-        alt: "Wide shot of reorganized warehouse — pallets neatly wrapped and separated by category, overhead crane visible",
+        alt: "Wide shot of reorganized warehouse: pallets neatly wrapped and separated by category, overhead crane visible",
       },
     ],
   },
   {
     date: "October 19, 2017",
-    title: "Airlift secured, trucks ready, supplies staged — waiting on FEMA",
-    narrative:
-      "Everything was in place. The warehouse was full, the pallets were wrapped and manifested, the trucks were positioned on the flight line, and C-130s sat on the tarmac ready to fly. All that was missing was FEMA mission approval. The frustration of having everything ready to go and not being able to move it — that was its own kind of crisis.",
+    title: "Everything was ready and we waited on FEMA",
     caption:
       "We have secured airlift, we have trucks, we have people, and the lifesaving supplies are ready to go. Just waiting on FEMA for mission approval.",
     photos: [
@@ -869,17 +756,15 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "fema-waiting-warehouse-ready.jpg",
-        alt: "Overhead view of warehouse packed with dozens of pallets — water, food, medicine, all staged and waiting for FEMA approval",
+        alt: "Overhead view of warehouse packed with dozens of pallets: water, food, medicine, all staged and waiting for FEMA approval",
       },
     ],
   },
   {
     date: "October 19, 2017",
-    title: "ABBA Church partners with Alpha CREW on the flight line",
-    narrative:
-      "Pastor Evelyn Martinez, her husband Luis A. Martinez, and niece Glorianne Ruiz from ABBA — La Casa De Mi Padre in Tampa visited the staging area and met with founder Joseph Duren on the flight line. Faith communities were becoming key partners in the relief effort, connecting Alpha CREW with congregations and families across Puerto Rico who needed help the most.",
+    title: "Visitors from ABBA La Casa De Mi Padre on the flight line",
     caption:
-      "Pastor Evelyn Martinez, husband Luis A. Martinez, and niece Glorianne Ruiz from ABBA — La Casa De Mi Padre in Tampa with our founder, Joseph Duren.",
+      "Pastor Evelyn Martinez, husband Luis A. Martinez, and niece Glorianne Ruiz from ABBA - La Casa De Mi Padre in Tampa with our founder, Joseph Duren.",
     photos: [
       {
         src: "abba-church-flight-line-group.jpg",
@@ -889,31 +774,21 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 20, 2017",
-    title: "The crew — volunteers, airmen, and families",
-    narrative:
-      "A month into the operation, the team gathered outside the warehouse for a group photo. Airmen in uniform stood next to civilian volunteers, church partners, and their families — kids included. This was never a military operation or a civilian one. It was both, held together by people who showed up because they couldn't not show up.",
+    title: "Thank you to our volunteers, donors and crewmates",
     caption:
       "Big thanks to all of our volunteers, donors, and crewmates for continuing to make an effort to help save lives in Puerto Rico.",
     photos: [
       {
         src: "full-crew-group-photo-warehouse.jpg",
-        alt: "Full Alpha CREW group photo outside the warehouse — airmen in uniform, civilian volunteers, church partners, and families with children",
+        alt: "Full Alpha CREW group photo outside the warehouse: airmen in uniform, civilian volunteers, church partners, and families with children",
       },
     ],
   },
   {
     date: "October 20, 2017",
-    title: "Medical supplies delivered to the Pediatric Children's Hospital in Bayamón",
-    narrative:
-      "The crew picked up emergency medical supplies from Partners for World Health at LMM Airport in San Juan — boxes of Hospira pharmaceuticals, non-sterile gowns, and other critical equipment. They loaded the Alpha CREW truck and drove straight to the Pediatric Children's Hospital in Bayamón, arriving at dusk. A children's hospital, a month without reliable supply chains, and a truck full of medicine pulling up to the entrance.",
+    title: "We delivered medical supplies to the children's hospital in Bayamón",
     caption:
       "Today, Alpha C.R.E.W picked up at LMM Airport in San Juan emergency medical supplies sent by Partners for World Health and delivered to the Pediatric Children's Hospital in Bayamón, PR.",
-    partners: [
-      {
-        name: "Partners for World Health",
-        url: "https://www.facebook.com/PartnersForWorldHealth",
-      },
-    ],
     photos: [
       {
         src: "bayamon-crew-truck-lmm-airport.jpg",
@@ -932,12 +807,13 @@ export const galleryEntries: GalleryEntry[] = [
         alt: "Loaded truck parked outside the Pediatric Children's Hospital in Bayamón at twilight, ambulance under the awning",
       },
     ],
+    partners: [
+      { name: "Partners for World Health", url: "https://www.facebook.com/PartnersForWorldHealth" },
+    ],
   },
   {
     date: "October 21, 2017",
-    title: "Welfare check on Ms. Carmen Rivera in St. Just",
-    narrative:
-      "The Rivera family in New Jersey hadn't heard from their grandmother since before Maria hit. They reached out to Alpha CREW and asked if someone could check on her. A crew member drove to St. Just, found Ms. Carmen Rivera on her porch — alive, with a tarp where her roof used to be, but okay. He handed her his cellphone so she could talk to her family for the first time in a month. One good story in the middle of everything else.",
+    title: "We checked on Ms. Carmen Rivera in St. Just",
     caption:
       "Today the Rivera Family asked Alpha CREW to check on Ms. Carmen Rivera in St. Just, PR. The Rivera Family is in New Jersey and haven't heard from her since before Hurricane Maria, and were extremely worried about her well being. One of our C.R.E.W. mates paid her a visit, and found her well, under the circumstances. She was able to talk to her family through his cellphone. One happy story for today!",
     photos: [
@@ -949,18 +825,14 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 21, 2017",
-    title: "Alpha CREW opens volunteering to everyone",
-    narrative:
-      "A month in, the operation had grown beyond what the original crew could handle alone. Alpha CREW put out a formal call for volunteers — not just military, everyone. Donate, spread the word, help transport supplies between sites, sort and palletize at the warehouse, or mentor Puerto Rican families arriving stateside. The message was clear: there's a role for anyone willing to show up.",
+    title: "We opened volunteering to everyone",
     caption:
       "General volunteering opportunities open to everyone. Are you interested in helping? Alpha CREW always has volunteering opportunities for everyone. You can help us accomplish the mission by donating, spreading the word, helping with transportation, mentoring Puerto Rican families arriving to your area, or helping us inspect, sort, palletize and load emergency supplies for transport. If you think you have what it takes to become an official C.R.E.W. mate, please send your bio and resume at contact@alphacrew.org.",
     photos: [],
   },
   {
     date: "October 24, 2017",
-    title: "Farm recovery in Utuado with Climbing Puerto Rico",
-    narrative:
-      "Alpha CREW partnered with Climbing Puerto Rico and headed back into the mountains of Utuado. The mission: help area farmers prep their land and clear a family's driveway that had been blocked by debris since Maria hit — over a month without being able to access their own home. Ismael \"Tico\" Marques provided the Jeep, Bryan from Climbing PR organized the trip, and volunteers worked chainsaws and rakes through massive downed trees. The CREW logo was on every vehicle now.",
+    title: "We helped farmers in Utuado with Climbing Puerto Rico",
     caption:
       "Together with Climbing Puerto Rico, Alpha CREW went to Utuado, PR to assist the area farmers prepping the farms. In addition, assisted a family to clear their driveway of debris, as they were unable to access their home since Hurricane Maria. A special thanks to Ismael \"Tico\" Marques for the Jeep ride and Bryan from Climbing Puerto Rico for the invitation.",
     photos: [
@@ -980,9 +852,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 24, 2017",
-    title: "Hot meals in San Juan with Voces and Fundación El Plato Caliente",
-    narrative:
-      "Alpha CREW partnered with Voces, Fundación Topy Mamery, and Fundación El Plato Caliente to distribute hot meals to families and children at Parcelas Falu and Barrio Campollanos in San Juan. Volunteers portioned soup and ladled rice and stew into cups in a restaurant kitchen, loaded the CREW trucks, and drove into the neighborhoods. For families surviving on canned goods and MREs for over a month, a hot meal was everything.",
+    title: "We handed out hot meals in San Juan with Voces and two foundations",
     caption:
       "Today, Alpha CREW collaborated with Voces, Fundación Topy Mamery, and Fundación El Plato Caliente distributing hot meals to families and children at Parcelas Falu and Barrio Campollanos in San Juan PR. We are very grateful for the invitation.",
     photos: [
@@ -1014,9 +884,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 25, 2017",
-    title: "65,000 lbs shipped in 48 hours",
-    narrative:
-      "This was the moment the entire operation had been building toward. In a single two-day push, Alpha CREW shipped 65,000 lbs of life-sustaining supplies from Florida to Georgia for airlift to Puerto Rico — 15,000 lbs on Tuesday, 50,000 lbs on Wednesday. King Transport flatbeds carried military-netted cargo pallets. Forklifts ran nonstop loading box trucks in the rain. Wheelchairs, stretchers, medical supplies, water, food — everything the warehouse had been staging for weeks was finally moving.",
+    title: "We sent 65,000 lbs in two days",
     caption:
       "In the last two days, Alpha CREW in Florida sent out approximately 65,000 lbs (15,000 lbs Tuesday and 50,000 lbs Wednesday) of life sustaining supplies to GA, to then be airlifted to PR.",
     photos: [
@@ -1048,9 +916,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 26, 2017",
-    title: "Hot meals delivered to homebound residents",
-    narrative:
-      "The mobile crew shifted from supply logistics to direct care, driving through neighborhoods to deliver hot meals to residents who couldn't leave their homes — elderly, disabled, or too sick to travel. It was one of the most personal days of the operation: knocking on doors, handing food through gates, making sure people who had been forgotten were fed.",
+    title: "We brought hot meals to people who could not leave home",
     caption:
       "Yesterday, the mobile crew of Alpha CREW went to bring hot meals to people who did not have the means, health, or are bedridden. Thank you c.r.e.w.mates!",
     photos: [
@@ -1074,9 +940,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 26, 2017",
-    title: "Supply convoy to Utuado and Jayuya barrios",
-    narrative:
-      "Partnering again with Voces, Fundacion Topy Mamery, UNICEF, Lote 23, Grupo de Amigos de Margarita Santos, and Foundation for Puerto Rico, Alpha CREW loaded a multi-vehicle convoy and drove deep into the mountains of Utuado and Jayuya. They hit eight barrios — Tetuan 1 and 2, Don Alonzo, Limon, Caonillas, Caonillas Abajo, Mameyes Arriba, and Mameyes Abajo — delivering sandwiches, rice, baby supplies, and hygiene products. They brought treats for the kids too.",
+    title: "We delivered food and supplies to eight barrios in Utuado and Jayuya",
     caption:
       "Today the C.R.E.W.mates of Alpha CREW collaborated once again with Voces, Fundación Topy Mamery, UNICEF, Lote 23, Grupo de Amigos de Margarita Santos - Volunteers Ad Hoc, and Foundation for Puerto Rico to deliver sandwiches, rice, baby and hygiene supplies to the residents of Utuado and Jayuya at Barrios Tetuan 1 & 2, Don Alonzo, Limon, Caonillas, Caonillas Abajo, Mameyes Arriba, and Mameyes Abajo. We also delivered some treats for the kids.... yum yum! We feel blessed every day we are able to help the community. Thank you again for the invite!",
     photos: [
@@ -1104,18 +968,9 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "November 1, 2017",
-    phase: "Final Push",
-    title: "Partners for World Health medical supplies palletized and shipped",
-    narrative:
-      "Back on the stateside logistics chain, volunteers palletized medical equipment donated by Partners for World Health — wheelchairs, walkers, crutches, and boxed supplies — and loaded them into trailers bound for Puerto Rico. An Air Force forklift moved the shrink-wrapped pallets onto the flight line. Every piece of durable medical equipment meant someone on the island could recover with dignity.",
+    title: "We palletized and shipped medical supplies from Partners for World Health",
     caption:
       "Yesterday, Alpha CREW C.R.E.W.mates palletized and shipped out medical supplies donated by Partners of World Health that are destined to PR. Your support is important to us, and is the lifeline for us to continue our efforts. No quantity is too small, everything counts.",
-    partners: [
-      {
-        name: "Partners for World Health",
-        url: "https://www.facebook.com/PartnersForWorldHealth",
-      },
-    ],
     photos: [
       {
         src: "pwh-volunteers-wheelchairs.jpg",
@@ -1134,12 +989,13 @@ export const galleryEntries: GalleryEntry[] = [
         alt: "Inside a trailer packed with shrink-wrapped pallets of wheelchairs, walkers, crutches, and medical equipment",
       },
     ],
+    partners: [
+      { name: "Partners for World Health", url: "https://www.facebook.com/PartnersForWorldHealth" },
+    ],
   },
   {
     date: "November 2, 2017",
-    title: "Late-night emergency supply run across San Juan communities",
-    narrative:
-      "Collaborating with the City of San Juan, the crew mobilized their entire fleet — a flatbed truck stacked with Nikini boxes, an F-350 dump truck, pickups loaded with diapers and water, even a compact Hyundai sedan bearing the CREW logo — and drove into Parcelas Falu, Hill Brothers, El Polvorin, and Berwind. They stayed out well past dark, distributing supplies under floodlights to crowds of residents who had been waiting. The Puerto Rico flag flew from every vehicle.",
+    title: "We brought supplies to four San Juan communities",
     caption:
       "Last Sunday October 29, 2017 Alpha CREW C.R.E.W.mates stayed out until very late collaborating with the City of San Juan to bring emergency supplies to the communities located at Parcelas Falu, Hill Brothers, el Polvorin, and Berwind. We are very grateful for the invitation. To contribute to our organization, please find the GoFundMe link on our page. Thank you for your support!",
     photos: [
@@ -1181,7 +1037,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "sanjuan-fleet-parking-lot.jpg",
-        alt: "Alpha CREW fleet vehicles — sedan, SUV, and flatbed truck with PR flag — staged in a parking lot before the supply run",
+        alt: "Alpha CREW fleet vehicles, sedan, SUV, and flatbed truck with PR flag, staged in a parking lot before the supply run",
       },
       {
         src: "sanjuan-hyundai-crew-logo.jpg",
@@ -1191,17 +1047,9 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "November 6, 2017",
-    title: "Medical supplies reach Vieques Hospital by air, land, and sea",
-    narrative:
-      "Six weeks into the operation, Alpha CREW coordinated an airlift of medical supplies donated by Partners for World Health to the hospital on Vieques — a small island off Puerto Rico's east coast, reachable only by ferry. The cargo moved by truck, then ferry, then hand-delivered to the hospital staff waiting inside.",
+    title: "We delivered medical supplies to the Vieques hospital",
     caption:
       "Alpha CREW has made history once again! We have successfully airlifted, transported and delivered very important life saving life supporting supplies donated by Partners for World Health to the Vieques Hospital in Puerto Rico. This has been an odyssey, but extremely rewarding! Thank you C.R.E.W. mates!!",
-    partners: [
-      {
-        name: "Partners for World Health",
-        url: "https://www.facebook.com/PartnersForWorldHealth",
-      },
-    ],
     photos: [
       {
         src: "vieques-c130-loading-tarmac.jpg",
@@ -1209,11 +1057,11 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "vieques-warehouse-staging-area.jpg",
-        alt: "Warehouse staging area — pallets of water, supplies, and equipment ready for airlift",
+        alt: "Warehouse staging area: pallets of water, supplies, and equipment ready for airlift",
       },
       {
         src: "vieques-night-ops-forklift-loading.jpg",
-        alt: "Night operations — crew loading pallets with forklift, military vehicles in background",
+        alt: "Night operations: crew loading pallets with forklift, military vehicles in background",
       },
       {
         src: "vieques-c130-in-flight.jpg",
@@ -1260,32 +1108,28 @@ export const galleryEntries: GalleryEntry[] = [
         alt: "Medical supplies delivered inside Vieques Hospital",
       },
     ],
+    partners: [
+      { name: "Partners for World Health", url: "https://www.facebook.com/PartnersForWorldHealth" },
+    ],
   },
   {
     date: "November 6, 2017",
-    title: "Church of Doral supplies airlifted to Añasco",
-    narrative:
-      "The same day the Vieques delivery wrapped up, another shipment was already moving. Supplies donated by The Church of Doral were airlifted and delivered to the functionaries of Catacumba 5 in Añasco — a community on Puerto Rico's west coast that had been cut off and underserved since Maria hit. The crew worked late into the night staging pallets and bins under floodlights, strapping cargo for the next leg of the chain.",
+    title: "We delivered supplies from The Church of Doral to Añasco",
     caption:
       "Alpha CREW airlifted and delivered life saving life sustaining supplies donated by The Church of Doral to the functionaries of Catacumba 5 from Añasco PR. To contribute to our organization, please find the GoFundMe link on our page. Thank you for your support!",
-    partners: [
-      {
-        name: "Catacumba 5 / Uno Church Puerto Rico",
-        url: "https://www.facebook.com/UnoChurchPuertoRico",
-      },
-    ],
     photos: [
       {
         src: "anasco-night-ops-palletizing.jpg",
         alt: "Crew and volunteers stacking bins and pallets under floodlights at night on the staging area, one volunteer standing on top of the pallet directing",
       },
     ],
+    partners: [
+      { name: "Catacumba 5 / Uno Church Puerto Rico", url: "https://www.facebook.com/UnoChurchPuertoRico" },
+    ],
   },
   {
     date: "November 6, 2017",
-    title: "CREW mates help Hurricane Irma recovery in Florida",
-    narrative:
-      "Alpha CREW wasn't only focused on Puerto Rico. Back in Florida, crew members were also helping neighbors recover from Hurricane Irma, which had torn through the state two weeks before Maria hit the island. A CREW mate loaded up the Silverado — logo on the door — and spent the day clearing downed palms, branches, and debris from residential neighborhoods, hauling it all to roll-off dumpsters. Same crew, same mission, different storm.",
+    title: "Crewmates helped with Hurricane Irma cleanup in Florida",
     caption:
       "Our C.R.E.W. mates are amazing.... not only they help in PR, but also those affected by Hurricane Irma in FL. Thank you Team!!",
     photos: [
@@ -1305,31 +1149,21 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "November 6, 2017",
-    title: "Mass distribution with the Municipio de San Juan",
-    narrative:
-      "Alpha CREW joined forces with the Municipio de San Juan and the military for a large-scale supply distribution. National Guard trucks loaded with pallets of MREs rolled into a community playground, and soldiers and volunteers formed lines to move boxes to hundreds of residents waiting behind the fence. This wasn't just Alpha CREW anymore — it was a full joint operation, military and municipal, with the crew embedded in the middle of it.",
+    title: "We handed out supplies with the Municipio de San Juan",
     caption:
       "Alpha CREW fever is everywhere. Our C.R.E.W. mates collaborated with the Municipio de San Juan to distribute supplies to the community. We are on FIRE! Thank you CREW!!!",
     photos: [
       {
         src: "sanjuan-municipio-aerial-distribution.jpg",
-        alt: "Aerial view of a mass supply distribution — National Guard trucks and pallets of MRE boxes at a playground, soldiers and volunteers working, large crowd of residents lined up along the fence",
+        alt: "Aerial view of a mass supply distribution: National Guard trucks and pallets of MRE boxes at a playground, soldiers and volunteers working, large crowd of residents lined up along the fence",
       },
     ],
   },
   {
     date: "November 6, 2017",
-    title: "Goal Zero generators from Sparks delivered to Vieques",
-    narrative:
-      "Alpha CREW received, processed, airlifted, transported, and delivered Goal Zero Yeti battery-powered portable generators donated by Sparks to the island of Vieques. The full chain was on display: airmen and civilians palletizing boxes of generators and diapers in a hangar, a King Transport flatbed hauling netted pallets across the tarmac stateside, a Yale forklift unloading at the destination with the crew posing alongside local volunteers, and the final handoff — boxes stacked in a pickup, ready for distribution across the island.",
+    title: "We delivered Goal Zero generators from Sparks to Vieques",
     caption:
       "Alpha CREW received, processed, airlifted, transported, and delivered Goal Zero Yeti Battery Powered Portable Generators donated by Sparks to the Island of Vieques. To contribute to our organization, please find the GoFundMe link on our page. Thank you for your support!",
-    partners: [
-      {
-        name: "Sparks",
-        url: "https://www.facebook.com/SparksMarketing",
-      },
-    ],
     photos: [
       {
         src: "sparks-hangar-palletizing-generators.jpg",
@@ -1348,12 +1182,13 @@ export const galleryEntries: GalleryEntry[] = [
         alt: "Crew member and local volunteer standing behind a pickup loaded with shrink-wrapped boxes of Goal Zero generators in Vieques, flowering trees in background",
       },
     ],
+    partners: [
+      { name: "Sparks", url: "https://www.facebook.com/SparksMarketing" },
+    ],
   },
   {
     date: "November 7, 2017",
-    title: "New partnership with Air National Guard EFAC — meeting FEMA at the COE",
-    narrative:
-      "Alpha CREW forged a new partnership with the Air National Guard Emergency Family Assistance Center (EFAC) and together met with FEMA at the Emergency Operations Center (COE) inside the Centro de Convenciones de Puerto Rico in San Juan. The goal: find a solution to keep moving life-sustaining supplies to the island using military aircraft. Seven weeks in, and the operation was still growing — building relationships at the institutional level to sustain what had started as a family effort.",
+    title: "We met with FEMA alongside the Air National Guard EFAC",
     caption:
       "Alpha CREW continues to move forward forging new relationships. We are now collaborating with the Air National Guard Emergency Family Assistance Center (EFAC). We teamed up for the same cause and met with FEMA at the Emergency Operations Center (COE) in San Juan, PR to find a solution to move life saving life sustaining supplies to Puerto Rico using military aircraft.",
     photos: [
@@ -1365,9 +1200,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "November 10, 2017",
-    title: "Hot meals with Fundación El Plato Caliente",
-    narrative:
-      "The crew partnered again with Fundación El Plato Caliente — this time for a full meal prep and delivery operation. Volunteers gathered around checkered tables to pack utensil kits and portion meals into styrofoam containers, then loaded up the trunk of a sedan and drove into the neighborhood. In a parking lot, they handed hot food directly to elderly women, neighbors in scrubs coming off shifts, and anyone who showed up. No staging area, no formality — just a car trunk and people who needed to eat.",
+    title: "We delivered hot meals with Fundación El Plato Caliente",
     caption:
       "Today, Alpha CREW C.R.E.W. mates collaborated with Fundación El Plato Caliente delivering hot meals to the community.",
     photos: [
@@ -1399,25 +1232,13 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "November 10, 2017",
-    title: "Gluten-free foods from Kinnikinnick delivered to Alianza de Autismo",
-    narrative:
-      "Alpha CREW delivered gluten-free foods donated by Kinnikinnick to the Alianza de Autismo de Puerto Rico — animal cookies, pancake mix, flour blend, sandwich cremes, and chocolate chip cookies. The chain started in the hangar stateside where a U.S. Air Force forklift moved palletized boxes, a CREW Jeep towed a trailer to the flight line, and a crew member with a headlamp pushed pallets deep into a trailer. On the island, Mr. Jose Galindez donated the local transport, and Ms. Byankah Sobá connected the crew with the autism alliance. The boxes were unloaded on pallets and hand carts outside Alianza's building — specialty food for families who needed it most.",
+    title: "We delivered gluten-free food from Kinnikinnick to Alianza de Autismo",
     caption:
       "Today, Alpha CREW delivered gluten free foods donated by Kinnikinnick to Alianza de Autismo de Puerto Rico. A special thanks to our good friend Mr. Jose Galindez for the donation of the transport in Puerto Rico and to Ms. Byankah Sobá to reach out to us to be part of this wonderful cause!",
-    partners: [
-      {
-        name: "Alianza de Autismo de Puerto Rico",
-        url: "https://www.facebook.com/alianzaautismo",
-      },
-      {
-        name: "Byankah Sobá",
-        url: "https://www.facebook.com/byankah.soba",
-      },
-    ],
     photos: [
       {
         src: "autismo-kinnikinnick-boxes-closeup.jpg",
-        alt: "Stack of Kinnikinnick gluten-free boxes — vanilla cookies, animal cookies, flour blend, pancake mix, and chocolate chip cookies",
+        alt: "Stack of Kinnikinnick gluten-free boxes: vanilla cookies, animal cookies, flour blend, pancake mix, and chocolate chip cookies",
       },
       {
         src: "autismo-usaf-forklift-hangar.jpg",
@@ -1447,6 +1268,10 @@ export const galleryEntries: GalleryEntry[] = [
         src: "autismo-kinnikinnick-unloaded-alianza.jpg",
         alt: "Kinnikinnick Gluten Free boxes unloaded on pallets and a hand cart outside the Alianza de Autismo building, iron fence and flowering plants behind",
       },
+    ],
+    partners: [
+      { name: "Alianza de Autismo de Puerto Rico", url: "https://www.facebook.com/alianzaautismo" },
+      { name: "Byankah Sobá", url: "https://www.facebook.com/byankah.soba" },
     ],
   },
 ];

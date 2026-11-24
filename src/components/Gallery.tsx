@@ -16,9 +16,12 @@ export default function Gallery() {
   return (
     <section className="py-24 md:py-32 bg-[#080808]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-[10px] text-zinc-600 uppercase tracking-[0.4em] mb-16">
+        <div className="text-[10px] text-zinc-600 uppercase tracking-[0.4em] mb-6">
           From the Field
         </div>
+        <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-16">
+          These are our posts as we wrote them on Facebook in 2017.
+        </p>
 
         <div className="space-y-6">
           {galleryEntries.map((entry, i) => {
@@ -27,17 +30,8 @@ export default function Gallery() {
 
             return (
               <div key={i}>
-                {entry.phase && (
-                  <div className="flex items-center gap-4 py-8 first:pt-0">
-                    <div className="h-px flex-1 bg-amber-700/30" />
-                    <div className="text-[10px] text-amber-700/60 uppercase tracking-[0.3em] font-medium whitespace-nowrap">
-                      {entry.phase}
-                    </div>
-                    <div className="h-px flex-1 bg-amber-700/30" />
-                  </div>
-                )}
               <div className="border border-zinc-800/40 rounded-sm overflow-hidden">
-                {/* Header — always visible, clickable */}
+                {/* Header: always visible, clickable */}
                 <button
                   onClick={() => toggle(i)}
                   className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 hover:bg-zinc-900/50 transition-colors"
@@ -75,20 +69,17 @@ export default function Gallery() {
                 {/* Expandable content */}
                 {isOpen && (
                   <div className="px-6 pb-6">
-                    {/* Narrative */}
-                    <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-4">
-                      {entry.narrative}
-                    </p>
-
-                    {/* Original FB post as source */}
-                    <div className="max-w-2xl mb-6 pl-4 border-l border-zinc-800/60">
-                      <p className="text-zinc-600 text-xs leading-relaxed italic">
-                        &ldquo;{entry.caption}&rdquo;
+                    {/* Context, only where a post needs it */}
+                    {entry.note && (
+                      <p className="text-zinc-500 text-xs leading-relaxed max-w-2xl mb-2">
+                        {entry.note}
                       </p>
-                      <div className="text-[9px] text-zinc-700 uppercase tracking-[0.2em] mt-1">
-                        — Original Facebook post
-                      </div>
-                    </div>
+                    )}
+
+                    {/* The post as it was written in 2017 */}
+                    <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-6">
+                      {entry.caption}
+                    </p>
 
                     {/* Partner shoutouts */}
                     {entry.partners && entry.partners.length > 0 && (

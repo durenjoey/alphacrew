@@ -151,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* From the Field — Gallery */}
+      {/* The log */}
       <Gallery />
 
       {/* Press */}

@@ -148,12 +148,12 @@ export const howItMoved: MoveStep[] = [
     line: "We loaded the CREW trucks.",
   },
   {
-    // the frame cut from the phone screenshot in the November 6 post, without the phone's bars
+    // cut from the phone screenshot in the November 6 post: the truck and the ferry, without the phone's bars
     photo: {
-      src: "vieques-ferry-crossing-frame.jpg",
+      src: "vieques-ferry-crossing-wide.jpg",
       alt: "Loaded truck crossing by ferry to Vieques island",
       width: 1125,
-      height: 1544,
+      height: 844,
     },
     line: "We took the ferry to Vieques.",
   },

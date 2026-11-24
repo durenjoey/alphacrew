@@ -8,7 +8,7 @@ export default function HowItMoved() {
       id="how-it-moved"
       className="py-20 md:py-28 border-t border-zinc-800/60"
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-10">
           How it moved
         </h2>
@@ -29,7 +29,7 @@ export default function HowItMoved() {
                     alt={step.photo.alt}
                     width={step.photo.width}
                     height={step.photo.height}
-                    sizes="(max-width: 768px) 46vw, 320px"
+                    sizes="(max-width: 768px) 46vw, 288px"
                     quality={75}
                     className="block w-full h-auto"
                   />

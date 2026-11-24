@@ -25,10 +25,10 @@ export default function Home() {
       <main id="main">
         {/* The story */}
         <section className="py-20 md:py-28">
-          <div className="max-w-3xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto px-6">
             <h2 className={h2}>The story</h2>
 
-            <div className="space-y-6 text-zinc-300 leading-relaxed text-lg">
+            <div className="space-y-6 text-zinc-300 leading-relaxed text-lg max-w-2xl">
               <p>
                 Hurricane Maria hit Puerto Rico on September 20, 2017. The
                 island lost power and communications, roads washed out, and

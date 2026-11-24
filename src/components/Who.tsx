@@ -81,14 +81,14 @@ export default function Who() {
         id="press"
         className="py-20 md:py-28 border-t border-zinc-800/60"
       >
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className={h2}>Press and links</h2>
 
           <a
             href={press.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block group"
+            className="block group max-w-3xl"
           >
             <div className="border border-zinc-800/60 rounded-sm p-6 md:p-8 hover:border-zinc-600 transition-colors">
               <div className="text-xs text-zinc-400 uppercase tracking-[0.08em] mb-3">

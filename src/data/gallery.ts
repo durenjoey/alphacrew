@@ -149,8 +149,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "pallets-loaded-dusk.jpg",
         alt: "Supply pallets loaded at dusk: coolers, generators, military bags, paper towels, and luggage staged for shipment",
-        width: 2048,
-        height: 1536,
+        width: 1218,
+        height: 1534,
       },
     ],
   },
@@ -311,8 +311,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "333rd-crew-c130-tarmac.jpg",
         alt: "Alpha CREW volunteers and 333rd Recruiting Squadron airmen standing together under the tail of a C-130 on the tarmac",
-        width: 600,
-        height: 800,
+        width: 577,
+        height: 632,
       },
     ],
   },
@@ -497,7 +497,7 @@ export const galleryEntries: GalleryEntry[] = [
     photos: [
       {
         src: "vetsforpr-animal-emergency-hospital.jpg",
-        alt: "Team delivering pet food and supplies to the Animal Emergency Hospital in Puerto Rico",
+        alt: "Volunteer setting cleaning supplies on top of an animal crate, dogs nearby",
         width: 1600,
         height: 1200,
       },
@@ -515,19 +515,19 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "vetsforpr-animal-shelter-crates.jpg",
-        alt: "Volunteer carrying supplies past stacked animal crates at a shelter, dogs roaming",
+        alt: "Team unloading pet food from a pickup outside the Animal Emergency Hospital",
         width: 1600,
         height: 1200,
       },
       {
         src: "vetsforpr-cleaning-supplies-dogs.jpg",
-        alt: "Vet organizing Clorox and cleaning supplies on top of a crate, dogs nearby",
+        alt: "Team members with residents and dogs in a yard, a storm-damaged palm tree behind",
         width: 960,
         height: 1280,
       },
       {
         src: "vetsforpr-dogs-residents.jpg",
-        alt: "Vets for PR team with residents and dogs in a neighborhood, damaged palm trees overhead",
+        alt: "Veterinarians for Puerto Rico logo: paw print with Puerto Rican flag star",
         width: 1237,
         height: 1237,
       },
@@ -757,7 +757,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "humane-society-van-packed-crates.jpg",
-        alt: "Van packed wall-to-wall with dog crates marked HSPR, ready for the drive to LMM airport",
+        alt: "Aircraft N651CT on the tarmac at night with a loading ramp at its door",
         width: 1500,
         height: 1124,
       },
@@ -769,7 +769,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "humane-society-aircraft-loading.jpg",
-        alt: "Aircraft N651CT on the tarmac at night, crew loading cargo through the side door",
+        alt: "Van packed wall-to-wall with dog crates, ready for the drive to LMM airport",
         width: 1500,
         height: 1124,
       },
@@ -836,14 +836,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "shipment-labeled-diapers-containers.jpg",
         alt: "Labeled containers of diapers, baby wipes, and Pampers stacked on pallets with manifest tags visible",
-        width: 960,
-        height: 1280,
+        width: 1280,
+        height: 960,
       },
       {
         src: "shipment-water-pallets-manifested.jpg",
         alt: "Rows of shrink-wrapped water pallets with yellow manifest labels, staged for airlift",
-        width: 1536,
-        height: 2048,
+        width: 2048,
+        height: 1536,
       },
     ],
   },
@@ -967,7 +967,7 @@ export const galleryEntries: GalleryEntry[] = [
     photos: [
       {
         src: "bayamon-crew-truck-lmm-airport.jpg",
-        alt: "Alpha CREW truck loaded with medical supply boxes outside LMM Airport terminal, CREW logo visible on the tailgate",
+        alt: "Alpha CREW truck loaded with medical supply boxes outside LMM Airport terminal, CREW logo on the door",
         width: 1281,
         height: 960,
       },
@@ -1117,13 +1117,13 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "65k-forklift-warehouse.jpg",
-        alt: "Forklift moving red-wrapped pallets inside the warehouse, food and water pallets visible on the right",
+        alt: "Pallets loaded into a box truck on wet tarmac under cloudy skies, a crew member standing by",
         width: 1200,
         height: 1600,
       },
       {
         src: "65k-box-truck-loading-rain.jpg",
-        alt: "Forklift loading pallets into a box truck on wet tarmac under cloudy skies, crew member directing",
+        alt: "Forklift moving red-wrapped pallets inside the warehouse, food and water pallets on the right",
         width: 1600,
         height: 1200,
       },
@@ -1260,13 +1260,13 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "sanjuan-pr-flag-water-bottles.jpg",
-        alt: "Puerto Rico flag waving above cases of Poland Spring water bottles on a vehicle roof rack, palm trees and blue sky behind",
+        alt: "Two crew members in Alpha CREW t-shirts taking a selfie in the car",
         width: 1600,
         height: 1202,
       },
       {
         src: "sanjuan-crewmates-selfie-car.jpg",
-        alt: "Two crew members in Alpha CREW t-shirts taking a selfie in the car, supplies visible in the backseat",
+        alt: "Puerto Rico flag waving above cases of water bottles on a vehicle roof rack, palm trees and blue sky behind",
         width: 1200,
         height: 1600,
       },

@@ -1382,18 +1382,6 @@ export const galleryEntries: GalleryEntry[] = [
         height: 960,
       },
       {
-        src: "vieques-ferry-terminal-crew-selfie.jpg",
-        alt: "Three crew members in CREW shirts taking a selfie at the ferry terminal, Vieques ferry visible in the background",
-        width: 1600,
-        height: 1202,
-      },
-      {
-        src: "vieques-ferry-cabin-crew-selfie.jpg",
-        alt: "Five crew members and a local volunteer selfie inside the ferry cabin on the crossing to Vieques",
-        width: 960,
-        height: 720,
-      },
-      {
         src: "vieques-ferry-crossing.jpg",
         alt: "Loaded truck crossing by ferry to Vieques island",
         width: 1125,

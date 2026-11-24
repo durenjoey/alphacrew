@@ -1648,7 +1648,6 @@ export const galleryEntries: GalleryEntry[] = [
     ],
     partners: [
       { name: "Alianza de Autismo de Puerto Rico", url: "https://www.facebook.com/alianzaautismo" },
-      { name: "Byankah Sobá", url: "https://www.facebook.com/byankah.soba" },
     ],
   },
 ];

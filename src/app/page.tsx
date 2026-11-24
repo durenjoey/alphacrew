@@ -3,9 +3,11 @@ import HeroCollage from "@/components/HeroCollage";
 import HowItMoved from "@/components/HowItMoved";
 import Missions from "@/components/Missions";
 import PhotoViewer from "@/components/PhotoViewer";
+import Who from "@/components/Who";
 
 const h2 =
   "text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-8";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-300">
@@ -58,34 +60,8 @@ export default function Home() {
         {/* How it moved */}
         <HowItMoved />
 
-        {/* Press */}
-        <section className="py-20 md:py-28 border-t border-zinc-800/60">
-          <div className="max-w-3xl mx-auto px-6">
-            <h2 className={h2}>Press</h2>
-
-            <a
-              href="https://www.afrc.af.mil/News/Article-Display/Article/1354296/reserve-citizen-airman-aids-hurricane-maria-victims-in-puerto-rico/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <div className="border border-zinc-800/60 rounded-sm p-6 md:p-8 hover:border-zinc-600 transition-colors">
-                <div className="text-xs text-zinc-400 uppercase tracking-[0.08em] mb-3">
-                  Air Force Reserve Command, October 25, 2017
-                </div>
-                <div className="text-amber-300 text-lg font-semibold group-hover:underline underline-offset-4 mb-2">
-                  Reserve Citizen Airman aids Hurricane Maria victims in Puerto
-                  Rico
-                </div>
-                <div className="text-zinc-300 text-base leading-relaxed">
-                  The article follows Master Sgt. Gerardo Ramos, who escorted
-                  our shipment to San Juan on a National Guard C-130 out of
-                  Savannah, Georgia.
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
+        {/* Who and receipts */}
+        <Who />
 
         {/* The log */}
         <Gallery />
@@ -111,8 +87,7 @@ export default function Home() {
           </div>
 
           <p className="text-zinc-300 text-base leading-relaxed max-w-lg mx-auto mb-4">
-            Joey Duren founded Alpha CREW in 2017 and led it. His father ran
-            shipping.
+            Joey Duren founded Alpha CREW and led it. His father ran shipping.
           </p>
 
           <p>

@@ -2,11 +2,12 @@ import Image from "next/image";
 
 const HERO_PHOTOS = [
   {
-    src: "/assets/photos/vieques-ferry-crossing.jpg",
+    // the frame cut from the phone screenshot, without the phone's bars
+    src: "/assets/photos/vieques-ferry-crossing-frame.jpg",
     alt: "Alpha CREW truck loaded with pallets on the Vieques ferry",
     tx: "-8vw",
     ty: "-6vh",
-    objectPosition: "center 40%",
+    objectPosition: "center 22%",
     hideMobile: false,
   },
   {
@@ -102,7 +103,7 @@ export default function HeroCollage() {
               fill
               sizes="(max-width: 768px) 50vw, 33vw"
               quality={75}
-              priority
+              priority={i < 2}
               className="object-cover"
               style={{ objectPosition: photo.objectPosition }}
             />
@@ -131,14 +132,6 @@ export default function HeroCollage() {
         }}
       />
 
-      {/* Grain texture */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-        }}
-      />
-
       {/* Text content */}
       <div className="relative min-h-screen flex items-center justify-center">
         <div className="text-center px-6 max-w-4xl mx-auto">
@@ -153,7 +146,6 @@ export default function HeroCollage() {
           </div>
 
           <div className="max-w-xl mx-auto">
-            <div className="w-12 h-px bg-amber-700/60 mx-auto mb-8" />
             <p className="text-lg md:text-xl text-zinc-100 leading-relaxed font-light drop-shadow-lg">
               After Hurricane Maria we moved 200,000+ lbs of water, food,
               medicine and generators from Florida to Puerto Rico by truck,
@@ -163,11 +155,6 @@ export default function HeroCollage() {
               Joey Duren founded Alpha CREW and led it.
             </p>
           </div>
-        </div>
-
-        {/* Scroll hint */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
-          <div className="w-px h-16 bg-gradient-to-b from-transparent to-zinc-600 mx-auto" />
         </div>
       </div>
     </section>

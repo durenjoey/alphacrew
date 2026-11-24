@@ -11,10 +11,20 @@ export interface PartnerLink {
   url: string;
 }
 
+// The six missions told at the top of the page. A post tagged with one belongs to that mission.
+export type MissionId =
+  | "vieques-generators"
+  | "shipment-65k"
+  | "hospitals"
+  | "mountains"
+  | "door-to-door"
+  | "animals";
+
 // One post from the Alpha CREW Facebook page in 2017. The caption is the post as it was written. Do not reword it.
 export interface GalleryEntry {
   date: string;
   title: string;
+  mission?: MissionId;
   // one plain sentence of context, only where a post needs it
   note?: string;
   caption: string;
@@ -192,6 +202,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "September 29, 2017",
     title: "We loaded generators for the hospital in Vieques",
+    mission: "vieques-generators",
     caption:
       "We are loading some generators to send to a busy hospital in Vieques, PR. The director of health and human services for the island spoke with us and said that they are in need of generators to keep their hospital operations running and we agreed to help. In order to get these generators to Vieques, our crew will have to fly 1,100 miles to Puerto Rico, travel 55 miles by truck to Fajardo and then go another 20 miles by boat to Vieques. There is very limited access to the island, but we have coordinated with the mayor to ensure safe passage.",
     photos: [
@@ -219,6 +230,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "September 29, 2017",
     title: "The generators were about to fly out",
+    mission: "vieques-generators",
     caption:
       "Our supplies are being transported and loaded onto the planes soon. We will have a major shipment flying out with generators that will help power the hospital in Vieques. Let's continue to make a difference together!",
     photos: [],
@@ -267,6 +279,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 1, 2017",
     title: "Our team reached Puerto Rico",
+    mission: "vieques-generators",
     caption:
       "Our team made it to Puerto Rico yesterday with supplies, manpower, and generators to replace the failing generators at the hospital in Vieques. We have also distributed many of our supplies from our first shipment to those who need them the most. These pictures were taken before the shipment was sent. We will not be able to continue our mission without your donations.",
     photos: [
@@ -333,6 +346,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 2, 2017",
     title: "The animals of Puerto Rico needed help",
+    mission: "animals",
     caption:
       "Many animals in the homes, streets, and beaches of Puerto Rico were killed by the wrath of Hurricane Maria. The animals that survived have lost their homes and owners and are now struggling to find them, as well as food. Our partners at Veterinarians for Puerto Rico are working to make a difference in this sphere and also need our help.",
     photos: [
@@ -361,6 +375,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 3, 2017",
     title: "Our crew reached Vieques",
+    mission: "vieques-generators",
     caption:
       "Our Crew has made it to Vieques this morning! Once the team returns to an area with internet connectivity, we will update with more pictures. Your support and your donations have made these missions a possibility. Thank you so much!",
     photos: [],
@@ -368,6 +383,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 4, 2017",
     title: "Little word from the team in Vieques",
+    mission: "vieques-generators",
     caption:
       "We have barely heard from our team since their arrival to Vieques but we know that they are safe and working hard to continue providing support. We will continue updating as more information flows.",
     photos: [],
@@ -375,6 +391,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 5, 2017",
     title: "We delivered the generators and handed out supplies in Vieques",
+    mission: "vieques-generators",
     caption:
       "Yesterday we handed out supplies in the Vieques Plaza and in the Esperanza Park. The generators have been handed to the hospital and other government buildings. When the C.R.E.W. gets some internet connectivity, we will begin posting pictures of the effort.",
     photos: [],
@@ -382,6 +399,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 5, 2017",
     title: "Handing out donations in Vieques",
+    mission: "vieques-generators",
     caption:
       "Our friends in Vieques, Puerto Rico are finally getting the help they need! In these pictures, we are handing out donations that were brought in by the First Lady and another great group of people called Activados por Puerto Rico. Your help, volunteerism, and donations, no matter how small or large, have made a HUGE impact this week.",
     photos: [
@@ -402,6 +420,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 6, 2017",
     title: "80 families got supplies in the Vieques town square",
+    mission: "vieques-generators",
     caption:
       "For World Smile Day Alpha CREW wants to bring smiles to those who have donated to our cause. Your donations and your support supplied 80 families with water, food, flashlights, and other hygiene products in the town square of Vieques, Puerto Rico. Let's continue making a difference!",
     photos: [
@@ -434,6 +453,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 6, 2017",
     title: "More than 500 families in Vieques had food, water and supplies",
+    mission: "vieques-generators",
     caption:
       "This is the incredible C.R.E.W. that is currently making a great difference in Vieques, Puerto Rico. Because of this group, there are over 500 families in Vieques with food, water, and supplies for their everyday needs. The hospital and VER clinic (center for dialysis) have the power to take care of their patients. Also, we provided generators to government buildings to continue to assist their citizens.",
     photos: [
@@ -454,6 +474,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 7, 2017",
     title: "What we did in Vieques",
+    mission: "vieques-generators",
     caption:
       "Alpha Crew established its footprint in Vieques. We coordinated with the local government, distributed our donations, shared our satellite phones with the residents for them to communicate with family members, provided generators and power inverters to hospitals, clinics and residents, collaborated with other entities to help them distribute their donations throughout the island.",
     photos: [
@@ -492,6 +513,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 7, 2017",
     title: "We moved donations for Veterinarians for Puerto Rico",
+    mission: "animals",
     caption:
       "Alpha Crew collaborated with our friends of Veterinarians for Puerto Rico to get their donations to PR. Alpha Crew provided the logistics, coordination, and transport to the island, and Veterinarians for Puerto Rico provided the donations and delivered them to different parts of the island (San Juan, Culebra, Loiza, and Rio Grande).",
     photos: [
@@ -598,6 +620,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 10, 2017",
     title: "We helped the Humane Society load aircraft for Vieques",
+    mission: "animals",
     caption:
       "At the Isla Grande Airport in San Juan, our other C.R.E.W.mates, helped the Humane Society moving and loading their Aircraft with provisions that are going to Vieques.",
     photos: [
@@ -653,6 +676,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 12, 2017",
     title: "We helped the Humane Society move supplies to Guaynabo",
+    mission: "animals",
     caption:
       "We have continued our aid to the Humane Society today as they transported food and supplies from the Isla Grande Airport to Guaynabo.",
     photos: [
@@ -714,6 +738,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 15, 2017",
     title: "We scouted Utuado",
+    mission: "mountains",
     caption:
       "Visited Utuado to scout communities in need of help and to determine the best ways to access and deliver supplies. In one of these areas, people have had to cross a river to gain access to supplies because of the collapse of their access bridge.",
     photos: [
@@ -746,6 +771,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 16, 2017",
     title: "We helped the Humane Society send dogs to New York",
+    mission: "animals",
     caption:
       "This weekend we spent some time helping the Humane Society of PR in Isla Grande Airport in San Juan. With them, we brought dogs to the LMM airport that are going to be sent to NY with the Guardians of Rescue. Our furry friends in Puerto Rico are also in need of help.",
     photos: [
@@ -778,6 +804,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 16, 2017",
     title: "Jorgito kept the vaccines cold in his refrigerator",
+    mission: "animals",
     caption:
       "One of our CREWmates (Jorgito) in PR has been keeping HSPR vaccines cold in his personal refrigerator due to the limitations of Guardians of Rescue's power generator.",
     photos: [
@@ -792,6 +819,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 16, 2017",
     title: "In Aguas Buenas we found seniors eating once a day",
+    mission: "door-to-door",
     caption:
       "After visiting the Health Fair (Feria de Salud) in Aguas Buenas, we found senior citizens that have only been eating once a day due to supply limitations. We also left water purifiers in communities where there is an excess of debris, mosquitoes, infectious diseases, and patients with compromised health. We have the information of the people in these communities and we are going to follow up. Areas visited: Sector Minillas, Bo Mula, Bo. Sumideros, Sector Corujas, and Sector la Jacana.",
     photos: [
@@ -850,6 +878,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 17, 2017",
     title: "The Guaynabo shelter flooded and the animals were moved",
+    mission: "animals",
     caption:
       "The Humane Society in Guaynabo was flooded yesterday. After hearing the news, Jorgito, one of our crewmates, sprung into action. Luckily, everyone made it out of there safely and the animals were relocated.",
     photos: [
@@ -962,6 +991,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 20, 2017",
     title: "We delivered medical supplies to the children's hospital in Bayamón",
+    mission: "hospitals",
     caption:
       "Today, Alpha C.R.E.W picked up at LMM Airport in San Juan emergency medical supplies sent by Partners for World Health and delivered to the Pediatric Children's Hospital in Bayamón, PR.",
     photos: [
@@ -997,6 +1027,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 21, 2017",
     title: "We checked on Ms. Carmen Rivera in St. Just",
+    mission: "door-to-door",
     caption:
       "Today the Rivera Family asked Alpha CREW to check on Ms. Carmen Rivera in St. Just, PR. The Rivera Family is in New Jersey and haven't heard from her since before Hurricane Maria, and were extremely worried about her well being. One of our C.R.E.W. mates paid her a visit, and found her well, under the circumstances. She was able to talk to her family through his cellphone. One happy story for today!",
     photos: [
@@ -1018,6 +1049,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 24, 2017",
     title: "We helped farmers in Utuado with Climbing Puerto Rico",
+    mission: "mountains",
     caption:
       "Together with Climbing Puerto Rico, Alpha CREW went to Utuado, PR to assist the area farmers prepping the farms. In addition, assisted a family to clear their driveway of debris, as they were unable to access their home since Hurricane Maria. A special thanks to Ismael \"Tico\" Marques for the Jeep ride and Bryan from Climbing Puerto Rico for the invitation.",
     photos: [
@@ -1044,6 +1076,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 24, 2017",
     title: "We handed out hot meals in San Juan with Voces and two foundations",
+    mission: "door-to-door",
     caption:
       "Today, Alpha CREW collaborated with Voces, Fundación Topy Mamery, and Fundación El Plato Caliente distributing hot meals to families and children at Parcelas Falu and Barrio Campollanos in San Juan PR. We are very grateful for the invitation.",
     photos: [
@@ -1088,6 +1121,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 25, 2017",
     title: "We sent 65,000 lbs in two days",
+    mission: "shipment-65k",
     caption:
       "In the last two days, Alpha CREW in Florida sent out approximately 65,000 lbs (15,000 lbs Tuesday and 50,000 lbs Wednesday) of life sustaining supplies to GA, to then be airlifted to PR.",
     photos: [
@@ -1132,6 +1166,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 26, 2017",
     title: "We brought hot meals to people who could not leave home",
+    mission: "door-to-door",
     caption:
       "Yesterday, the mobile crew of Alpha CREW went to bring hot meals to people who did not have the means, health, or are bedridden. Thank you c.r.e.w.mates!",
     photos: [
@@ -1164,6 +1199,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "October 26, 2017",
     title: "We delivered food and supplies to eight barrios in Utuado and Jayuya",
+    mission: "mountains",
     caption:
       "Today the C.R.E.W.mates of Alpha CREW collaborated once again with Voces, Fundación Topy Mamery, UNICEF, Lote 23, Grupo de Amigos de Margarita Santos - Volunteers Ad Hoc, and Foundation for Puerto Rico to deliver sandwiches, rice, baby and hygiene supplies to the residents of Utuado and Jayuya at Barrios Tetuan 1 & 2, Don Alonzo, Limon, Caonillas, Caonillas Abajo, Mameyes Arriba, and Mameyes Abajo. We also delivered some treats for the kids.... yum yum! We feel blessed every day we are able to help the community. Thank you again for the invite!",
     photos: [
@@ -1311,6 +1347,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "November 6, 2017",
     title: "We delivered medical supplies to the Vieques hospital",
+    mission: "hospitals",
     caption:
       "Alpha CREW has made history once again! We have successfully airlifted, transported and delivered very important life saving life supporting supplies donated by Partners for World Health to the Vieques Hospital in Puerto Rico. This has been an odyssey, but extremely rewarding! Thank you C.R.E.W. mates!!",
     photos: [
@@ -1512,6 +1549,7 @@ export const galleryEntries: GalleryEntry[] = [
   {
     date: "November 10, 2017",
     title: "We delivered hot meals with Fundación El Plato Caliente",
+    mission: "door-to-door",
     caption:
       "Today, Alpha CREW C.R.E.W. mates collaborated with Fundación El Plato Caliente delivering hot meals to the community.",
     photos: [

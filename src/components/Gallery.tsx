@@ -1,25 +1,6 @@
 import Photos from "@/components/Photos";
 import { galleryEntries, type GalleryEntry } from "@/data/gallery";
-
-const MONTHS = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
-];
-
-// "October 25, 2017" becomes "2017-10-25", which is the anchor for that day
-function isoDay(date: string): string {
-  const [month, day, year] = date.replace(",", "").split(" ");
-  const m = String(MONTHS.indexOf(month) + 1).padStart(2, "0");
-  return `${year}-${m}-${day.padStart(2, "0")}`;
-}
-
-const utc = (iso: string) => new Date(`${iso}T00:00:00Z`);
-const longDay = new Intl.DateTimeFormat("en-US", {
-  weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
-});
-const shortDay = new Intl.DateTimeFormat("en-US", {
-  month: "short", day: "numeric", timeZone: "UTC",
-});
+import { isoDay, longDay, shortDay, utc } from "@/data/days";
 
 // the posts are already in date order, so each new date starts a new day
 const days: { iso: string; posts: GalleryEntry[] }[] = [];

@@ -1,89 +1,11 @@
 import Gallery from "@/components/Gallery";
 import HeroCollage from "@/components/HeroCollage";
+import HowItMoved from "@/components/HowItMoved";
+import Missions from "@/components/Missions";
 import PhotoViewer from "@/components/PhotoViewer";
 
 const h2 =
   "text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-8";
-const h3 =
-  "text-sm font-semibold uppercase tracking-[0.08em] text-zinc-400 mb-4";
-
-const stateside = [
-  {
-    step: "01",
-    title: "Collection",
-    detail:
-      "Military bases, churches, and civilian communities across Florida donate supplies",
-  },
-  {
-    step: "02",
-    title: "Processing",
-    detail:
-      "Volunteers sort, label, manifest, and palletize every item in the warehouse",
-  },
-  {
-    step: "03",
-    title: "Ground Transport",
-    detail:
-      "Semi trucks move palletized cargo from Florida to Savannah, Georgia",
-  },
-  {
-    step: "04",
-    title: "Military Airlift",
-    detail:
-      "National Guard C-130 aircraft fly supplies from Savannah to San Juan",
-  },
-];
-
-const island = [
-  {
-    step: "05",
-    title: "Airport Pickup",
-    detail:
-      "Crew receives cargo at LMM Airport in San Juan and loads CREW trucks",
-  },
-  {
-    step: "06",
-    title: "Island Transport",
-    detail:
-      "Trucks and ferries move supplies to hospitals, shelters, and outer islands like Vieques",
-  },
-  {
-    step: "07",
-    title: "Community Distribution",
-    detail:
-      "Convoys drive into barrios, mountain towns, and neighborhoods to hand-deliver supplies",
-  },
-  {
-    step: "08",
-    title: "Direct Care",
-    detail:
-      "Welfare checks, hot meals to homebound residents, medical outreach, and animal rescue",
-  },
-];
-
-function Steps({ items }: { items: typeof stateside }) {
-  return (
-    <ol>
-      {items.map((item) => (
-        <li
-          key={item.step}
-          className="flex gap-6 py-5 border-b border-zinc-800/60 last:border-0"
-        >
-          <div className="text-zinc-400 font-mono text-sm font-bold w-8 flex-shrink-0 pt-0.5">
-            {item.step}
-          </div>
-          <div>
-            <div className="text-zinc-100 font-semibold mb-1">{item.title}</div>
-            <div className="text-zinc-300 text-base leading-relaxed">
-              {item.detail}
-            </div>
-          </div>
-        </li>
-      ))}
-    </ol>
-  );
-}
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-300">
@@ -130,25 +52,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* The operation */}
-        <section className="py-20 md:py-28 border-t border-zinc-800/60">
-          <div className="max-w-5xl mx-auto px-6">
-            <h2 className={h2}>The operation</h2>
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-              <div>
-                <h3 className={h3}>Stateside, Florida to Puerto Rico</h3>
-                <Steps items={stateside} />
-              </div>
-              <div>
-                <h3 className={h3}>On the ground in Puerto Rico</h3>
-                <Steps items={island} />
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Six missions */}
+        <Missions />
+
+        {/* How it moved */}
+        <HowItMoved />
 
         {/* Press */}
-        <section className="py-20 md:py-28">
+        <section className="py-20 md:py-28 border-t border-zinc-800/60">
           <div className="max-w-3xl mx-auto px-6">
             <h2 className={h2}>Press</h2>
 

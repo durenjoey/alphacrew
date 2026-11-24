@@ -962,7 +962,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 19, 2017",
-    title: "Visitors from ABBA La Casa De Mi Padre on the flight line",
+    title: "Pastor Evelyn Martinez and her family from ABBA La Casa De Mi Padre with our founder",
     caption:
       "Pastor Evelyn Martinez, husband Luis A. Martinez, and niece Glorianne Ruiz from ABBA - La Casa De Mi Padre in Tampa with our founder, Joseph Duren.",
     photos: [
@@ -1033,7 +1033,7 @@ export const galleryEntries: GalleryEntry[] = [
     photos: [
       {
         src: "carmen-rivera-welfare-check.jpg",
-        alt: "Crew member selfie with Ms. Carmen Rivera on her porch in St. Just, a tarp overhead covering storm damage, both smiling",
+        alt: "Crew member selfie with Ms. Carmen Rivera on her porch in St. Just, a torn awning overhead, both smiling",
         width: 972,
         height: 1296,
       },
@@ -1151,7 +1151,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "65k-forklift-warehouse.jpg",
-        alt: "Pallets loaded into a box truck on wet tarmac under cloudy skies, a crew member standing by",
+        alt: "Trailer loaded with red-wrapped pallets on wet tarmac under cloudy skies, a forklift in front and a crew member standing by",
         width: 1200,
         height: 1600,
       },
@@ -1165,7 +1165,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 26, 2017",
-    title: "We brought hot meals to people who could not leave home",
+    title: "Our mobile crew brought hot meals to people who were bedridden or without means",
     mission: "door-to-door",
     caption:
       "Yesterday, the mobile crew of Alpha CREW went to bring hot meals to people who did not have the means, health, or are bedridden. Thank you c.r.e.w.mates!",
@@ -1198,7 +1198,7 @@ export const galleryEntries: GalleryEntry[] = [
   },
   {
     date: "October 26, 2017",
-    title: "We delivered food and supplies to eight barrios in Utuado and Jayuya",
+    title: "We delivered food and supplies to barrios in Utuado and Jayuya",
     mission: "mountains",
     caption:
       "Today the C.R.E.W.mates of Alpha CREW collaborated once again with Voces, Fundación Topy Mamery, UNICEF, Lote 23, Grupo de Amigos de Margarita Santos - Volunteers Ad Hoc, and Foundation for Puerto Rico to deliver sandwiches, rice, baby and hygiene supplies to the residents of Utuado and Jayuya at Barrios Tetuan 1 & 2, Don Alonzo, Limon, Caonillas, Caonillas Abajo, Mameyes Arriba, and Mameyes Abajo. We also delivered some treats for the kids.... yum yum! We feel blessed every day we are able to help the community. Thank you again for the invite!",
@@ -1371,7 +1371,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "vieques-c130-in-flight.jpg",
-        alt: "C-130 aircraft in flight against a cloudy sky, carrying medical supplies to Puerto Rico",
+        alt: "C-130 aircraft in flight against a cloudy sky",
         width: 960,
         height: 718,
       },
@@ -1401,7 +1401,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "vieques-trucks-loaded-staging.jpg",
-        alt: "Flatbed trucks loaded with supplies in Vieques",
+        alt: "Two flatbed trucks loaded with wrapped pallets in a dirt lot beside a canopy, an SUV parked alongside",
         width: 960,
         height: 720,
       },
@@ -1573,7 +1573,7 @@ export const galleryEntries: GalleryEntry[] = [
       },
       {
         src: "platocaliente-trunk-elderly-women.jpg",
-        alt: "Volunteer distributing meals from a car trunk to two elderly women in a parking lot, colorful buildings behind",
+        alt: "Volunteer handing a meal from a car trunk to two women in a parking lot, colorful buildings behind",
         width: 1200,
         height: 1600,
       },

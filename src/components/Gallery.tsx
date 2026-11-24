@@ -2,11 +2,14 @@ import Photos from "@/components/Photos";
 import { galleryEntries, type GalleryEntry } from "@/data/gallery";
 import { isoDay, longDay, shortDay, utc } from "@/data/days";
 
-// the posts are already in date order, so each new date starts a new day
+// The posts are kept in date order, so each new date starts a new day. A post out of order stops the build.
 const days: { iso: string; posts: GalleryEntry[] }[] = [];
 for (const entry of galleryEntries) {
   const iso = isoDay(entry.date);
   const last = days[days.length - 1];
+  if (last && iso < last.iso) {
+    throw new Error(`"${entry.title}" (${entry.date}) is out of date order`);
+  }
   if (last && last.iso === iso) last.posts.push(entry);
   else days.push({ iso, posts: [entry] });
 }
@@ -35,12 +38,12 @@ export default function Gallery() {
           The log
         </h2>
         <p className="text-zinc-300 text-base leading-relaxed max-w-2xl mb-6">
-          These are our posts as we wrote them on Facebook in 2017.
+          These are the posts as they were written on Facebook in 2017.
         </p>
 
         <nav aria-label="Weeks in the log" className="mb-12">
           <div className="text-sm text-zinc-400 mb-3">Jump to the week of</div>
-          <ul className="flex flex-wrap gap-2">
+          <ul role="list" className="flex flex-wrap gap-2">
             {weeks.filter(Boolean).map((week) => (
               <li key={week.iso}>
                 <a

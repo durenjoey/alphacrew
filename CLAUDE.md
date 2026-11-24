@@ -5,9 +5,10 @@ alphacrew.org is the public record of Alpha CREW's relief work after Hurricane M
 ## Commands
 
 - `npm run dev` starts the dev server.
-- `npm run build` and `npm start` build and serve production.
+- `npm run build` and `npm start` build and serve production. The build fetches the Inter font from Google, so it needs a network connection.
 - `npm run lint` runs ESLint.
 - `npm run check` measures the running site against SITE-REVIEW.md. It needs `npm start` running.
+- `npm run check:viewer` opens the photo viewer on a phone-sized and a desktop-sized screen and measures the photo rows. It needs `npm start` running.
 
 ## Stack
 
@@ -15,12 +16,22 @@ Next.js 15 with the App Router, React 19, Tailwind CSS 4 (theme in `src/app/glob
 
 ## Files
 
-- `src/app/layout.tsx`: metadata and the page shell.
-- `src/app/page.tsx`: the page.
+- `src/app/layout.tsx`: metadata, link preview tags, the font and the page shell.
+- `src/app/page.tsx`: the page. It holds the story, the closing line, the footer and the order of the sections.
+- `src/app/robots.ts`, `src/app/sitemap.ts`, `src/app/favicon.ico`, `src/app/apple-icon.png`: what crawlers and browsers ask for.
 - `src/components/HeroCollage.tsx`: the hero.
+- `src/components/Missions.tsx`, `HowItMoved.tsx`, `Who.tsx`: the sections between the story and the log.
 - `src/components/Gallery.tsx`: the log.
+- `src/components/Photos.tsx`: a row of photos at their own shapes.
+- `src/components/PhotoViewer.tsx`: the full-size photo viewer. It is the only client code.
 - `src/data/gallery.ts`: the 2017 posts and their photos.
+- `src/data/missions.ts`: the six missions and the six "How it moved" photos.
+- `src/data/receipts.ts`: the founder line, the partners, the people and the press links.
+- `src/data/days.ts`, `src/data/site.ts`: date helpers and the site address.
 - `public/assets/photos`: the photos.
+- `public/og.jpg`: the photo a shared link shows.
+- `scripts/check-site.mjs`: the site check run by `npm run check`.
+- `scripts/check-viewer.mjs`: the photo row and photo viewer check run by `npm run check:viewer`.
 
 ## Facts
 

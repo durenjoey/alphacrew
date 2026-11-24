@@ -1,11 +1,11 @@
 import { galleryEntries } from "@/data/gallery";
 import { founder, links, partners, people, press } from "@/data/receipts";
 
-// A person is listed only if a post names them, spelled the same way.
+// An organization or a person is listed only if a post names them.
 const posts = galleryEntries.map((entry) => entry.caption).join("\n");
-for (const person of people) {
-  if (!posts.includes(person)) {
-    throw new Error(`${person} is not named in a post`);
+for (const named of [...partners.map((p) => p.posted ?? p.name), ...people]) {
+  if (!posts.includes(named)) {
+    throw new Error(`${named} is not named in a post`);
   }
 }
 
@@ -39,11 +39,11 @@ export default function Who() {
             </a>
           </p>
 
-          <h3 className={h3}>Partners and supporters</h3>
+          <h3 className={h3}>Organizations</h3>
           <p className={lead}>
             The 2017 posts name these {partners.length} organizations.
           </p>
-          <ul className={list}>
+          <ul role="list" className={list}>
             {partners.map((partner) => (
               <li
                 key={partner.name}
@@ -67,7 +67,7 @@ export default function Who() {
 
           <h3 className={h3}>People</h3>
           <p className={lead}>The 2017 posts name these people.</p>
-          <ul className={list}>
+          <ul role="list" className={list}>
             {people.map((person) => (
               <li key={person} className="break-inside-avoid py-0.5">
                 {person}
@@ -103,7 +103,7 @@ export default function Who() {
             </div>
           </a>
 
-          <ul className="mt-6 space-y-1 text-base">
+          <ul role="list" className="mt-6 space-y-1 text-base">
             {links.map((item) => (
               <li key={item.url}>
                 <a

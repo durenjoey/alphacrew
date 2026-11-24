@@ -28,7 +28,7 @@ const HERO_PHOTOS = [
   },
   {
     src: "/assets/photos/vieques-truck-handout-alphacrew.jpg",
-    alt: "Line of residents receiving supplies from Alpha CREW truck in Vieques",
+    alt: "Residents gathered at the Alpha CREW truck in Vieques",
     tx: "-10vw",
     ty: "2vh",
     objectPosition: "center 30%",
@@ -68,7 +68,7 @@ const HERO_PHOTOS = [
   },
   {
     src: "/assets/photos/vieques-c130-in-flight.jpg",
-    alt: "C-130 cargo aircraft in flight over Puerto Rico",
+    alt: "C-130 cargo aircraft in flight",
     tx: "10vw",
     ty: "6vh",
     objectPosition: "center 45%",
@@ -135,7 +135,7 @@ export default function HeroCollage() {
       {/* Text content */}
       <div className="relative min-h-screen flex items-center justify-center">
         <div className="text-center px-6 max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-6 drop-shadow-2xl">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-zinc-100 tracking-tighter leading-[0.85] mb-6 drop-shadow-2xl">
             ALPHA
             <br />
             CREW
@@ -148,8 +148,7 @@ export default function HeroCollage() {
           <div className="max-w-xl mx-auto">
             <p className="text-lg md:text-xl text-zinc-100 leading-relaxed font-light drop-shadow-lg">
               After Hurricane Maria we moved 200,000+ lbs of water, food,
-              medicine and generators from Florida to Puerto Rico by truck,
-              C-130 and boat.
+              medicine and generators to Puerto Rico by truck, C-130 and boat.
             </p>
             <p className="text-base text-zinc-100 leading-relaxed font-light drop-shadow-lg mt-4">
               Joey Duren founded Alpha CREW and led it.

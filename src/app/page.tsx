@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-300">
       <a
         href="#main"
-        className="absolute left-4 top-4 z-50 -translate-y-[300%] focus:translate-y-0 rounded-sm bg-zinc-100 px-4 py-2 text-sm font-semibold text-zinc-900 transition-transform"
+        className="absolute left-4 top-4 z-50 -translate-y-[300%] focus:translate-y-0 rounded-sm border border-zinc-600 bg-zinc-900 px-4 py-2 text-sm font-semibold text-zinc-100 transition-transform"
       >
         Skip to the story
       </a>
@@ -30,25 +30,25 @@ export default function Home() {
 
             <div className="space-y-6 text-zinc-300 leading-relaxed text-lg max-w-2xl">
               <p>
-                Hurricane Maria hit Puerto Rico on September 20, 2017. The
-                island lost power and communications, roads washed out, and
-                supplies stopped moving.
+                Hurricane Maria hit Puerto Rico on September 20, 2017. Roads
+                were destroyed or flooded, and first responders could not reach
+                the remote parts of the island.
               </p>
 
               <p>
-                Five days later we laid our gear out on a table in Florida and
-                started collecting. Airmen at Patrick Air Force Base, churches,
+                Five days later we laid out the gear our crew would take to
+                Puerto Rico. Airmen at Patrick Air Force Base, churches,
                 businesses and families sent what they had. We labeled every
-                item, logged it on a manifest, trucked the loads to Savannah,
-                and flew them to San Juan on National Guard C-130s.
+                item, logged it on a manifest and trucked the loads to
+                Savannah, where National Guard C-130s flew them to San Juan.
               </p>
 
               <p>
                 On the island the crew took it the rest of the way: generators
-                to the hospital on Vieques by ferry, medical supplies to the
+                to the hospital on Vieques by boat, medical supplies to the
                 children&apos;s hospital in Bayam&oacute;n, food into the
                 mountains of Utuado and Jayuya, and hot meals to people who
-                could not leave home.
+                were bedridden or without means.
               </p>
             </div>
           </div>

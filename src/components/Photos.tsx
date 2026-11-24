@@ -4,7 +4,7 @@ import type { GalleryPhoto } from "@/data/gallery";
 
 // How wide a photo usually shows, so the browser asks for a copy of about the right size.
 const SIZES: Record<"one" | "two" | "many", string> = {
-  one: "(max-width: 768px) 92vw, 600px",
+  one: "(max-width: 768px) 92vw, 760px",
   two: "(max-width: 768px) 46vw, 420px",
   many: "(max-width: 768px) 46vw, 300px",
 };

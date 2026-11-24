@@ -3,7 +3,6 @@
 @theme {
   /* --font-inter is set on <html> by next/font in layout.tsx */
   --font-sans: var(--font-inter), system-ui, sans-serif;
-  --radius: 0.5rem;
 }
 
 @layer base {
@@ -64,6 +63,8 @@
   --row: 120px;
   display: flex;
   flex-wrap: wrap;
+  /* each photo keeps its own shape even when a small file cannot grow as tall as its neighbors */
+  align-items: flex-start;
   gap: 6px;
 }
 
@@ -148,6 +149,8 @@
   max-width: 100%;
   max-height: calc(100dvh - 11rem);
   border-radius: 2px;
+  /* shows as the photo's place while the file loads */
+  background-color: #18181b;
 }
 
 .photo-viewer-figure figcaption {
@@ -195,6 +198,11 @@
   top: 50%;
   right: 0.5rem;
   transform: translateY(-50%);
+}
+
+/* keep room for the scrollbar so the page does not shift sideways when the viewer opens */
+html {
+  scrollbar-gutter: stable;
 }
 
 html:has(dialog[open]) {

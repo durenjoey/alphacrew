@@ -19,7 +19,7 @@ export const missions: Mission[] = [
     id: "vieques-generators",
     title: "Generators for the Vieques hospital",
     when: "September 29 to October 7",
-    text: "The island's health director told us the hospital's generators were failing. We sent eight 4,000-watt generators 1,100 miles by air, 55 by truck and 20 by boat. The crew reached Vieques on October 3. Three days later the hospital and the dialysis clinic had power, and more than 500 families had food, water and supplies.",
+    text: "The island's director of health and human services told us the hospital needed generators to keep running. We sent eight 4,000-watt generators 1,100 miles by air, 55 by truck and 20 by boat. The crew reached Vieques on October 3. Three days later the hospital and the dialysis clinic had power, and more than 500 families had food, water and supplies.",
     photos: [
       "vieques-generators-hangar-staged.jpg",
       "tarmac-forklift-cargo-netted.jpg",
@@ -30,7 +30,7 @@ export const missions: Mission[] = [
   },
   {
     id: "shipment-65k",
-    title: "65,000 lbs in 48 hours",
+    title: "65,000 lbs in two days",
     when: "October 24 and 25",
     text: "We sent 15,000 lbs on Tuesday and 50,000 lbs on Wednesday from Florida to Georgia for the airlift to Puerto Rico. Every item was labeled and on a manifest.",
     photos: [
@@ -59,7 +59,7 @@ export const missions: Mission[] = [
     id: "mountains",
     title: "Into the mountains",
     when: "October 15 to 26",
-    text: "We scouted Utuado and found people crossing a river because their bridge had collapsed. We went back with Climbing Puerto Rico to help farmers and clear a family's driveway, and again with six other groups to bring food and baby supplies to eight barrios in Utuado and Jayuya.",
+    text: "We scouted Utuado and found people crossing a river because their bridge had collapsed. We went back with Climbing Puerto Rico to help farmers and clear a family's driveway, and again with six other groups to bring food and baby supplies to barrios in Utuado and Jayuya.",
     photos: [
       "utuado-collapsed-bridge.jpg",
       "utuado-surveying-bridge.jpg",
@@ -71,7 +71,7 @@ export const missions: Mission[] = [
     id: "door-to-door",
     title: "Door to door",
     when: "October 16 to November 10",
-    text: "In Aguas Buenas we found seniors eating once a day and left water purifiers. In St. Just we checked on Ms. Carmen Rivera for her family in New Jersey and handed her a phone. With Fundación El Plato Caliente and Voces we carried hot meals to people who could not leave home.",
+    text: "In Aguas Buenas we found seniors eating once a day and left water purifiers. In St. Just one of our crew checked on Ms. Carmen Rivera for her family in New Jersey, and she talked to them on his cellphone. With Voces, Fundación Topy Mamery and Fundación El Plato Caliente we handed out hot meals in San Juan, and our mobile crew took hot meals to people who were bedridden or without means.",
     photos: [
       "aguas-buenas-porch-checkup.jpg",
       "carmen-rivera-welfare-check.jpg",
@@ -84,7 +84,7 @@ export const missions: Mission[] = [
     id: "animals",
     title: "The animals",
     when: "October 2 to 17",
-    text: "We moved supplies for Veterinarians for Puerto Rico and the Humane Society, helped get dogs on a flight to New York with Guardians of Rescue, kept vaccines cold in a crew member's refrigerator, and helped move the animals out when the Guaynabo shelter flooded.",
+    text: "We moved supplies for Veterinarians for Puerto Rico and the Humane Society, brought dogs to the airport for a flight to New York with Guardians of Rescue, and kept vaccines cold in a crew member's refrigerator. When the Guaynabo shelter flooded, our crewmate Jorgito responded and the animals were relocated.",
     photos: [
       "humane-society-dogs-carriers.jpg",
       "humane-society-aircraft-loading.jpg",
@@ -159,6 +159,6 @@ export const howItMoved: MoveStep[] = [
   },
   {
     photo: photoNamed("vieques-truck-handout-alphacrew.jpg"),
-    line: "We handed it out from the truck.",
+    line: "We handed out supplies from the truck.",
   },
 ];

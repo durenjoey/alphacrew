@@ -12,7 +12,7 @@ const inter = Inter({
 
 const title = "Alpha CREW | Hurricane Maria relief, 2017";
 const description =
-  "Alpha CREW moved 200,000+ lbs of water, food, medicine and generators to Puerto Rico after Hurricane Maria. The posts and photos from 2017.";
+  "Alpha CREW moved 200,000+ lbs of water, food, medicine and generators to Puerto Rico after Hurricane Maria. These are the posts and photos from 2017.";
 
 // The photo a shared link shows: public/og.jpg, cut from vieques-plaza-handout-closeup.jpg.
 const preview = {

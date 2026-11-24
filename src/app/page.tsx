@@ -146,9 +146,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* The log */}
-        <Gallery />
-
         {/* Press */}
         <section className="py-20 md:py-28">
           <div className="max-w-3xl mx-auto px-6">
@@ -177,6 +174,9 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        {/* The log */}
+        <Gallery />
 
         {/* Closing */}
         <section className="py-20 md:py-28 border-t border-zinc-800/60">

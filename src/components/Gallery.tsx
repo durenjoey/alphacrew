@@ -1,147 +1,165 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
-import { galleryEntries } from "@/data/gallery";
+import { galleryEntries, type GalleryEntry } from "@/data/gallery";
+
+const MONTHS = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+// "October 25, 2017" becomes "2017-10-25", which is the anchor for that day
+function isoDay(date: string): string {
+  const [month, day, year] = date.replace(",", "").split(" ");
+  const m = String(MONTHS.indexOf(month) + 1).padStart(2, "0");
+  return `${year}-${m}-${day.padStart(2, "0")}`;
+}
+
+const utc = (iso: string) => new Date(`${iso}T00:00:00Z`);
+const longDay = new Intl.DateTimeFormat("en-US", {
+  weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
+});
+const shortDay = new Intl.DateTimeFormat("en-US", {
+  month: "short", day: "numeric", timeZone: "UTC",
+});
+
+// the posts are already in date order, so each new date starts a new day
+const days: { iso: string; posts: GalleryEntry[] }[] = [];
+for (const entry of galleryEntries) {
+  const iso = isoDay(entry.date);
+  const last = days[days.length - 1];
+  if (last && last.iso === iso) last.posts.push(entry);
+  else days.push({ iso, posts: [entry] });
+}
+
+// one link per week, pointing at the first day in that week that has a post
+const weeks: { iso: string; label: string }[] = [];
+if (days.length) {
+  const first = utc(days[0].iso).getTime();
+  const WEEK = 7 * 24 * 60 * 60 * 1000;
+  for (const day of days) {
+    const index = Math.floor((utc(day.iso).getTime() - first) / WEEK);
+    if (!weeks[index]) {
+      weeks[index] = {
+        iso: day.iso,
+        label: shortDay.format(new Date(first + index * WEEK)),
+      };
+    }
+  }
+}
 
 export default function Gallery() {
-  const [expanded, setExpanded] = useState<Record<number, boolean>>({
-    // Most recent entry open by default
-    [galleryEntries.length - 1]: true,
-  });
-
-  const toggle = (i: number) =>
-    setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
-
   return (
-    <section className="py-20 md:py-28 bg-[#080808]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="log" className="py-20 md:py-28 bg-[#080808] border-t border-zinc-800/60">
+      <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-zinc-100 mb-4">
-          From the field
+          The log
         </h2>
-        <p className="text-zinc-300 text-base leading-relaxed max-w-2xl mb-10">
+        <p className="text-zinc-300 text-base leading-relaxed max-w-2xl mb-6">
           These are our posts as we wrote them on Facebook in 2017.
         </p>
 
-        <div className="space-y-4">
-          {galleryEntries.map((entry, i) => {
-            const isOpen = expanded[i] ?? false;
-            const photoCount = entry.photos.length;
-
-            return (
-              <div
-                key={i}
-                className="border border-zinc-800/60 rounded-sm overflow-hidden"
-              >
-                {/* Header: always visible, clickable */}
-                <button
-                  onClick={() => toggle(i)}
-                  aria-expanded={isOpen}
-                  className="w-full text-left px-4 sm:px-6 py-4 flex items-start justify-between gap-4 hover:bg-zinc-900/50 transition-colors"
+        <nav aria-label="Weeks in the log" className="mb-12">
+          <div className="text-sm text-zinc-400 mb-3">Jump to the week of</div>
+          <ul className="flex flex-wrap gap-2">
+            {weeks.filter(Boolean).map((week) => (
+              <li key={week.iso}>
+                <a
+                  href={`#${week.iso}`}
+                  className="inline-flex items-center min-h-9 px-3 py-1.5 text-sm text-amber-300 border border-zinc-700 rounded-sm hover:text-amber-200 hover:border-zinc-500 transition-colors"
                 >
-                  <div className="min-w-0 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6">
-                    <div className="text-xs text-zinc-400 uppercase tracking-[0.08em] sm:w-40 sm:flex-shrink-0">
-                      {entry.date}
-                    </div>
-                    <div className="text-base text-zinc-100 font-medium">
-                      {entry.title}
-                    </div>
-                    {photoCount > 0 && (
-                      <div className="text-xs text-zinc-400 sm:whitespace-nowrap">
-                        {photoCount} {photoCount === 1 ? "photo" : "photos"}
-                      </div>
-                    )}
-                  </div>
-                  <div
-                    className={`text-zinc-400 transition-transform duration-300 flex-shrink-0 mt-1 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  >
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M4 6L8 10L12 6"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </button>
+                  {week.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-                {/* Expandable content */}
-                {isOpen && (
-                  <div className="px-4 sm:px-6 pb-6">
-                    {/* Context, only where a post needs it */}
-                    {entry.note && (
-                      <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-2">
-                        {entry.note}
+        <div className="space-y-14">
+          {days.map((day) => (
+            <section key={day.iso} aria-labelledby={day.iso}>
+              <h3
+                id={day.iso}
+                className="scroll-mt-6 text-sm font-semibold uppercase tracking-[0.08em] text-zinc-400 pb-3 mb-6 border-b border-zinc-800/60"
+              >
+                {longDay.format(utc(day.iso))}
+              </h3>
+
+              <div className="space-y-10">
+                {day.posts.map((entry) => {
+                  const photoCount = entry.photos.length;
+                  return (
+                    <article key={entry.title}>
+                      <h4 className="text-lg font-semibold text-zinc-100 mb-2">
+                        {entry.title}
+                      </h4>
+
+                      {/* Context, only where a post needs it */}
+                      {entry.note && (
+                        <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mb-2">
+                          {entry.note}
+                        </p>
+                      )}
+
+                      {/* The post as it was written in 2017 */}
+                      <p className="text-zinc-300 text-base leading-relaxed max-w-2xl">
+                        {entry.caption}
                       </p>
-                    )}
 
-                    {/* The post as it was written in 2017 */}
-                    <p className="text-zinc-300 text-base leading-relaxed max-w-2xl mb-6">
-                      {entry.caption}
-                    </p>
+                      {/* Partner links */}
+                      {entry.partners && entry.partners.length > 0 && (
+                        <div className="max-w-2xl mt-4 flex flex-wrap gap-3">
+                          {entry.partners.map((partner) => (
+                            <a
+                              key={partner.url}
+                              href={partner.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center min-h-8 text-sm text-amber-300 border border-zinc-700 rounded-sm px-3 py-1.5 hover:text-amber-200 hover:border-zinc-500 transition-colors"
+                            >
+                              {partner.name}
+                            </a>
+                          ))}
+                        </div>
+                      )}
 
-                    {/* Partner links */}
-                    {entry.partners && entry.partners.length > 0 && (
-                      <div className="max-w-2xl mb-6 flex flex-wrap gap-3">
-                        {entry.partners.map((partner, k) => (
-                          <a
-                            key={k}
-                            href={partner.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 text-xs text-amber-300 uppercase tracking-[0.08em] border border-zinc-700 rounded-sm px-3 py-1.5 hover:text-amber-200 hover:border-zinc-500 transition-colors"
-                          >
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                              <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                            {partner.name}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Photo grid */}
-                    {photoCount === 0 ? null : photoCount === 1 ? (
-                      <div className="max-w-2xl">
-                        <Image
-                          src={`/assets/photos/${entry.photos[0].src}`}
-                          alt={entry.photos[0].alt}
-                          width={800}
-                          height={600}
-                          className="w-full object-cover rounded-sm"
-                          loading="lazy"
-                        />
-                      </div>
-                    ) : (
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-1.5">
-                        {entry.photos.map((photo, j) => (
-                          <div
-                            key={j}
-                            className={`overflow-hidden ${
-                              j === 0 ? "md:col-span-2 md:row-span-2" : ""
-                            }`}
-                          >
-                            <Image
-                              src={`/assets/photos/${photo.src}`}
-                              alt={photo.alt}
-                              width={j === 0 ? 800 : 400}
-                              height={j === 0 ? 600 : 300}
-                              className="w-full h-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-700"
-                              loading="lazy"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                )}
+                      {/* Photos */}
+                      {photoCount === 0 ? null : photoCount === 1 ? (
+                        <div className="max-w-2xl mt-5">
+                          <Image
+                            src={`/assets/photos/${entry.photos[0].src}`}
+                            alt={entry.photos[0].alt}
+                            width={800}
+                            height={600}
+                            sizes="(max-width: 768px) 100vw, 672px"
+                            className="w-full object-cover rounded-sm"
+                          />
+                        </div>
+                      ) : (
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-1.5 mt-5">
+                          {entry.photos.map((photo, j) => (
+                            <div
+                              key={photo.src}
+                              className={`overflow-hidden ${
+                                j === 0 ? "md:col-span-2 md:row-span-2" : ""
+                              }`}
+                            >
+                              <Image
+                                src={`/assets/photos/${photo.src}`}
+                                alt={photo.alt}
+                                width={j === 0 ? 800 : 400}
+                                height={j === 0 ? 600 : 300}
+                                sizes="(max-width: 768px) 50vw, 300px"
+                                className="w-full h-full object-cover aspect-[4/3]"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </article>
+                  );
+                })}
               </div>
-            );
-          })}
+            </section>
+          ))}
         </div>
       </div>
     </section>

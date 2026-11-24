@@ -1,6 +1,9 @@
 export interface GalleryPhoto {
   src: string;
   alt: string;
+  // the photo's real size in pixels
+  width: number;
+  height: number;
 }
 
 export interface PartnerLink {
@@ -29,6 +32,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "gear-loadout-pre-deployment.jpg",
         alt: "Tools and equipment laid out for deployment: chainsaw, circular saw, drill, safety vest, tool belt, boots, bolt cutters, and jump starter",
+        width: 2048,
+        height: 1536,
       },
     ],
   },
@@ -41,14 +46,20 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "920th-airmen-loading-truck.jpg",
         alt: "Two airmen from the 920th Rescue Wing loading supply cases into a truck at Patrick AFB",
+        width: 1024,
+        height: 768,
       },
       {
         src: "920th-donations-fuel-water-cases.jpg",
         alt: "Military case packed with fuel cans, water bottles, power inverter, and supplies",
+        width: 960,
+        height: 1280,
       },
       {
         src: "920th-donations-supply-bin.jpg",
         alt: "Supply bin filled with batteries, trash bags, and other donated goods",
+        width: 600,
+        height: 800,
       },
     ],
   },
@@ -61,6 +72,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "donations-generators-inverters.jpg",
         alt: "Portable generator, power inverters, and jumper cables loaded in the back of an SUV",
+        width: 1280,
+        height: 960,
       },
     ],
   },
@@ -73,6 +86,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "mayaguez-destruction-coastline.jpg",
         alt: "Mayaguez, Puerto Rico: homes collapsed into the ocean, truck submerged in floodwater, a man surveying the destruction from the roadside",
+        width: 720,
+        height: 960,
       },
     ],
   },
@@ -120,6 +135,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "920th-airman-chainsaw-donation.jpg",
         alt: "Airman from the 920th Rescue Wing with chainsaw case, dog food, and supplies ready for shipment",
+        width: 1080,
+        height: 1440,
       },
     ],
   },
@@ -132,6 +149,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "pallets-loaded-dusk.jpg",
         alt: "Supply pallets loaded at dusk: coolers, generators, military bags, paper towels, and luggage staged for shipment",
+        width: 2048,
+        height: 1536,
       },
     ],
   },
@@ -144,6 +163,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "first-shipment-sju-airport.jpg",
         alt: "First Alpha CREW shipment on the tarmac at San Juan airport: pallets loaded with generators, diapers, fuel cans, coolers, and military cases, forklift in background",
+        width: 960,
+        height: 720,
       },
     ],
   },
@@ -163,6 +184,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "pr-flood-kayak-rescue.jpg",
         alt: "Elderly man being evacuated by kayak through flooded streets in Puerto Rico, his dog riding with him, neighbors helping push through the water",
+        width: 960,
+        height: 720,
       },
     ],
   },
@@ -175,10 +198,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-generators-hangar-staged.jpg",
         alt: "Eight 4000-watt Predator generators stacked in a hangar, staged for shipment to Vieques Hospital",
+        width: 960,
+        height: 1280,
       },
       {
         src: "vieques-generators-truck-loading.jpg",
         alt: "Volunteer loading generators into a pickup truck bed for transport",
+        width: 960,
+        height: 1280,
       },
     ],
   },
@@ -205,6 +232,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "volunteers-loading-water-supplies.jpg",
         alt: "Two volunteers loading cases of water and canned goods from a store cart into a pickup truck",
+        width: 480,
+        height: 640,
       },
     ],
   },
@@ -224,10 +253,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "wang-cortes-dental-team.jpg",
         alt: "Alpha CREW members with Wang and Cortes Dental staff standing beside donated supplies: baby formula, Lysol, batteries, and canned food",
+        width: 1280,
+        height: 960,
       },
       {
         src: "wang-cortes-donations-boxes.jpg",
         alt: "Boxes of diapers and supplies stacked in the dental office, ready for pickup",
+        width: 1280,
+        height: 960,
       },
     ],
   },
@@ -240,22 +273,32 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "tarmac-forklift-cargo-netted.jpg",
         alt: "Airman directing a forklift carrying a cargo-netted pallet of generators, water, and supplies on the tarmac",
+        width: 1280,
+        height: 960,
       },
       {
         src: "hangar-packing-bins-pallet.jpg",
         alt: "Volunteers packing supply bins onto a pallet inside a hangar, checking inventory lists",
+        width: 960,
+        height: 1280,
       },
       {
         src: "hangar-hauling-bins-lineup.jpg",
         alt: "Volunteer hauling a supply bin across a hangar floor, line of bins and diapers staged behind her",
+        width: 2048,
+        height: 1536,
       },
       {
         src: "hangar-water-bottles-staged.jpg",
         alt: "Cases of water bottles covering an entire workbench inside the hangar",
+        width: 1536,
+        height: 2048,
       },
       {
         src: "pr-nighttime-supply-distribution.jpg",
         alt: "Two people unloading supplies from an SUV at night in Puerto Rico, no streetlights, total darkness",
+        width: 1536,
+        height: 2048,
       },
     ],
   },
@@ -268,6 +311,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "333rd-crew-c130-tarmac.jpg",
         alt: "Alpha CREW volunteers and 333rd Recruiting Squadron airmen standing together under the tail of a C-130 on the tarmac",
+        width: 600,
+        height: 800,
       },
     ],
   },
@@ -280,6 +325,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "william-nieves-facebook-post.jpg",
         alt: "Screenshot of a Facebook post describing an 82-year-old Korean War veteran alone in Puerto Rico, surviving on crackers and two bottles of water after Hurricane Maria",
+        width: 640,
+        height: 799,
       },
     ],
   },
@@ -292,6 +339,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "veterinarians-for-pr-logo.jpg",
         alt: "Veterinarians for Puerto Rico logo: paw print with Puerto Rican flag star",
+        width: 800,
+        height: 800,
       },
     ],
   },
@@ -304,6 +353,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "crew-strapping-pallet-tarmac.jpg",
         alt: "Crew members strapping down a pallet of generators, supply bins, and water on the tarmac, ready for airlift",
+        width: 720,
+        height: 960,
       },
     ],
   },
@@ -337,10 +388,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-crowd-waiting-field.jpg",
         alt: "Long line of Vieques residents waiting in a devastated field for supply distribution, stripped trees and damaged buildings in the background",
+        width: 720,
+        height: 474,
       },
       {
         src: "vieques-truck-handout-alphacrew.jpg",
         alt: "Alpha CREW volunteers handing out supplies from a flatbed truck with hand-painted ALPHA CREW sign, residents gathering around",
+        width: 720,
+        height: 540,
       },
     ],
   },
@@ -353,18 +408,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-plaza-handout-closeup.jpg",
         alt: "Volunteers on the Alpha CREW truck handing water and supplies to residents gathered in the Vieques town square",
+        width: 1233,
+        height: 925,
       },
       {
         src: "vieques-plaza-truck-church.jpg",
         alt: "Alpha CREW truck parked by the church in Vieques, crowd of residents receiving supplies",
+        width: 1233,
+        height: 925,
       },
       {
         src: "vieques-plaza-line-street.jpg",
         alt: "Line of residents stretching down the street in Vieques, waiting for supply distribution from the Alpha CREW truck",
+        width: 1233,
+        height: 925,
       },
       {
         src: "vieques-plaza-stroller-families.jpg",
         alt: "Families with strollers and children gathering around the Alpha CREW truck in the Vieques plaza",
+        width: 1280,
+        height: 960,
       },
     ],
   },
@@ -377,10 +440,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-crew-photo-taped-sign.jpg",
         alt: "Alpha CREW team posing in Vieques with a hand-lettered styrofoam sign, Puerto Rican flag, and red Jeep, stripped trees in the background",
+        width: 1024,
+        height: 768,
       },
       {
         src: "vieques-jeep-flag-sign.jpg",
         alt: "The Alpha CREW sign propped against the red Jeep with Puerto Rican flag overhead, devastated landscape behind",
+        width: 1024,
+        height: 768,
       },
     ],
   },
@@ -393,22 +460,32 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-satphone-call-family.jpg",
         alt: "A Vieques resident using Alpha CREW's satellite phone to call family, crew member watching from a fence, stripped trees in the background",
+        width: 960,
+        height: 1280,
       },
       {
         src: "vieques-coordination-meeting.jpg",
         alt: "Alpha CREW in a coordination meeting with local officials and other organizations in Vieques, notes and clipboards in hand",
+        width: 1280,
+        height: 960,
       },
       {
         src: "vieques-golf-cart-megaphone.jpg",
         alt: "Golf cart with a megaphone driving through a Vieques neighborhood to announce supply distributions",
+        width: 960,
+        height: 1280,
       },
       {
         src: "vieques-crew-residents-porch.jpg",
         alt: "Crew member talking with elderly residents on a porch in Vieques",
+        width: 960,
+        height: 1280,
       },
       {
         src: "vieques-truck-handout-street.jpg",
         alt: "Alpha CREW truck distributing supplies on the street in Vieques, residents walking away with water and goods",
+        width: 960,
+        height: 1280,
       },
     ],
   },
@@ -421,26 +498,38 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vetsforpr-animal-emergency-hospital.jpg",
         alt: "Team delivering pet food and supplies to the Animal Emergency Hospital in Puerto Rico",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "vetsforpr-night-truck-loading.jpg",
         alt: "Night handoff: volunteers and vets in scrubs loading supplies into a truck in the dark",
+        width: 960,
+        height: 1280,
       },
       {
         src: "vetsforpr-hangar-supplies.jpg",
         alt: "Hangar stacked with cases of Clorox, water, and pet training pads staged for delivery",
+        width: 1280,
+        height: 960,
       },
       {
         src: "vetsforpr-animal-shelter-crates.jpg",
         alt: "Volunteer carrying supplies past stacked animal crates at a shelter, dogs roaming",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "vetsforpr-cleaning-supplies-dogs.jpg",
         alt: "Vet organizing Clorox and cleaning supplies on top of a crate, dogs nearby",
+        width: 960,
+        height: 1280,
       },
       {
         src: "vetsforpr-dogs-residents.jpg",
         alt: "Vets for PR team with residents and dogs in a neighborhood, damaged palm trees overhead",
+        width: 1237,
+        height: 1237,
       },
     ],
   },
@@ -454,10 +543,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "shoutout-sandy-malone-weddings.png",
         alt: "Facebook post from Sandy Malone Weddings & Events sharing Alpha CREW's GoFundMe with #LetsSavePR banner",
+        width: 678,
+        height: 585,
       },
       {
         src: "shoutout-weddings-in-vieques.png",
         alt: "Facebook post from Weddings in Vieques page sharing Alpha CREW's GoFundMe to their alumni network",
+        width: 674,
+        height: 589,
       },
     ],
   },
@@ -470,6 +563,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-destroyed-structure.jpg",
         alt: "Collapsed structure on Vieques surrounded by stripped trees and debris, nothing left standing",
+        width: 1600,
+        height: 900,
       },
     ],
   },
@@ -489,10 +584,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "choliseo-sorting-clothing.jpg",
         alt: "Volunteer sorting and folding donated clothing at tables inside the José Miguel Agrelot Coliseum",
+        width: 496,
+        height: 662,
       },
       {
         src: "choliseo-packing-boxes.jpg",
         alt: "Volunteer packing boxes of donations at tables inside the coliseum, arena seating visible behind",
+        width: 496,
+        height: 662,
       },
     ],
   },
@@ -505,6 +604,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "isla-grande-humane-society-loading.jpg",
         alt: "Volunteer amid stacked pet carriers, boxes, and animal supplies in a hangar at Isla Grande Airport",
+        width: 883,
+        height: 662,
       },
     ],
   },
@@ -517,6 +618,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "guaynabo-hospital-fuel-cans.jpg",
         alt: "Five red fuel cans labeled HSPR 1/5 through 5/5, lined up on a tile floor next to water bottles and rubber boots",
+        width: 883,
+        height: 662,
       },
     ],
   },
@@ -536,10 +639,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "choliseo-volunteers-sorting-floor.jpg",
         alt: "Volunteer sorting clothing and donations on the arena floor of the Choliseo, empty seating tiers and sponsor banners above",
+        width: 720,
+        height: 1280,
       },
       {
         src: "choliseo-crew-group-photo.jpg",
         alt: "Six crew members and volunteers posing together on the Choliseo arena floor, boxes and pallets behind them",
+        width: 1280,
+        height: 960,
       },
     ],
   },
@@ -552,18 +659,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "humane-society-selfie-loaded-truck.jpg",
         alt: "Crew member selfie in front of a pickup truck loaded with water bottles and supplies",
+        width: 360,
+        height: 480,
       },
       {
         src: "humane-society-isla-grande-hangar.jpg",
         alt: "S.P. Helicopters hangar at Isla Grande packed with pet food, water, and boxes of supplies",
+        width: 320,
+        height: 240,
       },
       {
         src: "humane-society-truck-van-loading.jpg",
         alt: "Truck bed and van being loaded with bags of pet food and water in the hangar",
+        width: 360,
+        height: 480,
       },
       {
         src: "humane-society-water-heart-sign.jpg",
         alt: "Truck bed filled with water bottles next to a large red heart sign at the hangar entrance",
+        width: 360,
+        height: 480,
       },
     ],
   },
@@ -577,6 +692,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "shoutout-andrea-moya.png",
         alt: "Facebook post from Andrea Moya recommending Alpha CREW and other relief organizations to her network",
+        width: 675,
+        height: 630,
       },
     ],
   },
@@ -589,6 +706,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "rivera-caraballo-donation.jpg",
         alt: "Airman standing next to a cart loaded with donated water, food boxes, and plantains in a warehouse",
+        width: 1080,
+        height: 1440,
       },
     ],
   },
@@ -601,18 +720,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "utuado-collapsed-bridge.jpg",
         alt: "Collapsed bridge in Utuado: concrete pillars broken into the muddy river, homes visible on the hillside above",
+        width: 1280,
+        height: 720,
       },
       {
         src: "utuado-surveying-bridge.jpg",
         alt: "Two crew members standing at the edge of the collapsed bridge, surveying the destruction across the flooded river",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "utuado-destroyed-road.jpg",
         alt: "Crew walking a mud-covered road in Utuado, landslides on both sides, stripped hillsides in the background",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "utuado-military-lmtv.jpg",
         alt: "Military LMTV cargo truck parked on a road near Route 111 in Utuado, one of the few vehicles able to navigate the terrain",
+        width: 1281,
+        height: 960,
       },
     ],
   },
@@ -625,18 +752,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "humane-society-dogs-carriers.jpg",
         alt: "Rescued dogs in stacked carriers, named and labeled, waiting for transport",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "humane-society-van-packed-crates.jpg",
         alt: "Van packed wall-to-wall with dog crates marked HSPR, ready for the drive to LMM airport",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "humane-society-jet-aviation-night.jpg",
         alt: "Truck loaded with supplies outside the Jet Aviation terminal at LMM airport at night",
+        width: 1124,
+        height: 1500,
       },
       {
         src: "humane-society-aircraft-loading.jpg",
         alt: "Aircraft N651CT on the tarmac at night, crew loading cargo through the side door",
+        width: 1500,
+        height: 1124,
       },
     ],
   },
@@ -649,6 +784,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "jorgito-fridge-vaccines.jpg",
         alt: "Boxes of veterinary rabies vaccines stacked on refrigerator shelves, kept cold in a crew member's personal fridge",
+        width: 1080,
+        height: 1441,
       },
     ],
   },
@@ -661,18 +798,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "aguas-buenas-porch-checkup.jpg",
         alt: "Crew member and medic in scrubs checking on an elderly resident on his porch in Aguas Buenas",
+        width: 1281,
+        height: 960,
       },
       {
         src: "aguas-buenas-living-room-seniors.jpg",
         alt: "Crowded living room in Aguas Buenas: crew and medical volunteers assessing elderly residents, family photos on the walls",
+        width: 1281,
+        height: 960,
       },
       {
         src: "aguas-buenas-medical-supplies.jpg",
         alt: "Crew member carrying medical supply box on a porch while a medic takes a resident's blood pressure",
+        width: 960,
+        height: 1280,
       },
       {
         src: "aguas-buenas-doorway-intake.jpg",
         alt: "Volunteer collecting information from a resident at her doorway, writing on a clipboard",
+        width: 960,
+        height: 1281,
       },
     ],
   },
@@ -685,14 +830,20 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "shipment-warehouse-pallets-wide.jpg",
         alt: "Wide shot of warehouse floor: rows of shrink-wrapped pallets stacked high, freezers and military containers in the background",
+        width: 1280,
+        height: 960,
       },
       {
         src: "shipment-labeled-diapers-containers.jpg",
         alt: "Labeled containers of diapers, baby wipes, and Pampers stacked on pallets with manifest tags visible",
+        width: 960,
+        height: 1280,
       },
       {
         src: "shipment-water-pallets-manifested.jpg",
         alt: "Rows of shrink-wrapped water pallets with yellow manifest labels, staged for airlift",
+        width: 1536,
+        height: 2048,
       },
     ],
   },
@@ -705,18 +856,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "guaynabo-shelter-flooded-kennels.jpg",
         alt: "Empty kennels with doors flung open, mud and debris covering the shelter floor after flooding",
+        width: 1281,
+        height: 960,
       },
       {
         src: "guaynabo-shelter-flooded-floor.jpg",
         alt: "Flooded shelter interior: wet concrete floor, van backed into the bay, water barrels along the wall",
+        width: 1124,
+        height: 1500,
       },
       {
         src: "guaynabo-animals-relocated-gym.jpg",
         alt: "Dozens of pet carriers lined up in rows inside a basketball gym, volunteers organizing the relocated animals",
+        width: 960,
+        height: 1281,
       },
       {
         src: "guaynabo-gym-volunteers-carriers.jpg",
         alt: "Volunteers walking among rows of carriers on the gym floor, bags of pet food stacked nearby",
+        width: 1500,
+        height: 1124,
       },
     ],
   },
@@ -729,18 +888,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "333rd-warehouse-overhead.jpg",
         alt: "Overhead view of warehouse floor filled with dozens of shrink-wrapped pallets: water, food, medical supplies staged for airlift",
+        width: 1280,
+        height: 960,
       },
       {
         src: "333rd-sorting-pallets-water.jpg",
         alt: "Volunteers in Air Force shirts and civilians sorting water bottles onto pallets in the warehouse",
+        width: 1280,
+        height: 720,
       },
       {
         src: "333rd-airmen-civilians-sorting.jpg",
         alt: "Airmen in uniform and civilian volunteers working together to reorganize pallets of water and supplies",
+        width: 1280,
+        height: 720,
       },
       {
         src: "333rd-warehouse-reorganized.jpg",
         alt: "Wide shot of reorganized warehouse: pallets neatly wrapped and separated by category, overhead crane visible",
+        width: 1280,
+        height: 960,
       },
     ],
   },
@@ -753,10 +920,14 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "fema-waiting-truck-c130s.jpg",
         alt: "Semi truck parked on the flight line, C-130 aircraft visible on the tarmac in the background under blue skies",
+        width: 960,
+        height: 1280,
       },
       {
         src: "fema-waiting-warehouse-ready.jpg",
         alt: "Overhead view of warehouse packed with dozens of pallets: water, food, medicine, all staged and waiting for FEMA approval",
+        width: 1280,
+        height: 960,
       },
     ],
   },
@@ -769,6 +940,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "abba-church-flight-line-group.jpg",
         alt: "Luis Martinez, Pastor Evelyn Martinez, Joseph Duren in uniform, and Glorianne Ruiz standing together on the flight line with a C-130 in the background",
+        width: 2048,
+        height: 1536,
       },
     ],
   },
@@ -781,6 +954,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "full-crew-group-photo-warehouse.jpg",
         alt: "Full Alpha CREW group photo outside the warehouse: airmen in uniform, civilian volunteers, church partners, and families with children",
+        width: 840,
+        height: 489,
       },
     ],
   },
@@ -793,18 +968,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "bayamon-crew-truck-lmm-airport.jpg",
         alt: "Alpha CREW truck loaded with medical supply boxes outside LMM Airport terminal, CREW logo visible on the tailgate",
+        width: 1281,
+        height: 960,
       },
       {
         src: "bayamon-pwh-boxes-truck-cab.jpg",
         alt: "Partners for World Health and Hospira medical supply boxes loaded in the truck, visible through the passenger window",
+        width: 960,
+        height: 1281,
       },
       {
         src: "bayamon-truck-hospital-dusk.jpg",
         alt: "Truck bed full of medical supply boxes arriving at the hospital at dusk, Alpha CREW logo on the tailgate, streetlights on",
+        width: 960,
+        height: 1281,
       },
       {
         src: "bayamon-childrens-hospital-arrival.jpg",
         alt: "Loaded truck parked outside the Pediatric Children's Hospital in Bayamón at twilight, ambulance under the awning",
+        width: 960,
+        height: 1281,
       },
     ],
     partners: [
@@ -820,6 +1003,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "carmen-rivera-welfare-check.jpg",
         alt: "Crew member selfie with Ms. Carmen Rivera on her porch in St. Just, a tarp overhead covering storm damage, both smiling",
+        width: 972,
+        height: 1296,
       },
     ],
   },
@@ -839,14 +1024,20 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "utuado-climbing-pr-jeep-crew.jpg",
         alt: "Two crew members posing next to the Alpha CREW-branded Jeep in Utuado, ready for the mountain roads",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "utuado-climbing-pr-convoy.jpg",
         alt: "Mitsubishi Montero with Alpha CREW logo leading a convoy on a mountain road into Utuado, lush hillsides recovering",
+        width: 1124,
+        height: 1500,
       },
       {
         src: "utuado-clearing-debris-farm.jpg",
         alt: "Large group of volunteers clearing massive downed trees and debris from a farm property with chainsaws and rakes",
+        width: 1500,
+        height: 1124,
       },
     ],
   },
@@ -859,26 +1050,38 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "voces-soup-portioning.jpg",
         alt: "Rows of soup cups being portioned in a restaurant kitchen, volunteers working the counter",
+        width: 1124,
+        height: 1500,
       },
       {
         src: "voces-serving-rice-stew.jpg",
         alt: "Volunteers ladling rice and stew into cups from large pots, one wearing a CREW shirt",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "voces-crew-truck-site.jpg",
         alt: "White Alpha CREW truck at the distribution site, crew loading food containers in a covered area",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "voces-trucks-san-juan-street.jpg",
         alt: "Trucks lined up on a San Juan street with food containers and Puerto Rico flags, ready for delivery",
+        width: 1124,
+        height: 1500,
       },
       {
         src: "voces-community-gathering.jpg",
         alt: "Community members gathering around the truck as volunteers distribute meals from red and yellow containers",
+        width: 1124,
+        height: 1500,
       },
       {
         src: "voces-crew-suv-neighborhood.jpg",
         alt: "Alpha CREW SUV with logo driving through a San Juan neighborhood, white truck ahead",
+        width: 1500,
+        height: 1124,
       },
     ],
   },
@@ -891,26 +1094,38 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "65k-flatbed-crew-posing.jpg",
         alt: "Two crew members standing beside a King Transport flatbed loaded with netted cargo pallets on the flight line",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "65k-flatbed-forklift-loading.jpg",
         alt: "Military forklift loading netted pallets onto a King Transport flatbed, full load stretching the length of the trailer",
+        width: 1280,
+        height: 960,
       },
       {
         src: "65k-crew-selfie-pallets.jpg",
         alt: "Four crew members selfie in front of netted cargo pallets on the flatbed, celebrating the shipment",
+        width: 1278,
+        height: 960,
       },
       {
         src: "65k-medical-equipment-staged.jpg",
         alt: "Warehouse packed with pallets of medical supplies, wheelchairs, stretchers, and equipment staged for transport",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "65k-forklift-warehouse.jpg",
         alt: "Forklift moving red-wrapped pallets inside the warehouse, food and water pallets visible on the right",
+        width: 1200,
+        height: 1600,
       },
       {
         src: "65k-box-truck-loading-rain.jpg",
         alt: "Forklift loading pallets into a box truck on wet tarmac under cloudy skies, crew member directing",
+        width: 1600,
+        height: 1200,
       },
     ],
   },
@@ -923,18 +1138,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "hotmeals-crew-selfie-truck.jpg",
         alt: "Five crew members taking a selfie in a truck bed loaded with red containers of portioned meals and supplies",
+        width: 1278,
+        height: 960,
       },
       {
         src: "hotmeals-elderly-delivery.jpg",
         alt: "Volunteer handing a meal container to an elderly woman at her home gate, red container visible on the truck bed",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "hotmeals-containers-street.jpg",
         alt: "Red and yellow meal containers stacked in a truck bed, colorful San Juan street in the background",
+        width: 900,
+        height: 1600,
       },
       {
         src: "hotmeals-crew-logo-truck.jpg",
         alt: "Crew member selfie next to the Alpha CREW logo on the truck door, Puerto Rico flag visible in background",
+        width: 1278,
+        height: 960,
       },
     ],
   },
@@ -947,22 +1170,32 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "utuado-jayuya-tundra-mountain-village.jpg",
         alt: "Crew member standing in a Toyota Tundra truck bed with Alpha CREW logo, green mountain hillside and village buildings behind",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "utuado-jayuya-selfie-rice-bags.jpg",
         alt: "Two crew members taking a selfie in the cab, backseat packed with yellow bags of rice",
+        width: 1498,
+        height: 1124,
       },
       {
         src: "utuado-jayuya-convoy-rural-road.jpg",
         alt: "Vehicle convoy on a rural mountain road, boxes visible in truck bed, downed trees and tilted power lines along the roadside",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "utuado-jayuya-dakota-loaded.jpg",
         alt: "Maroon Dakota pickup with Alpha CREW logo, truck bed loaded with cardboard boxes and a small Puerto Rico flag",
+        width: 1500,
+        height: 1124,
       },
       {
         src: "utuado-jayuya-jeep-crew-logo.jpg",
         alt: "Silver Jeep Compass with Alpha CREW logo on the door parked on a street",
+        width: 1500,
+        height: 1124,
       },
     ],
   },
@@ -975,18 +1208,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "pwh-volunteers-wheelchairs.jpg",
         alt: "Three volunteers palletizing wheelchairs and walkers onto a pallet in a warehouse",
+        width: 1536,
+        height: 2048,
       },
       {
         src: "pwh-palletizing-walkers.jpg",
         alt: "Volunteer stacking aluminum walkers onto a wooden pallet in a large warehouse",
+        width: 1536,
+        height: 2048,
       },
       {
         src: "pwh-forklift-loading-trailer.jpg",
         alt: "U.S. Air Force forklift loading shrink-wrapped pallets into a semi trailer on the flight line",
+        width: 1536,
+        height: 2048,
       },
       {
         src: "pwh-trailer-packed-equipment.jpg",
         alt: "Inside a trailer packed with shrink-wrapped pallets of wheelchairs, walkers, crutches, and medical equipment",
+        width: 1536,
+        height: 2048,
       },
     ],
     partners: [
@@ -1002,46 +1243,68 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "sanjuan-flatbed-nikini-boxes.jpg",
         alt: "Dark green flatbed truck with Alpha CREW logo loaded with stacked Nikini supply boxes, Puerto Rico flag flying from the cab",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "sanjuan-nighttime-pallets-distribution.jpg",
         alt: "Nighttime distribution scene under floodlights, volunteers moving pallets of boxed supplies to waiting residents",
+        width: 1600,
+        height: 901,
       },
       {
         src: "sanjuan-nighttime-community-crowd.jpg",
         alt: "Large crowd of community residents gathered at night under a pavilion waiting for supply distribution",
+        width: 1600,
+        height: 901,
       },
       {
         src: "sanjuan-pr-flag-water-bottles.jpg",
         alt: "Puerto Rico flag waving above cases of Poland Spring water bottles on a vehicle roof rack, palm trees and blue sky behind",
+        width: 1600,
+        height: 1202,
       },
       {
         src: "sanjuan-crewmates-selfie-car.jpg",
         alt: "Two crew members in Alpha CREW t-shirts taking a selfie in the car, supplies visible in the backseat",
+        width: 1200,
+        height: 1600,
       },
       {
         src: "sanjuan-truck-water-pr-flag.jpg",
         alt: "Pickup truck bed loaded with water bottles and juice boxes, Puerto Rico flag on the roof rack",
+        width: 1200,
+        height: 1600,
       },
       {
         src: "sanjuan-f350-dump-truck.jpg",
         alt: "Maroon Ford F-350 dump truck with Alpha CREW logo parked on a colorful San Juan street",
+        width: 1280,
+        height: 960,
       },
       {
         src: "sanjuan-pickup-diapers-loaded.jpg",
         alt: "White pickup truck with CREW logo, bed loaded with bundled diapers and a spare tire",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "sanjuan-fleet-flatbed-corolla.jpg",
         alt: "Alpha CREW flatbed truck and black Corolla with CREW logo parked together, PR flag on the flatbed, residential neighborhood behind",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "sanjuan-fleet-parking-lot.jpg",
         alt: "Alpha CREW fleet vehicles, sedan, SUV, and flatbed truck with PR flag, staged in a parking lot before the supply run",
+        width: 1280,
+        height: 960,
       },
       {
         src: "sanjuan-hyundai-crew-logo.jpg",
         alt: "Light blue Hyundai Accent sedan with large Alpha CREW magnetic logo on the door, downed tree debris in the background",
+        width: 1281,
+        height: 960,
       },
     ],
   },
@@ -1054,58 +1317,86 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "vieques-c130-loading-tarmac.jpg",
         alt: "Airmen loading pink-wrapped medical supply pallets into a C-130 cargo bay on the tarmac, clear blue sky",
+        width: 960,
+        height: 720,
       },
       {
         src: "vieques-warehouse-staging-area.jpg",
         alt: "Warehouse staging area: pallets of water, supplies, and equipment ready for airlift",
+        width: 960,
+        height: 720,
       },
       {
         src: "vieques-night-ops-forklift-loading.jpg",
         alt: "Night operations: crew loading pallets with forklift, military vehicles in background",
+        width: 960,
+        height: 540,
       },
       {
         src: "vieques-c130-in-flight.jpg",
         alt: "C-130 aircraft in flight against a cloudy sky, carrying medical supplies to Puerto Rico",
+        width: 960,
+        height: 718,
       },
       {
         src: "vieques-cargo-pallets-military-flatbed.jpg",
         alt: "Military cargo pallets strapped to flatbed for transport",
+        width: 720,
+        height: 960,
       },
       {
         src: "vieques-ferry-terminal-crew-selfie.jpg",
         alt: "Three crew members in CREW shirts taking a selfie at the ferry terminal, Vieques ferry visible in the background",
+        width: 1600,
+        height: 1202,
       },
       {
         src: "vieques-ferry-cabin-crew-selfie.jpg",
         alt: "Five crew members and a local volunteer selfie inside the ferry cabin on the crossing to Vieques",
+        width: 960,
+        height: 720,
       },
       {
         src: "vieques-ferry-crossing.jpg",
         alt: "Loaded truck crossing by ferry to Vieques island",
+        width: 1125,
+        height: 2001,
       },
       {
         src: "vieques-trucks-loaded-staging.jpg",
         alt: "Flatbed trucks loaded with supplies in Vieques",
+        width: 960,
+        height: 720,
       },
       {
         src: "vieques-trucks-puerto-rico-wet-roads.jpg",
         alt: "Trucks on wet roads in Puerto Rico, storm damage visible on hillside",
+        width: 960,
+        height: 720,
       },
       {
         src: "vieques-hospital-unloading-crew.jpg",
         alt: "Full crew unloading supplies at the hospital",
+        width: 960,
+        height: 540,
       },
       {
         src: "vieques-forklift-pallets-dark-skies.jpg",
         alt: "Forklift moving pallets under dark skies, damaged power lines visible",
+        width: 960,
+        height: 540,
       },
       {
         src: "vieques-hospital-team-coordinating.jpg",
         alt: "Alpha CREW team coordinating with local staff at the hospital",
+        width: 960,
+        height: 540,
       },
       {
         src: "vieques-hospital-supplies-delivered.jpg",
         alt: "Medical supplies delivered inside Vieques Hospital",
+        width: 960,
+        height: 720,
       },
     ],
     partners: [
@@ -1121,6 +1412,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "anasco-night-ops-palletizing.jpg",
         alt: "Crew and volunteers stacking bins and pallets under floodlights at night on the staging area, one volunteer standing on top of the pallet directing",
+        width: 960,
+        height: 720,
       },
     ],
     partners: [
@@ -1136,14 +1429,20 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "irma-fl-crewmate-clearing-debris.jpg",
         alt: "Crew member in red shirt standing in a Silverado truck bed, tossing downed palm fronds into an Express Roll Off dumpster, storm-damaged roofs in the background",
+        width: 960,
+        height: 718,
       },
       {
         src: "irma-fl-silverado-dumpster.jpg",
         alt: "Black Chevy Silverado with Alpha CREW logo parked next to a green Express dumpster, crew member loading storm debris",
+        width: 960,
+        height: 718,
       },
       {
         src: "irma-fl-silverado-loaded-branches.jpg",
         alt: "Silverado truck bed overflowing with branches and palm fronds, parked in a Florida neighborhood driveway",
+        width: 720,
+        height: 960,
       },
     ],
   },
@@ -1156,6 +1455,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "sanjuan-municipio-aerial-distribution.jpg",
         alt: "Aerial view of a mass supply distribution: National Guard trucks and pallets of MRE boxes at a playground, soldiers and volunteers working, large crowd of residents lined up along the fence",
+        width: 960,
+        height: 540,
       },
     ],
   },
@@ -1168,18 +1469,26 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "sparks-hangar-palletizing-generators.jpg",
         alt: "Airmen and civilian volunteer palletizing boxes of generators, diapers, and supplies onto a pallet jack inside a hangar, labeled '6 of 7'",
+        width: 916,
+        height: 687,
       },
       {
         src: "sparks-king-transport-flatbed.jpg",
         alt: "Two crew members standing beside a King Transport flatbed fully loaded with netted cargo pallets on the tarmac, blue sky behind",
+        width: 916,
+        height: 687,
       },
       {
         src: "sparks-vieques-forklift-unloading.jpg",
         alt: "Yellow Yale forklift unloading pallets of generators in Vieques, crew member in CREW shirt posing with local volunteers, green hillside behind",
+        width: 960,
+        height: 540,
       },
       {
         src: "sparks-vieques-crew-delivery.jpg",
         alt: "Crew member and local volunteer standing behind a pickup loaded with shrink-wrapped boxes of Goal Zero generators in Vieques, flowering trees in background",
+        width: 960,
+        height: 720,
       },
     ],
     partners: [
@@ -1195,6 +1504,8 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "efac-fema-convention-center.jpg",
         alt: "Alpha CREW founder and EFAC partners posing outside the Centro de Convenciones de Puerto Rico after meeting with FEMA at the Emergency Operations Center",
+        width: 720,
+        height: 960,
       },
     ],
   },
@@ -1207,26 +1518,38 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "platocaliente-selfie-packing-utensils.jpg",
         alt: "Crew member selfie at a long table where volunteers in gloves pack utensil kits and napkins, boxes of supplies stacked in the background",
+        width: 1600,
+        height: 1202,
       },
       {
         src: "platocaliente-volunteers-packing-table.jpg",
         alt: "Two volunteers smiling at the checkered table, assembling utensil kits with gloves on, stacks of forks and napkins in front of them",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "platocaliente-handing-meal-resident.jpg",
         alt: "Volunteer in green cap handing a styrofoam meal container to a woman in an orange shirt from the open trunk of a silver sedan",
+        width: 1200,
+        height: 1600,
       },
       {
         src: "platocaliente-trunk-elderly-women.jpg",
         alt: "Volunteer distributing meals from a car trunk to two elderly women in a parking lot, colorful buildings behind",
+        width: 1200,
+        height: 1600,
       },
       {
         src: "platocaliente-parking-lot-distribution.jpg",
         alt: "Volunteer handing out meals from the car trunk in a parking lot, residents and a woman in scrubs waiting, palm trees and high-rise in the background",
+        width: 1600,
+        height: 1200,
       },
       {
         src: "platocaliente-community-conversation.jpg",
         alt: "Community member in a green dress talking with a resident while a volunteer loads meals from the trunk behind them",
+        width: 1200,
+        height: 1600,
       },
     ],
   },
@@ -1239,34 +1562,50 @@ export const galleryEntries: GalleryEntry[] = [
       {
         src: "autismo-kinnikinnick-boxes-closeup.jpg",
         alt: "Stack of Kinnikinnick gluten-free boxes: vanilla cookies, animal cookies, flour blend, pancake mix, and chocolate chip cookies",
+        width: 960,
+        height: 720,
       },
       {
         src: "autismo-usaf-forklift-hangar.jpg",
         alt: "U.S. Air Force Hyster forklift moving a pallet of Kinnikinnick boxes inside the hangar, water pallets stacked nearby",
+        width: 960,
+        height: 720,
       },
       {
         src: "autismo-jeep-trailer-hangar-loading.jpg",
         alt: "Black CREW Jeep with white enclosed trailer outside the hangar, Air Force forklift loading pallets in the background",
+        width: 960,
+        height: 720,
       },
       {
         src: "autismo-crewmate-trailer-palletjack.jpg",
         alt: "Crew member wearing a headlamp pushing a tall pallet of Kinnikinnick boxes with a red pallet jack inside a trailer",
+        width: 720,
+        height: 960,
       },
       {
         src: "autismo-crew-selfie-trailer.jpg",
         alt: "Three crew members selfie inside the trailer, walls of Kinnikinnick boxes stacked behind them",
+        width: 960,
+        height: 720,
       },
       {
         src: "autismo-flatbed-school-pr-flag.jpg",
         alt: "CREW flatbed truck at a school courtyard with basketball hoop, crew member on the bed with a Puerto Rico flag",
+        width: 720,
+        height: 960,
       },
       {
         src: "autismo-galindez-pallets-delivery.jpg",
         alt: "Mr. Jose Galindez standing next to black-wrapped pallets on blue pallets with a Clark pallet jack, outside Alianza's building",
+        width: 720,
+        height: 960,
       },
       {
         src: "autismo-kinnikinnick-unloaded-alianza.jpg",
         alt: "Kinnikinnick Gluten Free boxes unloaded on pallets and a hand cart outside the Alianza de Autismo building, iron fence and flowering plants behind",
+        width: 960,
+        height: 720,
       },
     ],
     partners: [
